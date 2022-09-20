@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Dsuite"  parallel="tests" thread-count="3">
+	<test name="Test set 1">
+		<groups>
+			<run>
+				<include name="smoke"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="Tests.Project_Module_TC_For_Admin_User"/>
+			<!-- add other classes of this set here -->
+			<parameter name="env" value="${env}"></parameter>
+		</classes>
+	</test>
+
+	<test name="Test set 2">
+		<groups>
+			<run>
+				<include name="smoke"/>
+			</run>
+		</groups>
+
+		<classes>
+		<class name="Tests.Project_Module_TC_For_Supervisor_User"/>
+			<!-- add other classes of this set here -->
+			<parameter name="env" value="${env}"></parameter>
+		</classes>
+	</test>
+
+
+	<test name="Test set 3">
+		<groups>
+			<run>
+				<include name="smoke"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="Tests.Project_Module_TC_For_Operator_User"/>
+			<!-- add other classes set here -->
+			<parameter name="env" value="${env}"></parameter>
+		</classes>
+	</test>
+
+</suite>
