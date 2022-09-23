@@ -8,7 +8,7 @@
 <!--			<class name="Tests.CreateRoleTest"></class>-->
 <!--			<class name="Tests.DataSetTest"></class>-->
 <!--			<class name="Tests.ReportTest"></class>-->
-			<class name="Tests.UserTest"></class>
+			<class name="Tests.ProjectModuleTest"></class>
 		</classes>
 	</test>
 

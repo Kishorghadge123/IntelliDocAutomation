@@ -11,10 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
-import java.awt.*;
-import java.awt.event.KeyEvent;
-
-public class ProjectTest extends BaseTest{
+public class ProjectModuleTest extends BaseTest{
     Project_Module project;
     SoftAssert softAssert;
 
@@ -107,6 +104,7 @@ public class ProjectTest extends BaseTest{
         project.selectoperator();
         project.clickUpdate1();
         Thread.sleep(3000);
+        softAssert.assertAll();
     }
 
 
