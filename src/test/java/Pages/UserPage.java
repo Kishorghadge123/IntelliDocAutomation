@@ -149,7 +149,6 @@ public class UserPage extends BaseTest {
             }
         }
     }
-
     public String getUserCountOfatomperPage() {
         return driver.findElement(By.xpath("//div[@class=\"mat-paginator-range-label\"]")).getText().split("of")[1].strip();
     }
@@ -187,4 +186,5 @@ public class UserPage extends BaseTest {
         this.textBoxinEdituser.sendKeys("QA Automation Project");
         this.updateButton.click();
     }
+
 }

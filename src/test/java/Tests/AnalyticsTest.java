@@ -3,6 +3,7 @@ package Tests;
 
 import Pages.AnalyticsPage;
 
+import Pages.UserPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -22,7 +23,7 @@ import java.text.ParseException;
 //@Listeners(Utilities.TestListeners.class)
 public class AnalyticsTest extends BaseTest {
     AnalyticsPage AnalyticsPageObj;
-
+    UserPage userPage;
     SoftAssert softAssert;
 
     @BeforeClass
@@ -128,7 +129,10 @@ public class AnalyticsTest extends BaseTest {
         Assert.assertEquals(actualcountOfdoc, expectedCountOfDocuments);
     }
 
-    @Test(priority = 7)
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 006 - verify That user Click On NtsplatformAdmin button and Admin Popup isDispaly")
+    @Description(" verify That user Click On NtsplatformAdmin button and Admin Popup isDispaly")
+    @Test(priority = 6, groups = "smoke", description = "verify That user Click On NtsplatformAdmin button and Admin Popup isDispaly")
     public void verifyThatuserClickOnNtsplatformAdminbuttonandAdminPopupisDispaly() throws InterruptedException {
         AnalyticsPageObj = new AnalyticsPage(driver);
         Thread.sleep(20000);
@@ -140,13 +144,41 @@ public class AnalyticsTest extends BaseTest {
         boolean element1 = driver.findElement(By.xpath("//button[contains(@class,'mat-focus-indicator mat-tooltip-trigger mat-m')]")).isDisplayed();
         Assert.assertTrue(element1);
     }
-
-    @Test(priority = 8)
-    public void verifyThatUserableToEditAdminProfile() throws InterruptedException {
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 006 - verify That user Click On NtsplatformAdmin button and Admin Popup isDispaly")
+    @Description(" verify That user Click On NtsplatformAdmin button and Admin Popup isDispaly")
+    @Test(priority = 6, groups = "smoke", description = "verify That user Click On NtsplatformAdmin button and Admin Popup isDispaly")
+    public void validateTheCountOfTotalUserInAnalyticsPage() throws Exception {
         AnalyticsPageObj = new AnalyticsPage(driver);
         Thread.sleep(20000);
-        driver.findElement(By.xpath("//button[contains(@class,'mat-focus-indicator mat-tooltip-trigger mat-m')]")).click();
+        String actualcount = AnalyticsPageObj.getUserCounts();
+        System.out.println(actualcount);
+        userPage = new UserPage(driver);
+        userPage.userclickOnUserTab();
+        waitForloadSpinner();
+        userPage.clickonGridIcon();
+        String expectedCount=userPage.getUserCountOfatomperPage();
+        Assert.assertEquals(actualcount,expectedCount);
+    }
+//    public void VerifyScrollUpDownInAnalyticsPage(){
+//
+//    }
+@Severity(SeverityLevel.CRITICAL)
+@Story("story_id: 007 - Verify That user click Drop Down Of Analytics Page")
+@Description(" Verify That user click Drop Down Of Analytics Page")
+@Test(priority = 7, groups = "smoke", description = "Verify That user click Drop Down Of Analytics Page")
+    public void verifyDropDownOfAnalyticsPage() throws Exception {
+        AnalyticsPageObj = new AnalyticsPage(driver);
+        softAssert = new SoftAssert();
+        Thread.sleep(20000);
+        AnalyticsPageObj.ClickAnalyticsBtn();
+        Thread.sleep(2000);
+        AnalyticsPageObj.clickOnDropDowns(1);
+        AnalyticsPageObj.clickOnDropDowns(1);
+        Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(@class,'mat-expansion-panel-body ng-tns-c')]//div[contains(@class,'row mt-3 ng-tns-c')])[1]")).isDisplayed());
+        AnalyticsPageObj.clickOnDropDowns(2);
+        AnalyticsPageObj.clickOnDropDowns(2);
+        Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(@class,'white_bg rounded_5px box_shadow py-3 h-100 d-flex-center flex-column')])[1]")).isDisplayed());
 
     }
-
 }

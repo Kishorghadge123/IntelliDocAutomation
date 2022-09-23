@@ -39,8 +39,6 @@ public class ProjectModuleTest extends BaseTest{
         Assert.assertTrue(project.createbtnproject.isDisplayed());
         project.searchCreatedProject("QA-Automation-FreeForm ");
         softAssert.assertTrue(project.searchedproject.isDisplayed());
-
-
     }
 
     @Severity(SeverityLevel.NORMAL)
