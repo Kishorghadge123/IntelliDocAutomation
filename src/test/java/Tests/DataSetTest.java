@@ -1,323 +1,158 @@
-//package Tests;
-//
-//
-//import BrowserDriverFactory.DriverFactory;
-//
-//import Pages.AnalyticsPage;
-//import Pages.DatasetPage;
-//import Utilities.AssertionsFunction;
-//import Utilities.Functions;
-//import io.qameta.allure.*;
-//import Utilities.ReadProps;
-//import org.openqa.selenium.By;
-//import org.openqa.selenium.JavascriptExecutor;
-//import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.WebElement;
-//import org.testng.Assert;
-//import org.testng.annotations.*;
-//
-//@Feature("Data Set Test")
+package Tests;
+
+import Pages.DatasetPage;
+import Utilities.SortingLists;
+import io.qameta.allure.*;
+import org.openqa.selenium.By;
+import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
+
+import java.io.IOException;
+
+@Feature("Data Set Test")
 //@Listeners(Utilities.TestListeners.class)
-//public class DataSetTest extends BaseTest {
-//    DatasetPage DatasetPageObj;
-//    AssertionsFunction assertions;
-//    JavascriptExecutor js;
-//
-//
-//    @Severity(SeverityLevel.NORMAL)
-//    @Story("story_id: 001  - search_user")
-//    @Description("verify user able to search_user")
-//    @Test(priority = 1, groups = "smoke", description = "verify search_user")
-//
-//    public void create_category_with_blank_name() throws Exception {
-//        WebDriver driver = DriverFactory.getInstance().getDriver();
-//
-//        assertions = new AssertionsFunction(driver);
-//        DatasetPageObj = new DatasetPage(driver);
-//        js= (JavascriptExecutor) driver;
-//
-//        DatasetPageObj.ClickDatasetBtn();
-//        Thread.sleep(2000);
-//        assertions.verifyTargetPageURL(DatasetPageObj.dataSetTabUrl);
-//        Thread.sleep(2000);
-//        //TC 6.1 - Create category with blank name.
-//        DatasetPageObj.ClickAddCategoryBtn();
-//        Thread.sleep(2000);
-//        Assert.assertTrue(assertions.isPresent(DatasetPageObj.getCreateNewDatasetCategory()));
-//
-//    }
-//
-//    @Severity(SeverityLevel.NORMAL)
-//    @Story("story_id: 002  - create_category_with_invalid_name")
-//    @Description("verify user able to create_category_with_invalid_name")
-//    @Test (priority=2,groups="smoke", description = "verify create_category_with_invalid_name")
-//
-//    public void create_category_with_invalid_name() throws Exception {
-//        //TC 6.2 - Create Category with Invalid Name.
-////        WebDriver driver = DriverFactory.getInstance().getDriver();
-//
-//        DatasetPageObj.ClickCategoryName(ReadProps.readAttr("Invalid_Name"));
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickCategoryCancelBtn();
-//        Thread.sleep(1000);
-//        assertions.verifyTargetPageURL(DatasetPageObj.dataSetTabUrl);
-//
-//    }
-//
-//
-//    @Severity(SeverityLevel.NORMAL)
-//    @Story("story_id: 003  - create_category_with_valid_name")
-//    @Description("verify user able to create_category_with_valid_name")
-//    @Test (priority=3,groups="smoke", description = "verify create_category_with_valid_name")
-//
-//    public void create_category_with_valid_name() throws Exception {
-//        //TC 6.3 - Create category with Valid name.
-//        WebDriver driver = DriverFactory.getInstance().getDriver();
-//
-//        DatasetPageObj.ClickAddCategoryBtn();
-//        Thread.sleep(1000);
-//        Assert.assertTrue(assertions.isPresent(DatasetPageObj.getCreateNewDatasetCategory()));
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickCategoryName(ReadProps.readAttr("DName"));//Change Dataset Name before executing
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickCreateCategory();
-//        Thread.sleep(2000);
-//        Assert.assertTrue(assertions.isPresent(DatasetPageObj.getcreatedCategory()));
-//        DatasetPageObj = new DatasetPage(driver);
-//        DatasetPageObj.clickcnacelcategory();
-//        Thread.sleep(2000);
-//    }
-//
-//
-//    @Severity(SeverityLevel.NORMAL)
-//    @Story("story_id: 004  - add_dataset_with_blank_and_no_chosen_file")
-//    @Description("verify user able to add_dataset_with_blank_and_no_chosen_file")
-//    @Test (priority=4,groups="smoke", description = "verify add_dataset_with_blank_and_no_chosen_file")
-//
-//    public void add_dataset_with_blank_and_no_chosen_file() throws Exception {
-//        //TC 6.4 - Perform action to add dataset with blank name and no chosen file.
-////        WebDriver driver = DriverFactory.getInstance().getDriver();
-//
-//        DatasetPageObj.ClickActionBtn();
-//        Thread.sleep(2000);
-////        Assert.assertTrue(Functions.isElementPresent(DatasetPageObj.getCreateNewDataset()));
-//        Thread.sleep(2000);
-//        DatasetPageObj.ClickAddDatasetCancelBtn();
-//        Thread.sleep(2000);
-//        assertions.verifyTargetPageURL(DatasetPageObj.dataSetTabUrl);
-//    }
-//
-//
-//
-//    @Severity(SeverityLevel.NORMAL)
-//    @Story("story_id: 005  - add_dataset_with_blank_and_name_chosen_file")
-//    @Description("verify user able to add_dataset_with_blank_and_name_chosen_file")
-//    @Test (priority=5,groups="smoke", description = "verify add_dataset_with_blank_and_name_chosen_file")
-//
-//    public void add_dataset_with_blank_and_name_chosen_file() throws Exception {
-//        //TC 6.5 - Perform action to add dataset with name and no chosen file.
-////        WebDriver driver = DriverFactory.getInstance().getDriver();
-//
-//        DatasetPageObj.ClickActionBtn();
-//        Thread.sleep(1000);
-//        Assert.assertTrue(assertions.isPresent(DatasetPageObj.getCreateNewDataset()));
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickDatasetName(ReadProps.readAttr("DName"));//Change before executing.
-//        Thread.sleep(2000);
-//        DatasetPageObj.ClickAddDatasetCancelBtn();
-//        Thread.sleep(2000);
-//        assertions.verifyTargetPageURL(DatasetPageObj.dataSetTabUrl);
-//    }
-//
-//    @Severity(SeverityLevel.NORMAL)
-//    @Story("story_id: 006  - add_dataset_with_csv_file_validation")
-//    @Description("verify user able to add_dataset_with_csv_file_validation")
-//    @Test (priority=6,groups="smoke", description = "verify add_dataset_with_csv_file_validation")
-//
-//    public void add_dataset_with_csv_file_validation() throws Exception {
-//        //TC 6.6 - Perform action to add dataset with name, chosen file (.csv) but no validation type.
-//        WebDriver driver = DriverFactory.getInstance().getDriver();
-//
-//        DatasetPageObj.ClickActionBtn();
-//        Thread.sleep(1000);
-//        Assert.assertTrue(assertions.isPresent(DatasetPageObj.getCreateNewDataset()));
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickDatasetName(ReadProps.readAttr("DName"));//Change before executing.
-//        Thread.sleep(1000);
-//        WebElement upload_file = driver.findElement(By.xpath("//body/app-root[1]/div[1]/app-landing[1]/div[1]/div[1]/main[1]/div[1]/app-dataset-editor[1]/div[4]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]"));
-//        upload_file.sendKeys(System.getProperty("user.dir") + "\\src\\test\\resources\\sampledata.csv");
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickAddDatasetCancelBtn();
-//        Thread.sleep(1000);
-//        assertions.verifyTargetPageURL(DatasetPageObj.dataSetTabUrl);
-//
-//    }
-//
-//
-//    @Severity(SeverityLevel.NORMAL)
-//    @Story("story_id: 007  - add_dataset_created_category_name_chosen_file_valid_type")
-//    @Description("verify user able to add_dataset_created_category_name_chosen_file_valid_type")
-//    @Test (priority=7,groups="smoke", description = "verify add_dataset_created_category_name_chosen_file_valid_type")
-//
-//    public void add_dataset_created_category_name_chosen_file_valid_type() throws Exception {
-//        //TC 6.7 - Perform action to add dataset file in the created category with name, chosen file and validation type.
-//        WebDriver driver = DriverFactory.getInstance().getDriver();
-//
-//        DatasetPageObj.ClickActionBtn();
-//        Thread.sleep(1000);
-//        Assert.assertTrue(assertions.isPresent(DatasetPageObj.getCreateNewDataset()));
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickDatasetName(ReadProps.readAttr("DName"));//Change before executing
-//        Thread.sleep(1000);
-//        WebElement upload_file1 = driver.findElement(By.xpath("//body/app-root[1]/div[1]/app-landing[1]/div[1]/div[1]/main[1]/div[1]/app-dataset-editor[1]/div[4]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]"));
-//        upload_file1.sendKeys(System.getProperty("user.dir") + "\\src\\test\\resources\\sampledata.csv");
-//        Thread.sleep(2000);
-//        assertions.verifyTargetPageURL(DatasetPageObj.dataSetTabUrl);
-//
-//    }
-//
-//
-//    @Severity(SeverityLevel.NORMAL)
-//    @Story("story_id: 008  - validation_type_as_name_to_create_new_dataset")
-//    @Description("verify user able to validation_type_as_name_to_create_new_dataset")
-//    @Test (priority=8,groups="smoke", description = "verify validation_type_as_name_to_create_new_dataset")
-//
-//    public void validation_type_as_name_to_create_new_dataset() throws Exception {
-//        //TC 6.8 - Validation type as "name" for dataset to create a new dataset.
-////        WebDriver driver = DriverFactory.getInstance().getDriver();
-//
-//        DatasetPageObj.ClickValidationDropDown();
-//        Thread.sleep(2000);
-//        DatasetPageObj.ClickValidationName();
-//        Thread.sleep(2000);
-//    }
-//
-//
-//    @Severity(SeverityLevel.NORMAL)
-//    @Story("story_id: 009  - validation_type_as_phone_role_to_create_new_dataset")
-//    @Description("")
-//    @Test (priority=9,groups="smoke", description = "validation_type_as_phone_role_to_create_new_dataset")
-//
-//    public void validation_type_as_phone_role_to_create_new_dataset() throws Exception {
-//        //TC 6.9 - Validation type as "phone" for roles to create a new dataset.
-////        WebDriver driver = DriverFactory.getInstance().getDriver();
-//
-//        DatasetPageObj.ClickValidationDropDown2();
-//        Thread.sleep(2000);
-//        DatasetPageObj.ClickValidationName();
-//        Thread.sleep(2000);
-//        DatasetPageObj.ClickValidationDropDown3();
-//        Thread.sleep(2000);
-//        DatasetPageObj.ClickValidationRoles();
-//        Thread.sleep(2000);
-//
-//        js.executeScript("window.scrollBy(0,20000)", "");
-//        Thread.sleep(4000);
-//        DatasetPageObj.ClickValidationDropDown4();
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickValidationEmail();
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickValidationDropDown5();
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickValidationText();
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickValidationDropDown6();
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickValidationText();
-//        Thread.sleep(1000);
-//        DatasetPageObj.ClickCreateDataset();
-//        Thread.sleep(4000);
-//        assertions.verifyTargetPageURL(DatasetPageObj.dataSetTabUrl);
-//
-//    }
-//
-//
-//
-//    @Severity(SeverityLevel.NORMAL)
-//    @Story("story_id: 010  - search_created_document_and_expand")
-//    @Description("verify user able to search_created_document_and_expandt")
-//    @Test (priority=10,groups="smoke", description = "verify validation_type_as_name_to_create_new_dataset")
-//
-//    public void search_created_document_and_expand() throws Exception {
-//        //TC 6.10 - Search created category and click to expand it.
-////        WebDriver driver = DriverFactory.getInstance().getDriver();
-//
-//        DatasetPageObj.ClickSearchBox(ReadProps.readAttr("DName"));//Change before executing
-//        Thread.sleep(2000);
-//        DatasetPageObj.ClickExpand1();
-//        assertions.isPresent(DatasetPageObj.ExpandDataset1);
-//        Thread.sleep(2000);
-//    }
-//
-//
-//
-//
-//    @Severity(SeverityLevel.NORMAL)
-//    @Story("story_id: 011  - select_open_file_and_cancel")
-//    @Description("verify user able to select_open_file_and_cancel")
-//    @Test (priority=11,groups="smoke", description = "verify validation_type_as_name_to_create_new_dataset")
-//
-//    public void select_open_file_and_cancel() throws Exception {
-//        //TC 6.11 - Select file to open it and cancel.
-////        WebDriver driver = DriverFactory.getInstance().getDriver();
-//
-//        Thread.sleep(2000);
-//        DatasetPageObj.ClickDatasetFileName();
-//        assertions.isPresent(DatasetPageObj.DatasetFile);
-//        Thread.sleep(2000);
-//
-//    }
-//
-////    @Severity(SeverityLevel.NORMAL)
-////    @Story("story_id: 01  - verify_searchbox_is_present")
-////    @Description("verify user able to verify_searchbox_is_present")
-////    @Test(priority = 1, groups = "sanity", description = "verify_searchbox_is_present")
-////
-////    public void verify_searchbox_is_present() throws Exception {
-////        WebDriver driver = DriverFactory.getInstance().getDriver();
-////
-////        assertions = new AssertionsFunction(driver);
-////        DatasetPageObj = new DatasetPage(driver);
-////        Thread.sleep(3000);
-////        DatasetPageObj.ClickDatasetBtn();
-////        Thread.sleep(3000);
-////        Assert.assertTrue(assertions.isPresent(DatasetPageObj.getSearchBox()));
-////    }
-////
-////    @Severity(SeverityLevel.NORMAL)
-////    @Story("story_id: 02  - verify_categorysort_is_present")
-////    @Description("verify user able to verify_categorysort_is_present")
-////    @Test(priority = 2, groups = "sanity", description = "verify_categorysort_is_present")
-////
-////    public void verify_categorysort_is_present() throws Exception {
-////        Assert.assertTrue(assertions.isPresent(DatasetPageObj.getcategory()));
-////    }
-////
-////    @Severity(SeverityLevel.NORMAL)
-////    @Story("story_id: 03  - verify_updatedsort_is_present")
-////    @Description("verify user able to verify_updatedsort_is_present")
-////    @Test(priority = 3, groups = "sanity", description = "verify_updatedsort_is_present")
-////
-////    public void verify_updatedsort_is_present() throws Exception {
-////        Assert.assertTrue(assertions.isPresent(DatasetPageObj.getUpdatesort()));
-////    }
-////
-////    @Severity(SeverityLevel.NORMAL)
-////    @Story("story_id: 04  - verify_datasetsort_is_present")
-////    @Description("verify user able to verify_datasetsort_is_present")
-////    @Test(priority = 4, groups = "sanity", description = "verify_datasetsort_is_present")
-////
-////    public void verify_datasetsort_is_present() throws Exception {
-////        Assert.assertTrue(assertions.isPresent(DatasetPageObj.getDatasets()));
-////    }
-////    @Severity(SeverityLevel.NORMAL)
-////    @Story("story_id: 05  - verify_trainingsort_is_present")
-////    @Description("verify user able to verify_trainingsort_is_present")
-////    @Test(priority = 5, groups = "sanity", description = "verify_trainingsort_is_present")
-////
-////    public void verify_trainingsort_is_present() throws Exception {
-////        Assert.assertTrue(assertions.isPresent(DatasetPageObj.getcreatesort()));
-////    }
-//
-//
-//}
+public class DataSetTest extends BaseTest {
+    DatasetPage DatasetPageObj;
+    SoftAssert softAssert;
+     SortingLists sortingLists;
+    @BeforeMethod
+    public void setmethod() throws Exception {
+        setup();
+        loginApplication();
+    }
+
+    @AfterMethod
+    public void tearDown() {
+//        driver.close();
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 011  - Check Datasets on user page ")
+    @Description("verify user able to Check Datasets")
+    @Test(priority = 1, groups = "smoke", description = "verify validation_type_as_name_to_create_new_dataset")
+    public void verifySearchDatasetsOnUserPage() throws Exception {
+        softAssert = new SoftAssert();
+        DatasetPageObj = new DatasetPage(driver);
+        Thread.sleep(3000);
+        DatasetPageObj.clickONDatasetPage();
+        DatasetPageObj.sendCategoryName();
+        DatasetPageObj.clickOnSearchBarIcon();
+        Thread.sleep(3000);
+        DatasetPageObj.clickOnCategoryName();
+        Thread.sleep(3000);
+        DatasetPageObj.clickOnTogglebutton();
+        Thread.sleep(5000);
+        DatasetPageObj.clickOnVisibilityButton();
+        DatasetPageObj.searchPatientName();
+        DatasetPageObj.clickOnserchBarIcon1();
+        Thread.sleep(5000);
+        DatasetPageObj.clickOnCancelDatasets();
+
+        //verify the search box is display
+        softAssert.assertTrue(DatasetPageObj.clickonCategory.isDisplayed());
+        //verify the count of Datasets File
+        int exepectedCountOfFileInTable = driver.findElements(By.xpath("//td[contains(text(),'QA Automation')]/following::table/tbody/tr")).size();
+        String ActualCountOfFile = driver.findElement(By.xpath("(//table/tbody/tr/td[2])[1]")).getText();
+        softAssert.assertEquals(exepectedCountOfFileInTable,Integer.parseInt(ActualCountOfFile));
+
+        softAssert.assertAll();
+
+    }
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 011  - check add new category on dataset page")
+    @Description("verify user able to add new category ")
+    @Test(priority = 2, groups = "smoke", description = "verify validation_type_as_name_to_Add_new_Category_dataset")
+    public void verifyAddNewCategory() throws IOException, InterruptedException {
+        softAssert = new SoftAssert();
+        DatasetPageObj = new DatasetPage(driver);
+        Thread.sleep(3000);
+        DatasetPageObj.clickONDatasetPage();
+        DatasetPageObj.clickOnAddCategory();
+        Thread.sleep(3000);
+        DatasetPageObj.sendCreateNewCategoryName();
+        DatasetPageObj.validateCreateCategoryName();
+        DatasetPageObj.clickOnCancelCreateNewDatasetCategory();
+        //verify the Text Of Add Category
+        softAssert.assertEquals(DatasetPageObj.addCategory.getText(), "Add Category");
+        //verify the create new Dataset Category
+        softAssert.assertEquals(DatasetPageObj.validateCreateNewDatasetCategory.getText(),"Create New Dataset Category");
+        //verify yhe Create Category
+        softAssert.assertEquals(DatasetPageObj.validateCreateCategory.getText(),"Create Category");
+
+        softAssert.assertAll();
+
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 011  - SortListOfDatasets ")
+    @Description("verify user able to sort Datasets")
+    @Test(priority = 3, groups = "smoke", description = "verify validation_type_as_name_to_sort_dataset")
+
+    public void verifySortingListOfDatasets() throws Exception {
+        softAssert = new SoftAssert();
+        sortingLists=new SortingLists(driver);
+        DatasetPageObj = new DatasetPage(driver);
+        waitForloadSpinner();
+        DatasetPageObj.clickONDatasetPage();
+        Thread.sleep(1000);
+        DatasetPageObj.getSortByCategory.click();
+        sortingLists.sortingListInOrder("ascending",1);
+        Thread.sleep(1000);
+        DatasetPageObj.getSortByCategory.click();
+        Thread.sleep(1000);
+        sortingLists.sortingListInOrder("descending",1);
+        //verify the category sort is enabled
+        softAssert.assertEquals(driver.findElement(By.xpath("//div[contains(text(),' Category ')]")).getText(), "Category");
+        //verify the Datasets sort is enabled
+        softAssert.assertEquals(driver.findElement(By.xpath("//div[contains(text(),' Datasets ')]")).getText(), "Datasets");
+        //verify the Updated sort is enabled
+        softAssert.assertEquals(driver.findElement(By.xpath("//div[contains(text(),' Updated ')]")).getText(), "Updated");
+        //verify the created sort is enabled
+        softAssert.assertEquals(driver.findElement(By.xpath("//div[contains(text(),' Created ')]")).getText(), "Created");
+        softAssert.assertAll();
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 011  - clickonActionButton ")
+    @Description("verify user able to Click on Action button")
+    @Test(priority = 4, groups = "smoke", description = "verify validation_type_as_name_to_Click on Action button")
+    public void verifyActionButton() throws IOException, InterruptedException {
+
+        softAssert = new SoftAssert();
+        DatasetPageObj = new DatasetPage(driver);
+        Thread.sleep(3000);
+        DatasetPageObj.clickONDatasetPage();
+        DatasetPageObj.clickOnActionButton();
+        Thread.sleep(3000);
+        DatasetPageObj.createDatasetFileName();
+        Thread.sleep(10000);
+        DatasetPageObj.clickOnChooseCSVFile();
+        Thread.sleep(3000);
+        DatasetPageObj.clickOnCancelNewDataset();
+        //verify that create new dataset
+        softAssert.assertEquals(DatasetPageObj.createNewDataset.getText(), "Create New Dataset");
+        //verify text on action button CSV format with maximum 100,000 entries.
+        softAssert.assertEquals(DatasetPageObj.validateCSVformatText.getText(),"Please select CSV format with maximum 100,000 entries.");
+        softAssert.assertAll();
+
+    }
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 011  - TotalCountOfUserinUserTab ")
+    @Description("verify user able to check the total count on user tab")
+    @Test(priority = 5, groups = "smoke", description = "verify validation_type_as_check_total_count)on_usertab")
+    public void verifyTheTotalCountOfUserinUserTab() throws IOException, InterruptedException {
+        softAssert = new SoftAssert();
+        DatasetPageObj = new DatasetPage(driver);
+        Thread.sleep(5000);
+        DatasetPageObj.clickONDatasetPage();
+        DatasetPageObj.clickOnDropDown();
+        DatasetPageObj.selectDropDownValue();
+        Thread.sleep(5000);
+        DatasetPageObj.userClickOnNextPageTab();
+        //verify count of user in category on dataset page
+        int exepectedCountOfUserInTable = driver.findElements(By.xpath("//table/tbody/tr/td[1]")).size();
+        String ActualCountOfUser = DatasetPageObj.getTotalUserCountOfItemPerPage();
+        softAssert.assertEquals(exepectedCountOfUserInTable,Integer.parseInt(ActualCountOfUser));
+
+    }
+}

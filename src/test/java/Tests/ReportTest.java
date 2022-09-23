@@ -38,7 +38,6 @@ public class ReportTest extends BaseTest {
             reportPage.clickOnProjectDropdown();
         }
     }
-
         @Test(priority = 2, enabled = true)
         public void verifyReportIsDownload () throws InterruptedException {
             Thread.sleep(10000);

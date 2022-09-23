@@ -158,7 +158,7 @@ public class UserPage extends BaseTest {
         this.Items_per_pageDropDown.click();
     }
 
-    public void selectDropDownValue() {
+    public void selectDropDownValue()  {
         driver.findElement(By.xpath("//span[text()=' 200 ']")).click();
     }
 
@@ -180,32 +180,7 @@ public class UserPage extends BaseTest {
         this.deleteRoleInEditUser.click();
     }
 
-    public void verifySortingorder(String order) {
-        boolean sorted = true;
-        List<WebElement> listOfuser = driver.findElements(By.xpath("//table/tbody/tr/td[1]"));
-        if (order.equalsIgnoreCase("ascending")) {
-            for (int i = 0; i < listOfuser.size() - 1; i++) {
-                if (listOfuser.get(i).getText().toUpperCase().compareTo(listOfuser.get(i + 1).getText().toUpperCase()) > 0) {
-                    sorted = false;
-                    break;
-                }
-            }
-        }
-        if (order.equalsIgnoreCase("descending")) {
-            for (int i = 0; i < listOfuser.size() - 1; i++) {
-                if (listOfuser.get(i).getText().toUpperCase().compareTo(listOfuser.get(i + 1).getText().toUpperCase()) < 0) {
-                    sorted = false;
-                    break;
-                }
-            }
-            if (sorted) {
-                System.out.println("it is sorted list");
-            } else {
-                System.out.println("it is not sorted list");
-            }
-            Assert.assertTrue(sorted);
-        }
-    }
+
 
     public void userSendTextinTextboxofEditUser() {
         this.textBoxinEdituser.clear();

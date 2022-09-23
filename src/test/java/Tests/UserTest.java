@@ -1,6 +1,7 @@
 package Tests;
 
 import Pages.UserPage;
+import Utilities.SortingLists;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -14,7 +15,7 @@ import java.util.Locale;
 public class UserTest extends BaseTest {
     UserPage userPage;
     SoftAssert softAssert;
-
+    SortingLists sortingLists;
     @BeforeMethod
     public void setmethod() throws Exception {
         setup();
@@ -23,7 +24,7 @@ public class UserTest extends BaseTest {
 
     @AfterMethod
     public void tearDown() {
-//        driver.close();
+        driver.close();
     }
 
     @Test(priority = 1)
@@ -120,30 +121,30 @@ public class UserTest extends BaseTest {
     public void verifyAllDropDownArrowInTable() throws Exception {
         softAssert = new SoftAssert();
         userPage = new UserPage(driver);
+        sortingLists=new SortingLists(driver);
         waitForloadSpinner();
         userPage.userclickOnUserTab();
         Thread.sleep(10000);
         userPage.clickonGridIcon();
         Thread.sleep(2000);
-        userPage.verifySortingorder("ascending");
         userPage.clickOnTableArrowDropDown("Name ");
         Thread.sleep(10000);
+        sortingLists.sortingListInOrder("ascending",1);
         userPage.clickOnTableArrowDropDown("Name ");
+        sortingLists.sortingListInOrder("descending",1);
         Thread.sleep(1000);
-        userPage.verifySortingorder("ascending");
+        sortingLists.sortingListInOrder("ascending",2);
         userPage.clickOnTableArrowDropDown(" Email ");
         softAssert.assertTrue(driver.findElement(By.xpath("//div[text()=' Email ']")).isEnabled());
+        sortingLists.sortingListInOrder("descending ",2);
         userPage.clickOnTableArrowDropDown(" Email ");
-        userPage.verifySortingorder("ascending");
         userPage.clickOnTableArrowDropDown(" Assigned Projects ");
         softAssert.assertTrue(driver.findElement(By.xpath("//div[text()=' Assigned Projects ']")).isEnabled());
         userPage.clickOnTableArrowDropDown(" Assigned Projects ");
-        userPage.verifySortingorder("ascending");
         userPage.clickOnTableArrowDropDown(" Updated ");
         softAssert.assertTrue(driver.findElement(By.xpath("//div[text()=' Updated ']")).isEnabled());
         userPage.clickOnTableArrowDropDown(" Updated ");
         userPage.clickOnTableArrowDropDown(" Created ");
-        userPage.verifySortingorder("ascending");
         softAssert.assertTrue(driver.findElement(By.xpath("//div[text()=' Created ']")).isEnabled());
         userPage.clickOnTableArrowDropDown(" Created ");
         softAssert.assertAll();
