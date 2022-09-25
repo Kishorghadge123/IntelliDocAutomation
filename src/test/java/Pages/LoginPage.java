@@ -78,7 +78,6 @@ public class LoginPage {
         }catch (Exception e){
             System.out.println("Spinar Not Appear");
         }
-//        Thread.sleep(5000);
     }
 }
 

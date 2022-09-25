@@ -12,10 +12,12 @@ public class SortingLists extends BaseTest {
     public SortingLists(WebDriver driver) {
         this.driver = driver;
     }
+
     WebDriver driver = null;
-    public void sortingListInOrder(String order,int index) throws InterruptedException {
+
+    public void sortingListInOrder(String order, int index) throws InterruptedException {
         boolean sorted = true;
-        List<WebElement> listofuser = driver.findElements(By.xpath("//table/tbody/tr/td["+index+"]"));
+        List<WebElement> listofuser = driver.findElements(By.xpath("//table/tbody/tr/td[" + index + "]"));
         if (order.equalsIgnoreCase("ascending")) {
             for (int i = 0; i < listofuser.size() - 1; i++) {
                 if (listofuser.get(i).getText().toUpperCase().compareTo(listofuser.get(i + 1).getText().toUpperCase()) > 0) {
@@ -38,5 +40,6 @@ public class SortingLists extends BaseTest {
             }
             Assert.assertTrue(sorted);
 
-        }}
+        }
+    }
 }

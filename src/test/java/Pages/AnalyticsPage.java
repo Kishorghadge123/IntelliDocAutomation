@@ -59,8 +59,7 @@ public class AnalyticsPage {
             i = Double.parseDouble(s.getText());
             j = j + i;
         }
-        Assert.assertEquals((j - 100.0), 100.0);
-    }
+        Assert.assertEquals((j - 100.0), 100.0);}
     public int verfiyThatTotalCountOfProjectDocisequleToTotalCountOfProccessReadyRejectDoc() throws InterruptedException {
      Thread.sleep(2000);
         driver.findElement(projectListDropDownArrow).click();
@@ -81,9 +80,7 @@ public class AnalyticsPage {
     public void ClickAnalyticsBtn() throws Exception {
         driver.findElement(AnalyticsBtn).click();}
     public String getUserCounts(){
-        return driver.findElement(userCount).getText();
-    }
+        return driver.findElement(userCount).getText();}
     public void clickOnDropDowns(int index){
-        driver.findElement(By.xpath("(//span[contains(@class,'mat-expansion-indicator ng-tns-c')])["+index+"]")).click();
-    }
+        driver.findElement(By.xpath("(//span[contains(@class,'mat-expansion-indicator ng-tns-c')])["+index+"]")).click();}
 }
