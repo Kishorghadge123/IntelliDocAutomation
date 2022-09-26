@@ -16,6 +16,7 @@ public class UserTest extends BaseTest {
     UserPage userPage;
     SoftAssert softAssert;
     SortingLists sortingLists;
+
     @BeforeMethod
     public void setmethod() throws Exception {
         setup();
@@ -96,9 +97,12 @@ public class UserTest extends BaseTest {
             userPage.setActiveUserToggleButton("on");
             System.out.println(userPage.isAddRoleButtonEnable());
             Assert.assertTrue(userPage.isAddRoleButtonEnable());
-        } else
+            System.out.println("Toggle Button is on ");
+        } else {
             userPage.setActiveUserToggleButton("off");
-        Assert.assertFalse(userPage.isAddRoleButtonEnable());
+            Assert.assertFalse(userPage.isAddRoleButtonEnable());
+            System.out.println("Toggle Button is off ");
+        }
     }
 
     @Test(priority = 5)
@@ -121,7 +125,7 @@ public class UserTest extends BaseTest {
     public void verifyAllDropDownArrowInTable() throws Exception {
         softAssert = new SoftAssert();
         userPage = new UserPage(driver);
-        sortingLists=new SortingLists(driver);
+        sortingLists = new SortingLists(driver);
         waitForloadSpinner();
         userPage.userclickOnUserTab();
         Thread.sleep(10000);
@@ -129,14 +133,14 @@ public class UserTest extends BaseTest {
         Thread.sleep(2000);
         userPage.clickOnTableArrowDropDown("Name ");
         Thread.sleep(10000);
-        sortingLists.sortingListInOrder("ascending",1);
+        sortingLists.sortingListInOrder("ascending", 1);
         userPage.clickOnTableArrowDropDown("Name ");
-        sortingLists.sortingListInOrder("descending",1);
+        sortingLists.sortingListInOrder("descending", 1);
         Thread.sleep(1000);
-        sortingLists.sortingListInOrder("ascending",2);
+        sortingLists.sortingListInOrder("ascending", 2);
         userPage.clickOnTableArrowDropDown(" Email ");
         softAssert.assertTrue(driver.findElement(By.xpath("//div[text()=' Email ']")).isEnabled());
-        sortingLists.sortingListInOrder("descending ",2);
+        sortingLists.sortingListInOrder("descending ", 2);
         userPage.clickOnTableArrowDropDown(" Email ");
         userPage.clickOnTableArrowDropDown(" Assigned Projects ");
         softAssert.assertTrue(driver.findElement(By.xpath("//div[text()=' Assigned Projects ']")).isEnabled());

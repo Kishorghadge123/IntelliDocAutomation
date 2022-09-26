@@ -1,6 +1,7 @@
 package Tests;
 
 import Pages.AuditPage;
+import Utilities.SortingLists;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -11,8 +12,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+
 public class AuditTest extends BaseTest {
     AuditPage auditPage;
+    SortingLists sortingLists;
 
     @BeforeMethod
     public void setmethod() throws Exception {
@@ -69,15 +72,33 @@ public class AuditTest extends BaseTest {
         Assert.assertEquals(driver.findElement(By.xpath("//div[contains(@class,'text-right ng-tns-c')]//span[contains(text(),'Apply')]")).getText(), "Apply");
         Assert.assertEquals(driver.findElement(By.xpath("//div[contains(@class,'text-right ng-tns-c')]//span[contains(text(),'Clear')]")).getText(), "Clear");
     }
+
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 002 - verifyTotalCountOfAuditedAndAuditPending")
     @Description("verifyTotalCountOfAuditedAndAuditPending")
     @Test(priority = 2, groups = "smoke", description = "verifyTotalCountOfAuditedAndAuditPending")
     public void verifytableDataisSorting() throws Exception {
         auditPage = new AuditPage(driver);
+        sortingLists = new SortingLists(driver);
         waitForloadSpinner();
         auditPage.clickOnauditTab();
         waitForloadSpinner();
+        auditPage.selectProject();
+        waitForloadSpinner();
+        auditPage.ClickOnDropDownsInAuditPage(2);
+        auditPage.clickStatusDropDownArrow();
+        Thread.sleep(2000);
+        auditPage.clickOnPendingStatus();
+        auditPage.clickOnAuditedStatus();
+        Thread.sleep(2000);
+        auditPage.clickOnApplyFilter();
         auditPage.verifySortsortingofTableData(1);
+        sortingLists.sortingListInOrder("ascending", 1);
+        auditPage.verifySortsortingofTableData(1);
+        sortingLists.sortingListInOrder("descending", 2);
+        auditPage.verifySortsortingofTableData(2);
+        sortingLists.sortingListInOrder("ascending", 2);
+        auditPage.verifySortsortingofTableData(2);
+        sortingLists.sortingListInOrder("descending", 2);
     }
 }

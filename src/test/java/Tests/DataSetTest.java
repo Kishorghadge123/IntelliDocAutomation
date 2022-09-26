@@ -87,7 +87,6 @@ public class DataSetTest extends BaseTest {
     @Story("story_id: 011  - SortListOfDatasets ")
     @Description("verify user able to sort Datasets")
     @Test(priority = 3, groups = "smoke", description = "verify validation_type_as_name_to_sort_dataset")
-
     public void verifySortingListOfDatasets() throws Exception {
         softAssert = new SoftAssert();
         sortingLists=new SortingLists(driver);

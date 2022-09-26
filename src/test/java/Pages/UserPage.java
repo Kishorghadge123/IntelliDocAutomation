@@ -59,7 +59,7 @@ public class UserPage extends BaseTest {
 
     @FindBy(xpath = "//button[@aria-label='Next page']")
     public WebElement nextPagetab;
-    By toggleButtonXpath = By.xpath("(//input[@type='checkbox'])[1]/ancestor::mat-slide-toggle");
+    By toggleButtonXpath = By.xpath("(//div[contains(@class,'mat-slide-toggle-bar mat-slide-toggle-bar-no-side-margin')]//input)[1]");
 
     @FindBy(xpath = "//input[@class='p-2 theme_color']")
     public WebElement searchOnAddroles;
@@ -124,6 +124,7 @@ public class UserPage extends BaseTest {
                 driver.findElement(toggleButtonXpath).click();
                 Thread.sleep(3000);
                 System.out.println("Active button is set to on state");
+
             }
         } else {
             if (currentstate) {
