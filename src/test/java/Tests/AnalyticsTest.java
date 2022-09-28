@@ -39,7 +39,7 @@ public class AnalyticsTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.CRITICAL)
-    @Story("story_id: 001 - test organization arrows on analytics page")
+    @Story("story_id: 001 - Test organization arrows on analytics page")
     @Description("verify user able to click organization arrows on analytics page")
     @Test(priority = 1, groups = "smoke", description = "verify test organization arrows on analytics page")
     public void test_organization_arrows_on_analytics_page_and_Doc() throws Exception {
@@ -68,7 +68,7 @@ public class AnalyticsTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.CRITICAL)
-    @Story("story_id: 001 - verify_Total_Document_Count")
+    @Story("story_id: 002 - verify Total Document Count")
     @Description(" verify_Total_Document_Count")
     @Test(priority = 2, groups = "smoke", description = "verify_Total_Document_Count")
     public void verify_Total_Document_Count() throws ParseException, InterruptedException {
@@ -79,9 +79,9 @@ public class AnalyticsTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.CRITICAL)
-    @Story("story_id: 003 - verify_Total_Document_Count")
-    @Description(" verify_Total_Document_Count")
-    @Test(priority = 3, groups = "smoke", description = "verify_Total_Document_Count")
+    @Story("story_id: 003 - verify Total Document Count in project statistics")
+    @Description(" verify_Total_Document_Countin_project_statistics")
+    @Test(priority = 3, groups = "smoke", description = "verify_Total_Document_Count_in_project_statistics")
     public void verify_Total_Document_CountInProjectStatistics() throws ParseException, InterruptedException {
         AnalyticsPageObj = new AnalyticsPage(driver);
         Thread.sleep(20000);
@@ -92,9 +92,9 @@ public class AnalyticsTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.CRITICAL)
-    @Story("story_id: 003 - verifyThatuserableToseetrendsAccordingToSelections")
-    @Description(" verifyThatuserableToseetrendsAccordingToSelections")
-    @Test(priority = 4, groups = "smoke", description = "verifyThatuserableToseetrendsAccordingToSelections")
+    @Story("story_id: 004 - verify that user able To see trends According To Selections")
+    @Description(" verify_that_user_able_to_see_trends_according_to_selections")
+    @Test(priority = 4, groups = "smoke", description = "verify_that_user_able_to_see_trends_according_to_selections")
     public void verifyThatuserableToseetrendsAccordingToSelections() throws InterruptedException {
         AnalyticsPageObj = new AnalyticsPage(driver);
         Thread.sleep(20000);
@@ -117,9 +117,9 @@ public class AnalyticsTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.CRITICAL)
-    @Story("story_id: 003 - verifyThatuserableToseetrendsAccordingToSelections")
-    @Description(" verifyThatuserableToseetrendsAccordingToSelections")
-    @Test(priority = 5, groups = "smoke", description = "verifyThatuserableToseetrendsAccordingToSelections")
+    @Story("story_id: 005 - verify total count of ready to proccess document is equal to total count of document in table")
+    @Description(" verify_total_count_of_ready_to_proccess_document_is_equal_to_total_count_of_document_in_table")
+    @Test(priority = 5, groups = "smoke", description = "verify_total_count_of_ready_to_proccess_document_is_equal_to_total_count_of_document_in_table")
     public void verifyTotalcountOfreadyToProccessDocisequalToTotalcountofDocinTable() throws InterruptedException {
         AnalyticsPageObj = new AnalyticsPage(driver);
         int actualcountOfdoc = AnalyticsPageObj.verifyTotalcountOfreadyToProccessDocisequalToTotalcountofDocinTable();
@@ -130,9 +130,9 @@ public class AnalyticsTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.CRITICAL)
-    @Story("story_id: 006 - verify That user Click On NtsplatformAdmin button and Admin Popup isDispaly")
-    @Description(" verify That user Click On NtsplatformAdmin button and Admin Popup isDispaly")
-    @Test(priority = 6, groups = "smoke", description = "verify That user Click On NtsplatformAdmin button and Admin Popup isDispaly")
+    @Story("story_id: 006 - verify That user click On NTS platform admin button and admin popup is display")
+    @Description(" verify_that_user_click_on_NTS_platform_admin_button_and_admin_popup_is_display")
+    @Test(priority = 6, groups = "smoke", description = "verify_that_user_click_on_NTS_platform_admin_button_and_admin_popup_is_display")
     public void verifyThatuserClickOnNtsplatformAdminbuttonandAdminPopupisDispaly() throws InterruptedException {
         AnalyticsPageObj = new AnalyticsPage(driver);
         Thread.sleep(20000);
@@ -145,9 +145,9 @@ public class AnalyticsTest extends BaseTest {
         Assert.assertTrue(element1);
     }
     @Severity(SeverityLevel.CRITICAL)
-    @Story("story_id: 006 - verify That user Click On NtsplatformAdmin button and Admin Popup isDispaly")
-    @Description(" verify That user Click On NtsplatformAdmin button and Admin Popup isDispaly")
-    @Test(priority = 6, groups = "smoke", description = "verify That user Click On NtsplatformAdmin button and Admin Popup isDispaly")
+    @Story("story_id: 007 - verify that user validate the count of total user in analytics page")
+    @Description(" verify_that_user_validate_the_count_of_total_user_in_analytics_page")
+    @Test(priority = 7, groups = "smoke", description = "verify_that_user_validate_the_count_of_total_user_in_analytics_page")
     public void validateTheCountOfTotalUserInAnalyticsPage() throws Exception {
         AnalyticsPageObj = new AnalyticsPage(driver);
         Thread.sleep(20000);
@@ -164,9 +164,9 @@ public class AnalyticsTest extends BaseTest {
 //
 //    }
 @Severity(SeverityLevel.CRITICAL)
-@Story("story_id: 007 - Verify That user click Drop Down Of Analytics Page")
-@Description(" Verify That user click Drop Down Of Analytics Page")
-@Test(priority = 7, groups = "smoke", description = "Verify That user click Drop Down Of Analytics Page")
+@Story("story_id: 008 - Verify That user click Drop Down on Analytics Page")
+@Description(" Verify_that_user_click_Drop_Down_Of_Analytics_Page")
+@Test(priority = 8, groups = "smoke", description = "Verify_that_user_click_Drop_Down_Of_Analytics_Page")
     public void verifyDropDownOfAnalyticsPage() throws Exception {
         AnalyticsPageObj = new AnalyticsPage(driver);
         softAssert = new SoftAssert();

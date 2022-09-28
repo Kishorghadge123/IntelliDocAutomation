@@ -32,9 +32,9 @@ public class LoginTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.CRITICAL)
-    @Story("story_id: 001  - verification_of_testloginfunctinality")
-    @Description("verification_testloginfunctinality")
-    @Test(priority = 1, groups = "smoke", description = "testloginfunctinality", dataProvider = "LoginDataProvider")
+    @Story("story_id: 001  - verification of test log in functinality")
+    @Description("verification_test_log_in_functinality")
+    @Test(priority = 1, groups = "smoke", description = "test_login_functinality", dataProvider = "LoginDataProvider")
     public void testloginfunctinality(String scenario, String username, String pwd) throws Exception {
         wait = new WebDriverWait(driver, 30);
         loginPage = new LoginPage(driver);
@@ -170,7 +170,7 @@ public class LoginTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.CRITICAL)
-    @Story("story_id: 002  - verification_of_title_logo_and_login_with_blank_details")
+    @Story("story_id: 002  - verification of title logo and login with blank details")
     @Description("verification_of_title_logo_and_login_with_blank_details")
     @Test(priority = 2, groups = "smoke", description = "verification_of_title_logo_and_login_with_blank_details")
     public void verification_of_title_ofLoginPage() throws Exception {
@@ -179,9 +179,9 @@ public class LoginTest extends BaseTest {
         assertEquals(expectedTitle, actualTitle, "TitleMismatched");
     }
     @Severity(SeverityLevel.CRITICAL)
-    @Story("story_id: 003  - verification_of_title_logo_and_login_with_blank_details")
-    @Description("verification_of_title_logo_and_login_with_blank_details")
-    @Test(priority = 3, groups = "smoke", description = "verification_of_title_logo_and_login_with_blank_details")
+    @Story("story_id: 003  - verify that the user is able to Log off the application")
+    @Description("verify_that_the_user_is_able_to_Log_off_the_application")
+    @Test(priority = 3, groups = "smoke", description = "verify_that_the_user_is_able_to_Log_off_the_application")
     public void verification_TheLogOfApplication() throws Exception {
         WebElement i = driver.findElement(By.xpath("//img[contains(@class,'img-fluid login-logo')]"));
         Boolean p = (Boolean) ((JavascriptExecutor) driver).executeScript("return arguments[0].complete " + "&& typeof arguments[0].naturalWidth != \"undefined\" " + "&& arguments[0].naturalWidth > 0", i);
@@ -193,7 +193,7 @@ public class LoginTest extends BaseTest {
         }
     }
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 004  -click_on_cancel_button_on_forgot_password")
+    @Story("story_id: 004 - verify click on cancel button on forgot password")
     @Description("verify user able to click_on_cancel_button_on_forgot_password")
     @Test(priority = 4, groups = "smoke", description = "verify click_on_cancel_button_on_forgot_password")
     public void VerifyForgotPasswerdButtonAndFunctionality() throws Exception {

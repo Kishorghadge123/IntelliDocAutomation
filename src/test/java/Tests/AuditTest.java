@@ -44,9 +44,9 @@ public class AuditTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 002 - verifyTotalCountOfAuditedAndAuditPending")
-    @Description("verifyTotalCountOfAuditedAndAuditPending")
-    @Test(priority = 2, groups = "smoke", description = "verifyTotalCountOfAuditedAndAuditPending")
+    @Story("story_id: 002 - verify total Count Of Audited and Audit Pending documents")
+    @Description("verify_total_Count_of_Audited_and_Audit_Pending_documents")
+    @Test(priority = 2, groups = "smoke", description = "verify_total_Count_of_Audited_and_Audit_Pending_documents")
     public void verifyTotalCountOfAuditedAndAuditPendingDoc() throws Exception {
         auditPage = new AuditPage(driver);
         waitForloadSpinner();
@@ -60,9 +60,9 @@ public class AuditTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 002 - verifyTotalCountOfAuditedAndAuditPending")
-    @Description("verifyTotalCountOfAuditedAndAuditPending")
-    @Test(priority = 2, groups = "smoke", description = "verifyTotalCountOfAuditedAndAuditPending")
+    @Story("story_id: 003 - verify All Filters Of Filter DropDown")
+    @Description("verify_all_filters_of_filter_DropDown")
+    @Test(priority = 3, groups = "smoke", description = "verify_all_filters_of_filter_DropDown")
     public void verifyAllFiltersOfFilterDropDown() throws Exception {
         auditPage = new AuditPage(driver);
         waitForloadSpinner();
@@ -74,9 +74,9 @@ public class AuditTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 002 - verifyTotalCountOfAuditedAndAuditPending")
-    @Description("verifyTotalCountOfAuditedAndAuditPending")
-    @Test(priority = 2, groups = "smoke", description = "verifyTotalCountOfAuditedAndAuditPending")
+    @Story("story_id: 004 - verify the user able to sort the table from data")
+    @Description("verify_the_user_able_to_sort_the_table_from_data")
+    @Test(priority = 4, groups = "smoke", description = "verify_the_user_able_to_sort_the_table_from_data")
     public void verifytableDataisSorting() throws Exception {
         auditPage = new AuditPage(driver);
         sortingLists = new SortingLists(driver);
@@ -90,6 +90,8 @@ public class AuditTest extends BaseTest {
         Thread.sleep(2000);
         auditPage.clickOnPendingStatus();
         auditPage.clickOnAuditedStatus();
+        Thread.sleep(2000);
+        auditPage.enterDocName();
         Thread.sleep(2000);
         auditPage.clickOnApplyFilter();
         auditPage.verifySortsortingofTableData(1);

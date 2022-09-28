@@ -92,7 +92,7 @@ public class UserPage extends BaseTest {
     }
 
     public void clickonGridIcon() {
-        this.grid_icon.click();
+       this.grid_icon.click();
     }
 
     public void clickonActionBtton() {

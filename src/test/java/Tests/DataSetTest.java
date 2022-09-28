@@ -27,9 +27,9 @@ public class DataSetTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 011  - Check Datasets on user page ")
-    @Description("verify user able to Check Datasets")
-    @Test(priority = 1, groups = "smoke", description = "verify validation_type_as_name_to_create_new_dataset")
+    @Story("story_id: 001  - verify that user is able to Check search Datasets on user page ")
+    @Description("verify_that_user_is_able_to_Check_Datasets_on_user_page")
+    @Test(priority = 1, groups = "smoke", description = "verify_that_user_is_able_to_Check_Datasets_on_user_page")
     public void verifySearchDatasetsOnUserPage() throws Exception {
         softAssert = new SoftAssert();
         DatasetPageObj = new DatasetPage(driver);
@@ -59,9 +59,9 @@ public class DataSetTest extends BaseTest {
 
     }
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 011  - check add new category on dataset page")
-    @Description("verify user able to add new category ")
-    @Test(priority = 2, groups = "smoke", description = "verify validation_type_as_name_to_Add_new_Category_dataset")
+    @Story("story_id: 002  - verify that user is able to add new category on dataset page")
+    @Description("verify_that_user_is_able_to_add_new_category_on_dataset_page ")
+    @Test(priority = 2, groups = "smoke", description = "verify_that_user_is_able_to_add_new_category_on_dataset_page")
     public void verifyAddNewCategory() throws IOException, InterruptedException {
         softAssert = new SoftAssert();
         DatasetPageObj = new DatasetPage(driver);
@@ -84,9 +84,9 @@ public class DataSetTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 011  - SortListOfDatasets ")
-    @Description("verify user able to sort Datasets")
-    @Test(priority = 3, groups = "smoke", description = "verify validation_type_as_name_to_sort_dataset")
+    @Story("story_id: 003  - verify that user is able to Sort List Of Datasets ")
+    @Description("verify_that_user_is_able_to_Sort_List_Of_Datasets")
+    @Test(priority = 3, groups = "smoke", description = "verify_that_user_is_able_to_Sort_List_Of_Datasets")
     public void verifySortingListOfDatasets() throws Exception {
         softAssert = new SoftAssert();
         sortingLists=new SortingLists(driver);
@@ -112,9 +112,9 @@ public class DataSetTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 011  - clickonActionButton ")
-    @Description("verify user able to Click on Action button")
-    @Test(priority = 4, groups = "smoke", description = "verify validation_type_as_name_to_Click on Action button")
+    @Story("story_id: 004  - verify that user is able to click on Action Button ")
+    @Description("verify_that_user_is_able_to_click_on_Action_Button")
+    @Test(priority = 4, groups = "smoke", description = "verify_that_user_is_able_to_click_on_Action_Button")
     public void verifyActionButton() throws IOException, InterruptedException {
 
         softAssert = new SoftAssert();
@@ -136,10 +136,9 @@ public class DataSetTest extends BaseTest {
 
     }
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 011  - TotalCountOfUserinUserTab ")
-    @Description("verify user able to check the total count on user tab")
-    @Test(priority = 5, groups = "smoke", description = "verify validation_type_as_check_total_count)on_usertab")
-    public void verifyTheTotalCountOfUserinUserTab() throws IOException, InterruptedException {
+    @Story("story_id: 005  - verify that user is able to Count total Users in UserTab ")
+    @Description("verify_that_user_is_able_to_Count_total_Users_in_UserTab")
+    @Test(priority = 5, groups = "smoke", description = "verify_that_user_is_able_to_Count_total_Users_in_UserTab")    public void verifyTheTotalCountOfUserinUserTab() throws IOException, InterruptedException {
         softAssert = new SoftAssert();
         DatasetPageObj = new DatasetPage(driver);
         Thread.sleep(5000);

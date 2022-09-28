@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10a64d68-2b6d-4e5f-af5b-34e959c1323c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TemplateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/48ecd0dd-eb12-4d33-9b0d-7c8fe5ba467b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4b827aba-766d-4e28-9e40-5d5fe69cba90-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8cdfa353-360c-4883-923f-9270e17829cc-result.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AuditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AuditPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/UserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/UserPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AnalyticsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AnalyticsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AuditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AuditTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CreateRoleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CreateRoleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ProjectModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ProjectModuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ReportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ReportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/AuditPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/AuditPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/AnalyticsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/AnalyticsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/AuditTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/AuditTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/CreateRoleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/CreateRoleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/TemplateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/TemplateTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +73,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.TemplateTest">
+  <component name="RunManager" selected="TestNG.UserTest">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="IntilliDoc_Product_JAN2022" />
       <method v="2">
@@ -63,42 +83,6 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="IntilliDoc_Product_JAN2022" />
       <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuditTest.verifyAllFiltersOfFilterDropDown" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IntelliDoc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AuditTest" />
-      <option name="METHOD_NAME" value="verifyAllFiltersOfFilterDropDown" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuditTest.verifyTotalCountOfAuditedAndAuditPendingDoc" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IntelliDoc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AuditTest" />
-      <option name="METHOD_NAME" value="verifyTotalCountOfAuditedAndAuditPendingDoc" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,6 +105,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/NTS-AmitKorade/OneDrive/Desktop/Product_Automation/ProductIntelliDocAutomation/IntilliDoc_Product_JAN2022/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IntelliDoc" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TemplateTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IntelliDoc" />
       <extension name="coverage">
@@ -131,6 +125,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.TemplateTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IntelliDoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.UserTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -158,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.UserTest" />
+        <item itemvalue="TestNG.C:/Users/NTS-AmitKorade/OneDrive/Desktop/Product_Automation/ProductIntelliDocAutomation/IntilliDoc_Product_JAN2022/testng.xml" />
+        <item itemvalue="TestNG.AuditTest.verifytableDataisSorting" />
         <item itemvalue="TestNG.TemplateTest" />
         <item itemvalue="TestNG.UserTest.verifyUserableToClickOnActiveRoleToggalButtonInUserTab" />
-        <item itemvalue="TestNG.AuditTest.verifytableDataisSorting" />
-        <item itemvalue="TestNG.AuditTest.verifyAllFiltersOfFilterDropDown" />
-        <item itemvalue="TestNG.AuditTest.verifyTotalCountOfAuditedAndAuditPendingDoc" />
       </list>
     </recent_temporary>
   </component>

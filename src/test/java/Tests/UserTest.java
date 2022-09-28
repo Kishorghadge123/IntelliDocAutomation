@@ -2,6 +2,10 @@ package Tests;
 
 import Pages.UserPage;
 import Utilities.SortingLists;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -28,7 +32,10 @@ public class UserTest extends BaseTest {
         driver.close();
     }
 
-    @Test(priority = 1)
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 001 -Search project name on user page")
+    @Description(" verify_that_user_able_to_Search_project_name_on_user_page")
+    @Test(priority = 1, groups = "smoke", description = "verify_that_user_able_to_Search_project_name_on_user_page")
     public void verifyProjectnameShouldBeSearchOnUserPage() throws Exception {
         userPage = new UserPage(driver);
         userPage.userclickOnUserTab();
@@ -42,7 +49,10 @@ public class UserTest extends BaseTest {
         Assert.assertTrue(driver.findElement(By.xpath("//td[@class='mat-cell cdk-cell cdk-column-name mat-column-name ng-star-inserted']")).isDisplayed());
     }
 
-    @Test(priority = 2)
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 002 -verify User Able To Click On Cancel Button")
+    @Description(" verify_user_able_to_click_on_cancel_button")
+    @Test(priority = 2, groups = "smoke", description = "verify_user_able_to_click_on_cancel_button")
     public void verifyUserAbleToClickOnCancelButton() throws Exception {
         userPage = new UserPage(driver);
         userPage.userclickOnUserTab();
@@ -57,7 +67,10 @@ public class UserTest extends BaseTest {
         Assert.assertTrue(driver.findElement(By.xpath("//input[@placeholder='Search']")).isDisplayed());
     }
 
-    @Test(priority = 3)
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 003 -Create New User and Verify All Text Of Create User")
+    @Description(" verify_user_able_to_create_new_user_and_verify_all_text_of_create_user")
+    @Test(priority = 3, groups = "smoke", description = "verify_user_able_to_create_new_user_and_verify_all_text_of_create_user")
     public void verifyUserableToCreatNewUserAndVerifyAllTextOfCreatUser() throws Exception {
         softAssert = new SoftAssert();
         userPage = new UserPage(driver);
@@ -80,7 +93,10 @@ public class UserTest extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test(priority = 4)
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 004 -Click On Active Role Toggle Button In UserTab")
+    @Description("verify_user_able_to_click_on_active_role_toggle_button_in_user_tab")
+    @Test(priority = 4, groups = "smoke", description = "verify_user_able_to_click_on_active_role_toggle_button_in_user_tab")
     public void verifyUserableToClickOnActiveRoleToggalButtonInUserTab() throws Exception {
         userPage = new UserPage(driver);
         //verify the text of user Button
@@ -105,7 +121,10 @@ public class UserTest extends BaseTest {
         }
     }
 
-    @Test(priority = 5)
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 005 -The Total Count Of User in UserTab")
+    @Description("verify_the_total_Count_Of_user_in_UserTab")
+    @Test(priority = 5, groups = "smoke", description = "verify_the_total_Count_Of_user_in_UserTab")
     public void verifyTheTotalCountOfUserinUserTab() throws Exception {
         userPage = new UserPage(driver);
         //verify the text of user Button
@@ -121,7 +140,10 @@ public class UserTest extends BaseTest {
         Assert.assertEquals(exepectedCountOfUserInTable, Integer.parseInt(ActualCountOfUser));
     }
 
-    @Test(priority = 6)
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 006 -All DropDown Arrow In Table")
+    @Description("verify_all_dropDown_arrow_in_table")
+    @Test(priority = 6, groups = "smoke", description = "verify_all_dropDown_arrow_in_table")
     public void verifyAllDropDownArrowInTable() throws Exception {
         softAssert = new SoftAssert();
         userPage = new UserPage(driver);
@@ -154,7 +176,10 @@ public class UserTest extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test(priority = 7)
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 007 -To Add Or Delete Role")
+    @Description("verify_user_able_to_add_or_delete_role")
+    @Test(priority = 7, groups = "smoke", description = "verify_user_able_to_add_or_delete_role")
     public void verifyUserAbleToAddOrDeletRole() throws Exception {
         userPage = new UserPage(driver);
         //verify the text of user Button
@@ -171,7 +196,10 @@ public class UserTest extends BaseTest {
         userPage.clickOnDeleteButtonIndeleteRoleInEditUser();
     }
 
-    @Test(priority = 8)
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 008 -verify User Able To Update Project")
+    @Description("verify_user_able_to_update_project")
+    @Test(priority = 8, groups = "smoke", description = "verify_user_able_to_update_project")
     public void verifyUserAbleToUpdateProject() throws Exception {
         userPage = new UserPage(driver);
         //verify the text of user Button

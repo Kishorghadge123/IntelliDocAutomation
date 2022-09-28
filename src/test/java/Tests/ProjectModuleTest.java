@@ -29,8 +29,8 @@ public class ProjectModuleTest extends BaseTest{
 
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 001 - Search Created Project")
-    @Description("verify user able to Search Created Project")
-    @Test(priority = 1, groups = "smoke", description = "verify user able to Search Created Project")
+    @Description("verify_user_able_to_Search_Created_Project")
+    @Test(priority = 1, groups = "smoke", description = "verify_user_able_to_Search_Created_Project")
     public void Search_Created_Project() throws Exception {
 
         softAssert = new SoftAssert();
@@ -43,9 +43,8 @@ public class ProjectModuleTest extends BaseTest{
 
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 002 - Update Created Project")
-    @Description("verify user able to Update Created Project")
-    @Test(priority = 2, groups = "smoke", description = "verify user able to Update Created Project")
-
+    @Description("verify_user_able_to_Update_Created_Project")
+    @Test(priority = 2, groups = "smoke", description = "verify_user_able_to_Update_Created_Project")
     public void Update_Created_Project() throws Exception {
         softAssert = new SoftAssert();
         Thread.sleep(5000);
@@ -223,8 +222,8 @@ public class ProjectModuleTest extends BaseTest{
 //    }
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 003 - Create Project With Blank Data")
-    @Description("verify user able to Create Project With Blank Data")
-    @Test(priority = 3, groups = "smoke", description = "verify user able to Create Project With Blank Data")
+    @Description("verify_user_able_to_Create_Project_With_Blank_Data")
+    @Test(priority = 3, groups = "smoke", description = "verify_user_able_to_Create_Project_With_Blank_Data")
     public void Create_Project_With_Blank_Data() throws Exception{
         softAssert = new SoftAssert();
         project = new Project_Module(driver);
@@ -251,9 +250,9 @@ public class ProjectModuleTest extends BaseTest{
 
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 004 - Create Project Without Selecting Processing Engine")
-    @Description("verify user able to Create Project Without Selecting Processing Engine")
-    @Test(priority = 4, groups = "smoke", description = "verify user able to Create Project Without Selecting Processing Engine")
+    @Story("story_id: 004 - Create Project Without Selecting Processing Engine and Templates")
+    @Description("verify_that_user_able_to_Create_Project_Without_Selecting_Processing_Engine_and_Templates")
+    @Test(priority = 4, groups = "smoke", description = "verify_that_user_able_to_Create_Project_Without_Selecting_Processing_Engine_and_Templates")
     public void Create_Project_Without_Selecting_Processing_Engine_And_Template() throws Exception {
         softAssert = new SoftAssert();
         project = new Project_Module(driver);
@@ -277,9 +276,9 @@ public class ProjectModuleTest extends BaseTest{
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 004 - Create Project Without Role and user")
-    @Description("verify user able to Create Project Without Role and user")
-    @Test(priority = 4, groups = "smoke", description = "verify user able to Create Project Without Role and user")
+    @Story("story_id: 005 - Create Project Without Role and user")
+    @Description("verify_that_user_able_to_Create_Project_without_Role_and_user")
+    @Test(priority = 5, groups = "smoke", description = "verify_that_user_able_to_Create_Project_without_Role_and_user")
     public void Create_Project_Without_Without_Role_And_User() throws Exception {
         softAssert = new SoftAssert();
         project = new Project_Module(driver);
@@ -311,9 +310,9 @@ public class ProjectModuleTest extends BaseTest{
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 004 - Create Project Without Role and user")
-    @Description("verify user able to Create Project Without Role and user")
-    @Test(priority = 4, groups = "smoke", description = "verify user able to Create Project Without Role and user")
+    @Story("story_id: 006 - Create Project Without  and user")
+    @Description("verify_that_user_able_to_Create_Project_without_and_user")
+    @Test(priority = 6, groups = "smoke", description = "verify_that_user_able_to_Create_Project_without_and_user")
     public void Create_Project_Without_Without_User() throws Exception {
         softAssert = new SoftAssert();
         project = new Project_Module(driver);

@@ -1,13 +1,10 @@
 package Tests;
-
-
 import Pages.CreateRolePage;
-import io.qameta.allure.Feature;
+import io.qameta.allure.*;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import java.awt.*;
 import java.awt.event.KeyEvent;
 
@@ -27,7 +24,10 @@ public class CreateRoleTest extends BaseTest {
         driver.quit();
     }
 
-    @Test(priority = 1, groups = "smoke", description = "verify invalid data")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 001 - verify that user is able to create new role with permission")
+    @Description("verify_that_user_is_able_to_create_new_role_with_permission")
+    @Test(priority = 1, groups = "smoke", description = "verify_that_user_is_able_to_create_new_role_with_permission")
     public void verifyCreateNewRoleWithPermisson() throws Exception {
         createRolePage = new CreateRolePage(driver);
         softAssert = new SoftAssert();
@@ -40,7 +40,6 @@ public class CreateRoleTest extends BaseTest {
         createRolePage.activateButton();
         Thread.sleep(2000);
         softAssert.assertTrue(createRolePage.roleNameError.isDisplayed());
-        //  softAssert.assertTrue(createRolePage.roleNameLmt.isDisplayed());
         createRolePage.addPermission();
         Thread.sleep(3000);
         createRolePage.roleOption();
@@ -60,7 +59,10 @@ public class CreateRoleTest extends BaseTest {
 
     }
 
-    @Test(priority = 2, groups = "smoke", description = "verify role with invalid details and cancel")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 002 - verify role with invalid data details and cancel")
+    @Description("verify_role_with_invalid_data_details_and_cancel")
+    @Test(priority = 2, groups = "smoke", description = "verify_role_with_invalid_data_details_and_cancel")
     public void verifyRolewithInvalidData() throws Exception {
         createRolePage = new CreateRolePage(driver);
         softAssert = new SoftAssert();
@@ -72,7 +74,6 @@ public class CreateRoleTest extends BaseTest {
         createRolePage.EnterNewRoleName("O");
         createRolePage.activateButton();
         Thread.sleep(3000);
-        //softAssert.assertTrue(createRolePage.roleNameError.isDisplayed());
         softAssert.assertTrue(createRolePage.roleNameLmt.isDisplayed());
         createRolePage.addPermission();
         Thread.sleep(2000);
@@ -94,7 +95,10 @@ public class CreateRoleTest extends BaseTest {
 
     }
 
-    @Test(priority = 3, groups = "smoke", description = "verify role with valid details")
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 003 - verify that user is able to create role with valid details")
+    @Description("verify_that_user_is_able_to_create_role_with_valid_details")
+    @Test(priority = 3, groups = "smoke", description = "verify_that_user_is_able_to_create_role_with_valid_details")
     public void verifyRoleWithCreateButton() throws Exception {
         createRolePage = new CreateRolePage(driver);
         softAssert = new SoftAssert();

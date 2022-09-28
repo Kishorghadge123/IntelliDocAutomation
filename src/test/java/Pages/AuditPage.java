@@ -37,8 +37,13 @@ public class AuditPage {
     @FindBy(xpath = "(//div[contains(@class,'mat-form-field-infix ng-tns-c')]//div[contains(@class,'mat-select-arrow-wrapper ng-tns-c')])[2]")
     WebElement clickStatusDropDownArrow;
 
-    @FindBy(xpath = "(//button[contains(@class,'mat-focus-indicator mat-flat')]//span[text()=' Apply '])[2]")
+    @FindBy(xpath = "(//button[contains(@class,'mat-focus-indicator m')]//span[contains(@class,'mat-button-focus-overlay')])[2]//following::button[1]")
     WebElement clickOnApplyFilter;
+
+    @FindBy(xpath = "(//div[contains(@class,'mat-form-field-infix ng-tns-c')]//input[contains(@type,'text')])[2]")
+    WebElement documentName ;
+
+
 
     public void clickOnauditTab() {
         this.auditTab.click();
@@ -74,7 +79,9 @@ public class AuditPage {
         this.clickStatusDropDownArrow.click();}
     public void clickOnApplyFilter() {
         this.clickOnApplyFilter.click();
-//        this.clickOnApplyFilter.click();
+    }
+    public void enterDocName() {
+        this.documentName.click();
     }
 }
 

@@ -20,9 +20,9 @@ public class TemplateTest extends BaseTest{
         driver.close();
     }
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 011  - Check Templates on user page ")
-    @Description("verify user able to Check Templates")
-    @Test(priority = 1, groups = "smoke", description = "verify validation_type_as_name_on_Templates")
+    @Story("story_id: 001  - Check Templates on user page ")
+    @Description("verify_user_able_to_Check_Templates_on_user_page")
+    @Test(priority = 1, groups = "smoke", description = "verify validation_type_as_name_on_Templates_on_user_page")
     public void verifySearchTemplatesOnUserPage() throws Exception {
         softAssert = new SoftAssert();
         TemplatePageObj = new TemplatePage(driver);
@@ -55,9 +55,9 @@ public class TemplateTest extends BaseTest{
         softAssert.assertAll();
     }
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 011  - SortListOfTemplates ")
-    @Description("verify user able to sort Templates")
-    @Test(priority = 1, groups = "smoke", description = "verify validation_type_as_name_to_sort_Templates")
+    @Story("story_id: 002  - Sort List Of Templates ")
+    @Description("verify_user_able_to_sort_Templates")
+    @Test(priority = 2, groups = "smoke", description = "verify_validation_type_as_name_to_sort_Templates")
     public void verifySortingListOfTemplates() throws IOException, InterruptedException {
         softAssert = new SoftAssert();
         TemplatePageObj = new TemplatePage(driver);
@@ -88,9 +88,9 @@ public class TemplateTest extends BaseTest{
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 011  - check add new category on Upload Templates Button")
-    @Description("verify user able to click on Upload Templates ")
-    @Test(priority = 1, groups = "smoke", description = "verify validation_type_as_name_to_upload_new_telplates")
+    @Story("story_id: 003  - check add new category on Upload Templates Button")
+    @Description("verify_user_able_to_click_on_Upload_Templates ")
+    @Test(priority = 3, groups = "smoke", description = "verify_validation_type_as_name_to_upload_new_telplates")
     public void verifyNewUploadTemplatesButton() throws IOException, InterruptedException {
         softAssert = new SoftAssert();
         TemplatePageObj = new TemplatePage(driver);
@@ -113,9 +113,9 @@ public class TemplateTest extends BaseTest{
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 011  - TotalCountOfTemplatesinUserTab ")
+    @Story("story_id: 004  - Total Count Of Templatesin UserTab ")
     @Description("verify user able to check the total count on user tab")
-    @Test(priority = 1, groups = "smoke", description = "verify validation_type_as_check_total_count_on_usertab")
+    @Test(priority = 4, groups = "smoke", description = "verify_validation_type_as_check_total_count_on_usertab")
     public void verifyTheTotalCountOfTemplatesinUserTab() throws IOException, InterruptedException {
 
         softAssert = new SoftAssert();
