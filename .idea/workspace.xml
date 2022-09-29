@@ -5,27 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10a64d68-2b6d-4e5f-af5b-34e959c1323c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/allure-results/48ecd0dd-eb12-4d33-9b0d-7c8fe5ba467b-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/4b827aba-766d-4e28-9e40-5d5fe69cba90-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8cdfa353-360c-4883-923f-9270e17829cc-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/011f29f3-68a5-4b06-91e5-1594e852ffdd-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/072dc539-d07c-4971-b07d-6101d832a9ac-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/074d063e-40f4-48e6-b008-4875ef64e848-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/220a6d11-301b-456e-a5f0-ac008f6c4e5e-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/266a1fdb-fdee-42d8-8ec4-b5a2137f2bb0-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/28c48ec7-0072-4651-8d64-ce07d6620510-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/355f9160-0bf2-4317-94a7-39af33919bdf-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4af35a7e-305e-49d2-8b26-fa9834e8b967-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/53645fc2-3b88-4822-a978-ffb068b029b5-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/587c861e-6842-43db-bf36-87adceb74843-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/6565d16a-0bb1-45c3-992b-6c376bf51e28-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/66724623-a7e3-4097-9e43-fb21ecd036f7-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/6686941b-f400-4ce9-90b0-20d7987209eb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/74d265ff-e69a-450a-93b9-a9b7b2d91863-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/77791228-315b-4a8b-bba4-d192c651e2cf-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7fdd18c6-382e-4784-b330-2b3bfad5d029-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/84b1d914-af5d-49aa-a483-0f376388f6fd-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/890ffeb8-bfd5-4949-9196-0c16266ef269-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8a0aab41-6935-43b7-ac53-c71cb2a1f685-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/906ce109-0378-42bb-8df3-9efc78ad6421-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/942d349b-eda1-40da-8e15-380d20c14a9d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/96ddc8cf-d7d7-4aa2-a939-79d053d50306-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9da73b57-4544-4f9a-ab29-b0bc59ca58a9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9e02f9d2-87bb-48b3-94d5-81c8786204ec-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a6627cb8-9034-4a12-b4f4-e12c5951d951-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a8000994-bf96-4dd1-bfe2-033076aa605d-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b33129b1-f811-4523-aa69-f2c86de5b244-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/b5339b67-ccbd-4672-bbf4-d9d5a1996917-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/beeccba3-af9c-490b-bed7-a913f0144b94-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/bf0d9da6-1d43-4fad-a397-7b0849819c0e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c241d0d5-ce45-4696-9be4-a7337de94aec-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c7924612-9ba1-4945-8cad-4e7d673b9306-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ca80b7fe-ed28-469e-9ae1-829990df7e43-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d0c13650-aeb3-4c23-a888-792684c42e09-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/db5148c7-deb9-432b-945b-1896d6466051-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/dc0d6302-4e67-43cc-8306-ff61c9c8b25a-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/de782864-9752-454e-bfc7-aed5ff35be99-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e42bb43e-2e8b-4f4c-860a-552792eedad0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e7f55580-03ae-4e05-93b2-43bdbb8ede4b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f7cf41ec-ecd5-49b8-8159-33e49246f928-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f929c0da-208c-4bbd-97e6-860cc70c3fa4-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ff3b02d5-83ed-4b53-89e3-46fcfbdbbc48-result.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AuditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AuditPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/UserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/UserPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AnalyticsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AnalyticsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AuditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AuditTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CreateRoleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CreateRoleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/DataSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/DataSetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ProjectModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ProjectModuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AnalyticsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AnalyticsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ReportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ReportTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TemplateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/AuditPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/AuditPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Pages/AnalyticsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Pages/AnalyticsPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/AnalyticsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/AnalyticsTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/AuditTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/AuditTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/CreateRoleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/CreateRoleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/DataSetTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/DataSetTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/ProjectModuleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/ProjectModuleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/ReportTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/ReportTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/TemplateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/TemplateTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Tests/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Tests/UserTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +107,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.UserTest">
+  <component name="RunManager" selected="TestNG.ReportTest.verifyReportIsDownload">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="IntilliDoc_Product_JAN2022" />
       <method v="2">
@@ -87,7 +121,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuditTest.verifytableDataisSorting" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AnalyticsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IntelliDoc" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +130,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AuditTest" />
-      <option name="METHOD_NAME" value="verifytableDataisSorting" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AnalyticsTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AnalyticsTest.verifyThatuserableToseetrendsAccordingToSelections" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IntelliDoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AnalyticsTest" />
+      <option name="METHOD_NAME" value="verifyThatuserableToseetrendsAccordingToSelections" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -105,17 +156,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/NTS-AmitKorade/OneDrive/Desktop/Product_Automation/ProductIntelliDocAutomation/IntilliDoc_Product_JAN2022/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="IntelliDoc" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TemplateTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ReportTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IntelliDoc" />
       <extension name="coverage">
         <pattern>
@@ -124,7 +165,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.TemplateTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ReportTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -132,7 +173,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ReportTest.verifyReportIsDownload" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IntelliDoc" />
       <extension name="coverage">
         <pattern>
@@ -141,15 +182,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.UserTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ReportTest" />
+      <option name="METHOD_NAME" value="verifyReportIsDownload" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.verifyUserableToClickOnActiveRoleToggalButtonInUserTab" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ReportTest.verifyTotalCountOfAllDocInAnalyticsSectionInReportTab" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IntelliDoc" />
       <extension name="coverage">
         <pattern>
@@ -158,8 +200,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.UserTest" />
-      <option name="METHOD_NAME" value="verifyUserableToClickOnActiveRoleToggalButtonInUserTab" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ReportTest" />
+      <option name="METHOD_NAME" value="verifyTotalCountOfAllDocInAnalyticsSectionInReportTab" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -169,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.UserTest" />
-        <item itemvalue="TestNG.C:/Users/NTS-AmitKorade/OneDrive/Desktop/Product_Automation/ProductIntelliDocAutomation/IntilliDoc_Product_JAN2022/testng.xml" />
-        <item itemvalue="TestNG.AuditTest.verifytableDataisSorting" />
-        <item itemvalue="TestNG.TemplateTest" />
-        <item itemvalue="TestNG.UserTest.verifyUserableToClickOnActiveRoleToggalButtonInUserTab" />
+        <item itemvalue="TestNG.ReportTest.verifyReportIsDownload" />
+        <item itemvalue="TestNG.ReportTest.verifyTotalCountOfAllDocInAnalyticsSectionInReportTab" />
+        <item itemvalue="TestNG.ReportTest" />
+        <item itemvalue="TestNG.AnalyticsTest" />
+        <item itemvalue="TestNG.AnalyticsTest.verifyThatuserableToseetrendsAccordingToSelections" />
       </list>
     </recent_temporary>
   </component>
