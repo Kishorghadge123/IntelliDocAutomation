@@ -101,8 +101,8 @@ public class CreateRolePage {
         driver.findElement(CancelBtn).click();
     }
 
-    public void clickOutside() {
-        Actions action = new Actions(driver);
-        action.moveByOffset(0, 0).click().build().perform();
-    }
+//    public void clickOutside() {
+//        Actions action = new Actions(driver);
+//        action.moveByOffset(0, 0).click().build().perform();
+//    }
 }

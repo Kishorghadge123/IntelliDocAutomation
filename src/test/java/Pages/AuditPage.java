@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.testng.Assert;
+import java.util.ArrayList;
 import java.util.List;
 
 public class AuditPage {
@@ -37,7 +38,7 @@ public class AuditPage {
     @FindBy(xpath = "(//div[contains(@class,'mat-form-field-infix ng-tns-c')]//div[contains(@class,'mat-select-arrow-wrapper ng-tns-c')])[2]")
     WebElement clickStatusDropDownArrow;
 
-    @FindBy(xpath = "(//button[contains(@class,'mat-focus-indicator m')]//span[contains(@class,'mat-button-focus-overlay')])[2]//following::button[1]")
+    @FindBy(xpath = "(//button[contains(@class,'mat-focus-indicator mat-flat-button mat-button-base mat-primary')]//span[contains(text(),'Apply')])[2]")
     WebElement clickOnApplyFilter;
 
     @FindBy(xpath = "(//div[contains(@class,'mat-form-field-infix ng-tns-c')]//input[contains(@type,'text')])[2]")
@@ -61,7 +62,7 @@ public class AuditPage {
         this.selectProjectDropDown.click();
         Thread.sleep(2000);
         this.searchProject.clear();
-        this.searchProject.sendKeys("M-Medical");
+        this.searchProject.sendKeys("888-Medical");
         this.clickOnproject.click();
     }
 
@@ -82,6 +83,14 @@ public class AuditPage {
     }
     public void enterDocName() {
         this.documentName.click();
+    }
+    public void verfiyDisplayStatusOfDoc(String status){
+        List<WebElement> listOfWebElements = driver.findElements(By.xpath("//table/tbody/tr/td[3]"));
+     List list=new ArrayList<>();
+        for (WebElement e:listOfWebElements) {
+           System.out.println(list.add(e.getText()));
+        }
+        list.stream().forEach(s-> Assert.assertEquals(s,status));
     }
 }
 

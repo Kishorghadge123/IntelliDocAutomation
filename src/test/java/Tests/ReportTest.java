@@ -6,20 +6,18 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class ReportTest extends BaseTest {
     ReportPage reportPage;
 
-    @BeforeClass
+    @BeforeMethod
     public void setmethod() throws Exception {
         setup();
         loginApplication();
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDown() {
         driver.close();
     }
@@ -45,17 +43,21 @@ public class ReportTest extends BaseTest {
             reportPage.clickOnProjectDropdown();
         }
     }
+
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 002 - Verify Report is Downloaded")
     @Description("verify_user_able_to_Download_Report")
-    @Test(priority = 2, groups = "smoke", description = "verify_user_able_to_Download_Report",enabled = true)
-    public void verifyReportIsDownload () throws InterruptedException {
-            Thread.sleep(10000);
-            reportPage.verifyUserableDownloadreport();
-            Thread.sleep(10000);
-            Assert.assertTrue(reportPage.isFileDownloaded("final_report.xlsx"));//final_report
-            Thread.sleep(10000);
-            reportPage.deleteReportFile("final_report.xlsx");
-        }
-
+    @Test(priority = 2, groups = "smoke", description = "verify_user_able_to_Download_Report", enabled = true)
+    public void verifyReportIsDownload() throws Exception {
+        waitForloadSpinner();
+        reportPage = new ReportPage(driver);
+        reportPage.clickOnReportTab();
+        Thread.sleep(10000);
+        reportPage.verifyUserableDownloadreport();
+        Thread.sleep(10000);
+        Assert.assertTrue(reportPage.isFileDownloaded("final_report.xlsx"));//final_report
+        Thread.sleep(10000);
+        reportPage.deleteReportFile("final_report.xlsx");
     }
+
+}
