@@ -3,6 +3,7 @@ package Tests;
 import Pages.AuditPage;
 import Utilities.ClickOnOutSide;
 import Utilities.SortingLists;
+import Utilities.VerifyTextOfTable;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -18,6 +19,7 @@ public class AuditTest extends BaseTest {
     AuditPage auditPage;
     SortingLists sortingLists;
     ClickOnOutSide clickOnOutSide;
+    VerifyTextOfTable verifyTextOfTable;
 
     @BeforeMethod
     public void setmethod() throws Exception {
@@ -81,7 +83,7 @@ public class AuditTest extends BaseTest {
     @Test(priority = 4, groups = "smoke", description = "verify_the_user_able_to_sort_the_table_from_data")
     public void verifytableDataisSorting() throws Exception {
         auditPage = new AuditPage(driver);
-        clickOnOutSide=new ClickOnOutSide(driver);
+        clickOnOutSide = new ClickOnOutSide(driver);
         sortingLists = new SortingLists(driver);
         waitForloadSpinner();
         auditPage.clickOnauditTab();
@@ -106,13 +108,15 @@ public class AuditTest extends BaseTest {
         auditPage.verifySortsortingofTableData(2);
         sortingLists.sortingListInOrder("descending", 2);
     }
+
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 005 - verfiy Doc Status Is Diaplay In Table As Per Filters")
     @Description("verfiyDocStatusIsDiaplayInTableAsPerFilter")
     @Test(priority = 5, groups = "smoke", description = "verfiyDocStatusIsDiaplayInTableAsPerFilter")
     public void verfiyDocStatusIsDiaplayInTableAsPerFilter() throws Exception {
         auditPage = new AuditPage(driver);
-        clickOnOutSide=new ClickOnOutSide(driver);
+        clickOnOutSide = new ClickOnOutSide(driver);
+        verifyTextOfTable = new VerifyTextOfTable(driver);
         waitForloadSpinner();
         auditPage.clickOnauditTab();
         waitForloadSpinner();
@@ -124,9 +128,9 @@ public class AuditTest extends BaseTest {
         auditPage.clickOnPendingStatus();
         auditPage.clickOnPendingStatus();
         clickOnOutSide.clickOutside();
-       Thread.sleep(2000);
+        Thread.sleep(2000);
         auditPage.clickOnApplyFilter();
-        auditPage.verfiyDisplayStatusOfDoc("Pending");
+        verifyTextOfTable.verfiyDisplayStatusOfDoc("Pending");
         Thread.sleep(2000);
         auditPage.clickStatusDropDownArrow();
         Thread.sleep(2000);
@@ -136,7 +140,6 @@ public class AuditTest extends BaseTest {
         Thread.sleep(2000);
         auditPage.clickOnApplyFilter();
         Thread.sleep(2000);
-        auditPage.verfiyDisplayStatusOfDoc("Audited");
+        verifyTextOfTable.verfiyDisplayStatusOfDoc("Audited");
     }
-
 }

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,8 +43,7 @@ public class AuditPage {
     WebElement clickOnApplyFilter;
 
     @FindBy(xpath = "(//div[contains(@class,'mat-form-field-infix ng-tns-c')]//input[contains(@type,'text')])[2]")
-    WebElement documentName ;
-
+    WebElement documentName;
 
 
     public void clickOnauditTab() {
@@ -75,22 +75,28 @@ public class AuditPage {
     }
 
     public void clickOnAuditedStatus() {
-        this.selectStatusAudited.click();}
+        this.selectStatusAudited.click();
+    }
+
     public void clickStatusDropDownArrow() {
-        this.clickStatusDropDownArrow.click();}
+        this.clickStatusDropDownArrow.click();
+    }
+
     public void clickOnApplyFilter() {
         this.clickOnApplyFilter.click();
     }
+
     public void enterDocName() {
         this.documentName.click();
     }
-    public void verfiyDisplayStatusOfDoc(String status){
+
+    public void verfiyDisplayStatusOfDoc(String status) {
         List<WebElement> listOfWebElements = driver.findElements(By.xpath("//table/tbody/tr/td[3]"));
-     List list=new ArrayList<>();
-        for (WebElement e:listOfWebElements) {
-           System.out.println(list.add(e.getText()));
+        List<Object> list = new ArrayList<>();
+        for (WebElement e : listOfWebElements) {
+            System.out.println(list.add(e.getText()));
         }
-        list.stream().forEach(s-> Assert.assertEquals(s,status));
+        list.stream().forEach(s -> Assert.assertEquals(s, status));
     }
 }
 
