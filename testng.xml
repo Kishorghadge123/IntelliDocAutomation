@@ -2,9 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Dsuite" >
 	<test name="Test">
-		<packages>
-			<package name="Tests"></package>
-		</packages>
+	<classes>
+		<class name="Tests.LoginTest"></class>
+		<class name="Tests.ProjectModuleTest"></class>
+		<class name="Tests.UserTest"></class>
+		<class name="Tests.ReportTest"></class>
+		<class name="Tests.DataSetTest"></class>
+		<class name="Tests.CreateRoleTest"></class>
+		<class name="Tests.AnalyticsTest"></class>
+		<class name="Tests.AuditTest"></class>
+		<class name="Tests.TemplateTest"></class>
+	</classes>
 		
 	</test>
 

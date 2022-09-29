@@ -134,13 +134,6 @@ public class LoginTest extends BaseTest {
                 String ActualtextOfWithoutusername = driver.findElement(By.xpath("//span[text()='Please Enter Valid Data ...!']")).getText();
                 Assert.assertEquals(ActualtextOfWithoutusername, "Please Enter Valid Data ...!");
             }
-            case "InactiveUser" -> {
-                wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='User is inactive. Please contact Administration']")));
-                String ActualtextOfWithoutusername = driver.findElement(By.xpath("//span[text()='User is inactive. Please contact Administration']")).getText();
-                Assert.assertEquals(ActualtextOfWithoutusername, "User is inactive. Please contact Administration");
-            }
-
-
         }
     }
 
@@ -165,7 +158,6 @@ public class LoginTest extends BaseTest {
                 {"InvalidpasswordOperator", "Operator@Test.com", "a#Operator@111"},
                 {"WithoutPasswordOperator", "Operator@Test.com", ""},
                 {"WithoutUsernameOperator", "", "Operator@111"},
-                {"InactiveUser", "jyoti.vedpathak@neutrinotechlabs.com", "Abcd@1234"},
         };
     }
 

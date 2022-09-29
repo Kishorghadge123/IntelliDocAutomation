@@ -23,7 +23,7 @@ public class DataSetTest extends BaseTest {
 
     @AfterMethod
     public void tearDown() {
-//        driver.close();
+      driver.close();
     }
 
     @Severity(SeverityLevel.NORMAL)
