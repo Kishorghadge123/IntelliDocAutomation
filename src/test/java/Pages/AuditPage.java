@@ -45,6 +45,8 @@ public class AuditPage {
     @FindBy(xpath = "(//div[contains(@class,'mat-form-field-infix ng-tns-c')]//input[contains(@type,'text')])[2]")
     WebElement documentName;
 
+    @FindBy(xpath = "(//table/tbody/tr/td[8])[1]")
+    WebElement ActionButtoninTable;
 
     public void clickOnauditTab() {
         this.auditTab.click();
@@ -89,14 +91,9 @@ public class AuditPage {
     public void enterDocName() {
         this.documentName.click();
     }
-
-    public void verfiyDisplayStatusOfDoc(String status) {
-        List<WebElement> listOfWebElements = driver.findElements(By.xpath("//table/tbody/tr/td[3]"));
-        List<Object> list = new ArrayList<>();
-        for (WebElement e : listOfWebElements) {
-            System.out.println(list.add(e.getText()));
-        }
-        list.stream().forEach(s -> Assert.assertEquals(s, status));
+    public void clickOnActionButtoninTable(){
+        this.ActionButtoninTable.click();
     }
+
 }
 

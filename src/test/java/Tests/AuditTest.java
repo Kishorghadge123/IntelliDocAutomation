@@ -13,6 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 
 public class AuditTest extends BaseTest {
@@ -29,7 +30,7 @@ public class AuditTest extends BaseTest {
 
     @AfterMethod
     public void tearDown() {
-        driver.close();
+//        driver.close();
     }
 
     @Severity(SeverityLevel.NORMAL)
@@ -141,5 +142,32 @@ public class AuditTest extends BaseTest {
         auditPage.clickOnApplyFilter();
         Thread.sleep(2000);
         verifyTextOfTable.verfiyDisplayStatusOfDoc("Audited");
+    }
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 005 - verify Text Of Audit Tab")
+    @Description("verify Text Of Audit Tab")
+    @Test(priority = 5, groups = "smoke", description = "verify Text Of Audit Tab")
+    public void verifyTextOfAuditTab() throws Exception {
+        auditPage = new AuditPage(driver);
+        clickOnOutSide = new ClickOnOutSide(driver);
+        verifyTextOfTable = new VerifyTextOfTable(driver);
+        SoftAssert softAssert=new SoftAssert();
+        waitForloadSpinner();
+        auditPage.clickOnauditTab();
+        waitForloadSpinner();
+        auditPage.selectProject();
+        waitForloadSpinner();
+        auditPage.ClickOnDropDownsInAuditPage(2);
+        auditPage.clickStatusDropDownArrow();
+        Thread.sleep(2000);
+        auditPage.clickOnPendingStatus();
+        auditPage.clickOnPendingStatus();
+        clickOnOutSide.clickOutside();
+        Thread.sleep(2000);
+        auditPage.clickOnActionButtoninTable();
+        softAssert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),' Save Draft')]")).getText(),"Save Draft");
+        softAssert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Submit')]")).getText(),"Submit");
+        softAssert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Release')]")).getText(),"Release");
+        softAssert.assertAll();
     }
 }
