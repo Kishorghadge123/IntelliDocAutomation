@@ -33,7 +33,7 @@ public class DataSetTest extends BaseTest {
     public void verifySearchDatasetsOnUserPage() throws Exception {
         softAssert = new SoftAssert();
         DatasetPageObj = new DatasetPage(driver);
-        Thread.sleep(3000);
+        waitForloadSpinner();
         DatasetPageObj.clickONDatasetPage();
         DatasetPageObj.sendCategoryName();
         DatasetPageObj.clickOnSearchBarIcon();
@@ -62,10 +62,10 @@ public class DataSetTest extends BaseTest {
     @Story("story_id: 002  - verify that user is able to add new category on dataset page")
     @Description("verify_that_user_is_able_to_add_new_category_on_dataset_page ")
     @Test(priority = 2, groups = "smoke", description = "verify_that_user_is_able_to_add_new_category_on_dataset_page")
-    public void verifyAddNewCategory() throws IOException, InterruptedException {
+    public void verifyAddNewCategory() throws Exception {
         softAssert = new SoftAssert();
         DatasetPageObj = new DatasetPage(driver);
-        Thread.sleep(3000);
+        waitForloadSpinner();
         DatasetPageObj.clickONDatasetPage();
         DatasetPageObj.clickOnAddCategory();
         Thread.sleep(3000);
@@ -115,11 +115,10 @@ public class DataSetTest extends BaseTest {
     @Story("story_id: 004  - verify that user is able to click on Action Button ")
     @Description("verify_that_user_is_able_to_click_on_Action_Button")
     @Test(priority = 4, groups = "smoke", description = "verify_that_user_is_able_to_click_on_Action_Button")
-    public void verifyActionButton() throws IOException, InterruptedException {
-
+    public void verifyActionButton() throws Exception {
         softAssert = new SoftAssert();
         DatasetPageObj = new DatasetPage(driver);
-        Thread.sleep(3000);
+        waitForloadSpinner();
         DatasetPageObj.clickONDatasetPage();
         DatasetPageObj.clickOnActionButton();
         Thread.sleep(3000);
@@ -138,10 +137,11 @@ public class DataSetTest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 005  - verify that user is able to Count total Users in UserTab ")
     @Description("verify_that_user_is_able_to_Count_total_Users_in_UserTab")
-    @Test(priority = 5, groups = "smoke", description = "verify_that_user_is_able_to_Count_total_Users_in_UserTab")    public void verifyTheTotalCountOfUserinUserTab() throws IOException, InterruptedException {
+    @Test(priority = 5, groups = "smoke", description = "verify_that_user_is_able_to_Count_total_Users_in_UserTab")
+    public void verifyTheTotalCountOfUserinUserTab() throws Exception {
         softAssert = new SoftAssert();
         DatasetPageObj = new DatasetPage(driver);
-        Thread.sleep(5000);
+       waitForloadSpinner();
         DatasetPageObj.clickONDatasetPage();
         DatasetPageObj.clickOnDropDown();
         DatasetPageObj.selectDropDownValue();
