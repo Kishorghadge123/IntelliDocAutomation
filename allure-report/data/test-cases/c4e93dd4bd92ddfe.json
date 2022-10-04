@@ -1,0 +1,175 @@
+{
+  "uid" : "c4e93dd4bd92ddfe",
+  "name" : "test_login_functinality",
+  "fullName" : "Tests.LoginTest.testloginfunctinality",
+  "historyId" : "6392c246a913ab2401c98cbec789e9fe",
+  "time" : {
+    "start" : 1664542219174,
+    "stop" : 1664542219404,
+    "duration" : 230
+  },
+  "description" : "verification_test_log_in_functinality",
+  "descriptionHtml" : "<p>verification_test_log_in_functinality</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setmethod",
+    "time" : {
+      "start" : 1664542211944,
+      "stop" : 1664542219169,
+      "duration" : 7225
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "verification_test_log_in_functinality",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "EnterUsername",
+      "time" : {
+        "start" : 1664542219175,
+        "stop" : 1664542219291,
+        "duration" : 116
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "Supervisor@Test.com"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "setPassword",
+      "time" : {
+        "start" : 1664542219291,
+        "stop" : 1664542219355,
+        "duration" : 64
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "pass",
+        "value" : "Super@111"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "clickLoginButtonForValidInput",
+      "time" : {
+        "start" : 1664542219355,
+        "stop" : 1664542219404,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1664542219407,
+      "stop" : 1664542219490,
+      "duration" : 83
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Tests.LoginTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Tests.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testloginfunctinality"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Dsuite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Tests.LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "NTS-AmitKorade"
+  }, {
+    "name" : "thread",
+    "value" : "24560@NTS-AmitKorade.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "story_id: 001  - verification of test log in functinality"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "ValidLoginsupervisior"
+  }, {
+    "name" : "arg1",
+    "value" : "Supervisor@Test.com"
+  }, {
+    "name" : "arg2",
+    "value" : "Super@111"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c4e93dd4bd92ddfe.json",
+  "parameterValues" : [ "ValidLoginsupervisior", "Supervisor@Test.com", "Super@111" ]
+}

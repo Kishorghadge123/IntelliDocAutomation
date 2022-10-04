@@ -1,0 +1,157 @@
+{
+  "uid" : "24e5a21ccff0789f",
+  "name" : "verify validation_type_as_name_on_Templates_on_user_page",
+  "fullName" : "Tests.TemplateTest.verifySearchTemplatesOnUserPage",
+  "historyId" : "5929e73cd0a3b97ecbcc906a498569e9",
+  "time" : {
+    "start" : 1664544946633,
+    "stop" : 1664544990851,
+    "duration" : 44218
+  },
+  "description" : "verify_user_able_to_Check_Templates_on_user_page",
+  "descriptionHtml" : "<p>verify_user_able_to_Check_Templates_on_user_page</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setmethod",
+    "time" : {
+      "start" : 1664544937884,
+      "stop" : 1664544946557,
+      "duration" : 8673
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "EnterUsername",
+      "time" : {
+        "start" : 1664544944042,
+        "stop" : 1664544944212,
+        "duration" : 170
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "di-admin@neutrinotechsystems.com"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "setPassword",
+      "time" : {
+        "start" : 1664544944212,
+        "stop" : 1664544944321,
+        "duration" : 109
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "pass",
+        "value" : "Nts#admin@123"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "clickLoginButtonForValidInput",
+      "time" : {
+        "start" : 1664544944321,
+        "stop" : 1664544944380,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1664544990855,
+      "stop" : 1664544990973,
+      "duration" : 118
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Tests.TemplateTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Tests.TemplateTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifySearchTemplatesOnUserPage"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Dsuite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Tests.TemplateTest"
+  }, {
+    "name" : "host",
+    "value" : "NTS-AmitKorade"
+  }, {
+    "name" : "thread",
+    "value" : "27744@NTS-AmitKorade.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "story_id: 001  - Check Templates on user page "
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "24e5a21ccff0789f.json",
+  "parameterValues" : [ ]
+}

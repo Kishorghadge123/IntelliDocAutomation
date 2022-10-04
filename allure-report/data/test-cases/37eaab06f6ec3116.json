@@ -1,0 +1,72 @@
+{
+  "uid" : "37eaab06f6ec3116",
+  "name" : "verify_Total_Document_Count_in_project_statistics",
+  "fullName" : "Tests.AnalyticsTest.verify_Total_Document_CountInProjectStatistics",
+  "historyId" : "d8b743628607fae228b472fedddaf8e9",
+  "time" : {
+    "start" : 1664544638638,
+    "stop" : 1664544663098,
+    "duration" : 24460
+  },
+  "description" : " verify_Total_Document_Countin_project_statistics",
+  "descriptionHtml" : "<p>verify_Total_Document_Countin_project_statistics</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Tests.AnalyticsTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Tests.AnalyticsTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verify_Total_Document_CountInProjectStatistics"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Dsuite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Tests.AnalyticsTest"
+  }, {
+    "name" : "host",
+    "value" : "NTS-AmitKorade"
+  }, {
+    "name" : "thread",
+    "value" : "27744@NTS-AmitKorade.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "story_id: 003 - verify Total Document Count in project statistics"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "37eaab06f6ec3116.json",
+  "parameterValues" : [ ]
+}

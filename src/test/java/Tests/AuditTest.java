@@ -2,6 +2,7 @@ package Tests;
 
 import Pages.AuditPage;
 import Utilities.ClickOnOutSide;
+import Utilities.Scroll_Page;
 import Utilities.SortingLists;
 import Utilities.VerifyTextOfTable;
 import io.qameta.allure.Description;
@@ -22,6 +23,8 @@ public class AuditTest extends BaseTest {
     ClickOnOutSide clickOnOutSide;
     VerifyTextOfTable verifyTextOfTable;
 
+    Scroll_Page scroll_page;
+
     @BeforeMethod
     public void setmethod() throws Exception {
         setup();
@@ -30,7 +33,7 @@ public class AuditTest extends BaseTest {
 
     @AfterMethod
     public void tearDown() {
-       driver.close();
+        driver.quit();
     }
 
     @Severity(SeverityLevel.NORMAL)
@@ -86,6 +89,7 @@ public class AuditTest extends BaseTest {
         auditPage = new AuditPage(driver);
         clickOnOutSide = new ClickOnOutSide(driver);
         sortingLists = new SortingLists(driver);
+        Scroll_Page scroll_page=new Scroll_Page(driver);
         waitForloadSpinner();
         auditPage.clickOnauditTab();
         waitForloadSpinner();
@@ -143,6 +147,7 @@ public class AuditTest extends BaseTest {
         Thread.sleep(2000);
         verifyTextOfTable.verfiyDisplayStatusOfDoc("Audited");
     }
+
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 005 - verify Text Of Audit Tab")
     @Description("verify Text Of Audit Tab")
@@ -151,7 +156,7 @@ public class AuditTest extends BaseTest {
         auditPage = new AuditPage(driver);
         clickOnOutSide = new ClickOnOutSide(driver);
         verifyTextOfTable = new VerifyTextOfTable(driver);
-        SoftAssert softAssert=new SoftAssert();
+        SoftAssert softAssert = new SoftAssert();
         waitForloadSpinner();
         auditPage.clickOnauditTab();
         waitForloadSpinner();
@@ -165,9 +170,46 @@ public class AuditTest extends BaseTest {
         clickOnOutSide.clickOutside();
         Thread.sleep(2000);
         auditPage.clickOnActionButtoninTable();
-        softAssert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),' Save Draft')]")).getText(),"Save Draft");
-        softAssert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Submit')]")).getText(),"Submit");
-        softAssert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Release')]")).getText(),"Release");
+        softAssert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),' Save Draft')]")).getText(), "Save Draft");
+        softAssert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Submit')]")).getText(), "Submit");
+        softAssert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Release')]")).getText(), "Release");
         softAssert.assertAll();
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 005 - verify_That_Data_Extracted_From_Document")
+    @Description("verify_That_Data_Extracted_From_Document")
+    @Test(priority = 5, groups = "smoke", description = "verify_That_Data_Extracted_From_Document")
+    public void verify_That_Data_Extracted_From_Document() throws Exception {
+        auditPage = new AuditPage(driver);
+        clickOnOutSide = new ClickOnOutSide(driver);
+        verifyTextOfTable = new VerifyTextOfTable(driver);
+        scroll_page=new Scroll_Page(driver);
+        SoftAssert softAssert = new SoftAssert();
+        waitForloadSpinner();
+        auditPage.clickOnauditTab();
+        waitForloadSpinner();
+        auditPage.selectProject();
+        waitForloadSpinner();
+        auditPage.ClickOnDropDownsInAuditPage(2);
+        auditPage.clickStatusDropDownArrow();
+        Thread.sleep(2000);
+        auditPage.clickOnPendingStatus();
+        auditPage.clickOnPendingStatus();
+        clickOnOutSide.clickOutside();
+        Thread.sleep(2000);
+        auditPage.clickOnActionButtoninTable();
+        Thread.sleep(2000);
+        auditPage.clickOnClassificationTab();
+        auditPage.SelectChatsDropDown();
+        auditPage.SelectChatLevelFlagsDropDown();
+        auditPage.SelectChatLevelFlags(1);
+        auditPage.clickOnChatCardDropDown();
+        Thread.sleep(2000);
+        Assert.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'chronicConditionsTable ng-star-inserted')]")).isDisplayed());
+        Assert.assertEquals(driver.findElement(By.xpath("(//span[contains(text(),'Kordus, Elaine M')])[1]")).getText().split("Elaine")[0].strip(), "Kordus,");
+        Thread.sleep(2000);
+        scroll_page.ScrollUpDown(auditPage.ssn);
+
     }
 }

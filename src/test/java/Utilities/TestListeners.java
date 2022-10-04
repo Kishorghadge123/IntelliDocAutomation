@@ -6,6 +6,7 @@
 //import java.util.Date;
 //
 //import Base.BasePage;
+//import Tests.BaseTest;
 //import org.openqa.selenium.WebDriver;
 //import org.testng.ITestContext;
 //import org.testng.ITestListener;
@@ -18,7 +19,7 @@
 //public class TestListeners implements ITestListener {
 //    public static ExtentTest test;
 //    static ExtentReports report;
-//    static WebDriver driver= BasePage.driver;
+//    static WebDriver driver= BaseTest.driver;
 //    @Override
 //    public void onFinish(ITestContext result) {
 //        report.endTest(test);

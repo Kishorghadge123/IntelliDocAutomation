@@ -1,0 +1,307 @@
+{
+  "uid" : "90470b269c50e7f8",
+  "name" : "verify_role_with_invalid_data_details_and_cancel",
+  "fullName" : "Tests.CreateRoleTest.verifyRolewithInvalidData",
+  "historyId" : "ef15fe9f0898ce12e0815b6f11a1dfcd",
+  "time" : {
+    "start" : 1664544536811,
+    "stop" : 1664544562431,
+    "duration" : 25620
+  },
+  "description" : "verify_role_with_invalid_data_details_and_cancel",
+  "descriptionHtml" : "<p>verify_role_with_invalid_data_details_and_cancel</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setupmethod",
+    "time" : {
+      "start" : 1664544525187,
+      "stop" : 1664544536795,
+      "duration" : 11608
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "EnterUsername",
+      "time" : {
+        "start" : 1664544534318,
+        "stop" : 1664544534498,
+        "duration" : 180
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "di-admin@neutrinotechsystems.com"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "setPassword",
+      "time" : {
+        "start" : 1664544534498,
+        "stop" : 1664544534592,
+        "duration" : 94
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "pass",
+        "value" : "Nts#admin@123"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "clickLoginButtonForValidInput",
+      "time" : {
+        "start" : 1664544534592,
+        "stop" : 1664544534645,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "verify_role_with_invalid_data_details_and_cancel",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click on role button",
+      "time" : {
+        "start" : 1664544540813,
+        "stop" : 1664544541057,
+        "duration" : 244
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click on Create button",
+      "time" : {
+        "start" : 1664544544059,
+        "stop" : 1664544544177,
+        "duration" : 118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "enter New Role Name",
+      "time" : {
+        "start" : 1664544547181,
+        "stop" : 1664544550274,
+        "duration" : 3093
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "roleName",
+        "value" : "O"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "click On Activate button",
+      "time" : {
+        "start" : 1664544550274,
+        "stop" : 1664544550356,
+        "duration" : 82
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "click On AddPermission Role Button",
+      "time" : {
+        "start" : 1664544555540,
+        "stop" : 1664544555644,
+        "duration" : 104
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "click On AddPermission Sub-role Button",
+      "time" : {
+        "start" : 1664544556656,
+        "stop" : 1664544556726,
+        "duration" : 70
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "click On AddPermission Sub-role Button",
+      "time" : {
+        "start" : 1664544557738,
+        "stop" : 1664544557804,
+        "duration" : 66
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "click On Addpermission sub-role Button",
+      "time" : {
+        "start" : 1664544558815,
+        "stop" : 1664544558880,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click on cancel",
+      "time" : {
+        "start" : 1664544562319,
+        "stop" : 1664544562430,
+        "duration" : 111
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 9,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1664544562435,
+      "stop" : 1664544562679,
+      "duration" : 244
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Tests.CreateRoleTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Tests.CreateRoleTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyRolewithInvalidData"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Dsuite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Tests.CreateRoleTest"
+  }, {
+    "name" : "host",
+    "value" : "NTS-AmitKorade"
+  }, {
+    "name" : "thread",
+    "value" : "27744@NTS-AmitKorade.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "story_id: 002 - verify role with invalid data details and cancel"
+  }, {
+    "name" : "feature",
+    "value" : "test to create role"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "90470b269c50e7f8.json",
+  "parameterValues" : [ ]
+}

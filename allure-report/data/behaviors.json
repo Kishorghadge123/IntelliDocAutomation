@@ -1,0 +1,1336 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "setmethod",
+    "uid" : "e246e9a723ffd576",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1664521136911,
+      "stop" : 1664521136911,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "story_id: 001 - verify Drop Downs Of Analytics And Filters In AuditPage",
+    "children" : [ {
+      "name" : "verify Drop Downs Of Analytics And Filters In AuditPage",
+      "uid" : "889c286107d55d1b",
+      "parentUid" : "e0eef9612a5b5adf57801e765d8b8f4e",
+      "status" : "failed",
+      "time" : {
+        "start" : 1664544789808,
+        "stop" : 1664544797466,
+        "duration" : 7658
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e0eef9612a5b5adf57801e765d8b8f4e"
+  }, {
+    "name" : "story_id: 002 - verify total Count Of Audited and Audit Pending documents",
+    "children" : [ {
+      "name" : "verify_total_Count_of_Audited_and_Audit_Pending_documents",
+      "uid" : "b85a3bbbd013805d",
+      "parentUid" : "cd2b392acde6a8496caf542774544a21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664544810954,
+        "stop" : 1664544824536,
+        "duration" : 13582
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cd2b392acde6a8496caf542774544a21"
+  }, {
+    "name" : "story_id: 003 - verify All Filters Of Filter DropDown",
+    "children" : [ {
+      "name" : "verify_all_filters_of_filter_DropDown",
+      "uid" : "43d56946d4bfbfe5",
+      "parentUid" : "326f40bf6c43749aed38ce0546eef50b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664544833359,
+        "stop" : 1664544841225,
+        "duration" : 7866
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "326f40bf6c43749aed38ce0546eef50b"
+  }, {
+    "name" : "story_id: 004 - verify the user able to sort the table from data",
+    "children" : [ {
+      "name" : "verify_the_user_able_to_sort_the_table_from_data",
+      "uid" : "ac66669cc3f8926b",
+      "parentUid" : "461feb80474899ee9dc1f1d798e0171d",
+      "status" : "broken",
+      "time" : {
+        "start" : 1664544852540,
+        "stop" : 1664544870928,
+        "duration" : 18388
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "461feb80474899ee9dc1f1d798e0171d"
+  }, {
+    "name" : "story_id: 005 - verfiy Doc Status Is Diaplay In Table As Per Filters",
+    "children" : [ {
+      "name" : "verfiyDocStatusIsDiaplayInTableAsPerFilter",
+      "uid" : "d1c7f468f9b487f3",
+      "parentUid" : "2e58e7090afb3de22a1a19ccd5142545",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664544882260,
+        "stop" : 1664544907159,
+        "duration" : 24899
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2e58e7090afb3de22a1a19ccd5142545"
+  }, {
+    "name" : "story_id: 005 - verify Text Of Audit Tab",
+    "children" : [ {
+      "name" : "verify Text Of Audit Tab",
+      "uid" : "7573d3043b578edd",
+      "parentUid" : "7ea762602e097aec2caaac3379a96776",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664544919411,
+        "stop" : 1664544937875,
+        "duration" : 18464
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 8,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "verify Text Of Audit Tab",
+      "uid" : "11e2900b54f35ba4",
+      "parentUid" : "7ea762602e097aec2caaac3379a96776",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664774771678,
+        "stop" : 1664774784300,
+        "duration" : 12622
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7ea762602e097aec2caaac3379a96776"
+  }, {
+    "name" : "story_id: 001  - Check Templates on user page ",
+    "children" : [ {
+      "name" : "verify validation_type_as_name_on_Templates_on_user_page",
+      "uid" : "24e5a21ccff0789f",
+      "parentUid" : "aa69db078424a3b4f65458d0a3bcb79b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664544946633,
+        "stop" : 1664544990851,
+        "duration" : 44218
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "aa69db078424a3b4f65458d0a3bcb79b"
+  }, {
+    "name" : "story_id: 002  - Sort List Of Templates ",
+    "children" : [ {
+      "name" : "verify_validation_type_as_name_to_sort_Templates",
+      "uid" : "c79d84db8deaf92a",
+      "parentUid" : "86e9a8d1538d87a1b18353f5231ec64e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664545003185,
+        "stop" : 1664545018873,
+        "duration" : 15688
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "86e9a8d1538d87a1b18353f5231ec64e"
+  }, {
+    "name" : "story_id: 003  - check add new category on Upload Templates Button",
+    "children" : [ {
+      "name" : "verify_validation_type_as_name_to_upload_new_telplates",
+      "uid" : "3cc257c23b31cc9e",
+      "parentUid" : "562e0f594b202719927c3acd413cca64",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664545027907,
+        "stop" : 1664545041634,
+        "duration" : 13727
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "562e0f594b202719927c3acd413cca64"
+  }, {
+    "name" : "story_id: 004  - Total Count Of Templatesin UserTab ",
+    "children" : [ {
+      "name" : "verify_validation_type_as_check_total_count_on_usertab",
+      "uid" : "159b5129651c1e75",
+      "parentUid" : "20cb77fba411e121eefd2b8438e30359",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664545053513,
+        "stop" : 1664545084277,
+        "duration" : 30764
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "20cb77fba411e121eefd2b8438e30359"
+  }, {
+    "name" : "story_id: 001  - verification of test log in functinality",
+    "children" : [ {
+      "name" : "test_login_functinality",
+      "uid" : "308b2f8c62d43a37",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771272571,
+        "stop" : 1664771278880,
+        "duration" : 6309
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "validLogin", "di-admin@neutrinotechsystems.com", "Nts#admin@123" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "79fce2a763188b78",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771287242,
+        "stop" : 1664771288663,
+        "duration" : 1421
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "Invalidlogin", "di-admin@neutrinotechsycfwstems.com", "s#admin@123" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "788d344ec5f403ed",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771295270,
+        "stop" : 1664771296634,
+        "duration" : 1364
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "Invalidusername", "di-admin@neutrinotechsycfwstems.com", "Nts#admin@123" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "a689505c806a5cc2",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771302810,
+        "stop" : 1664771304135,
+        "duration" : 1325
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "Invalidpassword", "di-admin@neutrinotechsystems.com", "s#admin@123" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "8b883f7996729235",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771310332,
+        "stop" : 1664771310729,
+        "duration" : 397
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "WithoutPassword", "di-admin@neutrinotechsycfwstems.com", "" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "5e1c5633f1c537b7",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771316804,
+        "stop" : 1664771317090,
+        "duration" : 286
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "WithoutUsername", "", "Nts#admin@123" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "13d75488282c7aa3",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771323303,
+        "stop" : 1664771323551,
+        "duration" : 248
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "ValidLoginsupervisior", "Supervisor@Test.com", "Super@111" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "61e71bce67043f74",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771332586,
+        "stop" : 1664771333970,
+        "duration" : 1384
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "Invalidloginsupervisior", "Supervisor11@Test.com", "a#Super@111" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "ce333ed15264eb48",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771339836,
+        "stop" : 1664771341235,
+        "duration" : 1399
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "Invalidusernamesupervisior", "Supervisor11@Test.com", "Super@111" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "be5ec8e5a9cfcc44",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771347545,
+        "stop" : 1664771349002,
+        "duration" : 1457
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "Invalidpasswordsupervisior", "Supervisor@Test.com", "a#Super@111" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "147339584ae1bb68",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771355558,
+        "stop" : 1664771355934,
+        "duration" : 376
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "WithoutPasswordsupervisior", "Supervisor@Test.com", "" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "46df72528ab251d5",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771362767,
+        "stop" : 1664771363081,
+        "duration" : 314
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "WithoutUsernamesupervisior", "", "Super@111" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "80a5d705722268d5",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771369026,
+        "stop" : 1664771369298,
+        "duration" : 272
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "ValidLoginOperator", "Operator@Test.com", "Operator@111" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "efce234ba06b3f2b",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771375654,
+        "stop" : 1664771376974,
+        "duration" : 1320
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "InvalidloginOperator", "Operator@Test11.com", "a#Operator@111" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "2d43588bfccd67b5",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771382963,
+        "stop" : 1664771384343,
+        "duration" : 1380
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "InvalidusernameOperator", "Operator11@Test.com", "Operator@111" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "c2431edf08df4f7e",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771390644,
+        "stop" : 1664771392005,
+        "duration" : 1361
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "InvalidpasswordOperator", "Operator@Test.com", "a#Operator@111" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "1d5fe5dc05508d11",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771398448,
+        "stop" : 1664771398788,
+        "duration" : 340
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "WithoutPasswordOperator", "Operator@Test.com", "" ]
+    }, {
+      "name" : "test_login_functinality",
+      "uid" : "e4ab729cda22c67f",
+      "parentUid" : "ce1edcc128eb18d6f06c3296f60683a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771404886,
+        "stop" : 1664771405192,
+        "duration" : 306
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ "WithoutUsernameOperator", "", "Operator@111" ]
+    } ],
+    "uid" : "ce1edcc128eb18d6f06c3296f60683a2"
+  }, {
+    "name" : "story_id: 002  - verification of title logo and login with blank details",
+    "children" : [ {
+      "name" : "verification_of_title_logo_and_login_with_blank_details",
+      "uid" : "b3aecaf2f1bc3bcd",
+      "parentUid" : "b8609ca3402a7f1128a32c3e9b27cec6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771411130,
+        "stop" : 1664771411138,
+        "duration" : 8
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b8609ca3402a7f1128a32c3e9b27cec6"
+  }, {
+    "name" : "story_id: 003  - verify that the user is able to Log off the application",
+    "children" : [ {
+      "name" : "verify_that_the_user_is_able_to_Log_off_the_application",
+      "uid" : "75f3aa2a9a3c0dc5",
+      "parentUid" : "7464703f06fbe0e9a982c6f0863a275e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771416856,
+        "stop" : 1664771416882,
+        "duration" : 26
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7464703f06fbe0e9a982c6f0863a275e"
+  }, {
+    "name" : "story_id: 004 - verify click on cancel button on forgot password",
+    "children" : [ {
+      "name" : "verify click_on_cancel_button_on_forgot_password",
+      "uid" : "d3e822fd740dd00d",
+      "parentUid" : "6b58e887371d7856259373bb35a3a3d7",
+      "status" : "broken",
+      "time" : {
+        "start" : 1664771422935,
+        "stop" : 1664771423080,
+        "duration" : 145
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "6b58e887371d7856259373bb35a3a3d7"
+  }, {
+    "name" : "story_id: 001 - Search Created Project",
+    "children" : [ {
+      "name" : "verify_user_able_to_Search_Created_Project",
+      "uid" : "e14bbf8c89bdf64b",
+      "parentUid" : "d6e2812d93298d158e71fe0e5f5c536b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771431743,
+        "stop" : 1664771442381,
+        "duration" : 10638
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d6e2812d93298d158e71fe0e5f5c536b"
+  }, {
+    "name" : "story_id: 002 - Update Created Project",
+    "children" : [ {
+      "name" : "verify_user_able_to_Update_Created_Project",
+      "uid" : "cc74ff20e44691b2",
+      "parentUid" : "82b9974b292f09cb738b14aeb147fd3c",
+      "status" : "failed",
+      "time" : {
+        "start" : 1664771442389,
+        "stop" : 1664771480522,
+        "duration" : 38133
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "82b9974b292f09cb738b14aeb147fd3c"
+  }, {
+    "name" : "story_id: 003 - Create Project With Blank Data",
+    "children" : [ {
+      "name" : "verify_user_able_to_Create_Project_With_Blank_Data",
+      "uid" : "df7a25a31f617ade",
+      "parentUid" : "63a24f7b56830c3d25c1e8b9349f225b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771480533,
+        "stop" : 1664771487361,
+        "duration" : 6828
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "63a24f7b56830c3d25c1e8b9349f225b"
+  }, {
+    "name" : "story_id: 004 - Create Project Without Selecting Processing Engine and Templates",
+    "children" : [ {
+      "name" : "verify_that_user_able_to_Create_Project_Without_Selecting_Processing_Engine_and_Templates",
+      "uid" : "1317c589605015ad",
+      "parentUid" : "977984c5fda68215b00d4b47004afe12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771487367,
+        "stop" : 1664771497951,
+        "duration" : 10584
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "977984c5fda68215b00d4b47004afe12"
+  }, {
+    "name" : "story_id: 005 - Create Project Without Role and user",
+    "children" : [ {
+      "name" : "verify_that_user_able_to_Create_Project_without_Role_and_user",
+      "uid" : "bcb5abc7be0346ed",
+      "parentUid" : "b525548a4767c8700446ebf02c676dd2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771497960,
+        "stop" : 1664771514319,
+        "duration" : 16359
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b525548a4767c8700446ebf02c676dd2"
+  }, {
+    "name" : "story_id: 006 - Create Project Without  and user",
+    "children" : [ {
+      "name" : "verify_that_user_able_to_Create_Project_without_and_user",
+      "uid" : "633488e7a702abec",
+      "parentUid" : "6af6fb89254b1b94e0316a2d35fac817",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771514325,
+        "stop" : 1664771529237,
+        "duration" : 14912
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "6af6fb89254b1b94e0316a2d35fac817"
+  }, {
+    "name" : "story_id: 001 -Search project name on user page",
+    "children" : [ {
+      "name" : "verify_that_user_able_to_Search_project_name_on_user_page",
+      "uid" : "5e53c72d152c5c72",
+      "parentUid" : "a0a99b51dd0bcf2c11041367b2d947ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771538015,
+        "stop" : 1664771573453,
+        "duration" : 35438
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a0a99b51dd0bcf2c11041367b2d947ef"
+  }, {
+    "name" : "story_id: 002 -verify User Able To Click On Cancel Button",
+    "children" : [ {
+      "name" : "verify_user_able_to_click_on_cancel_button",
+      "uid" : "291be82ce1e64ffa",
+      "parentUid" : "7f8820b5dddd489cfc21939ee6e5a66c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771582389,
+        "stop" : 1664771603348,
+        "duration" : 20959
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7f8820b5dddd489cfc21939ee6e5a66c"
+  }, {
+    "name" : "story_id: 003 -Create New User and Verify All Text Of Create User",
+    "children" : [ {
+      "name" : "verify_user_able_to_create_new_user_and_verify_all_text_of_create_user",
+      "uid" : "5efa30865f3ec409",
+      "parentUid" : "5b4648f437188f30835dbb3ceac92f4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771612728,
+        "stop" : 1664771636548,
+        "duration" : 23820
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5b4648f437188f30835dbb3ceac92f4e"
+  }, {
+    "name" : "story_id: 004 -Click On Active Role Toggle Button In UserTab",
+    "children" : [ {
+      "name" : "verify_user_able_to_click_on_active_role_toggle_button_in_user_tab",
+      "uid" : "7dbde4e66388272f",
+      "parentUid" : "25b6fe7b443972c745a74fb05d78215e",
+      "status" : "broken",
+      "time" : {
+        "start" : 1664771646302,
+        "stop" : 1664771692131,
+        "duration" : 45829
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "25b6fe7b443972c745a74fb05d78215e"
+  }, {
+    "name" : "story_id: 005 -The Total Count Of User in UserTab",
+    "children" : [ {
+      "name" : "verify_the_total_Count_Of_user_in_UserTab",
+      "uid" : "9bd07f0e8bbddac7",
+      "parentUid" : "993bab817ca89b4b5fd38377ac679e86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771701031,
+        "stop" : 1664771758699,
+        "duration" : 57668
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "993bab817ca89b4b5fd38377ac679e86"
+  }, {
+    "name" : "story_id: 006 -All DropDown Arrow In Table",
+    "children" : [ {
+      "name" : "verify_all_dropDown_arrow_in_table",
+      "uid" : "3f366ebf57e7ef8f",
+      "parentUid" : "d1b577621432e14ff11f69f40440699c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771766941,
+        "stop" : 1664771806572,
+        "duration" : 39631
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d1b577621432e14ff11f69f40440699c"
+  }, {
+    "name" : "story_id: 007 -To Add Or Delete Role",
+    "children" : [ {
+      "name" : "verify_user_able_to_add_or_delete_role",
+      "uid" : "f3f66516731300ac",
+      "parentUid" : "44ec1ed596ed35082ea43d75e09b9898",
+      "status" : "broken",
+      "time" : {
+        "start" : 1664771814941,
+        "stop" : 1664771852635,
+        "duration" : 37694
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "44ec1ed596ed35082ea43d75e09b9898"
+  }, {
+    "name" : "story_id: 008 -verify User Able To Update Project",
+    "children" : [ {
+      "name" : "verify_user_able_to_update_project",
+      "uid" : "84aa6879b7794bce",
+      "parentUid" : "6d39e728f9523f0a21054ad993ca1db5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771860964,
+        "stop" : 1664771910311,
+        "duration" : 49347
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "6d39e728f9523f0a21054ad993ca1db5"
+  }, {
+    "name" : "story_id: 001 - Total Count Of All Document In Analytics Section in ReportTab",
+    "children" : [ {
+      "name" : "verify_user_able_to_count_all_Documents_in_Analytics_section_in_report_tab",
+      "uid" : "4b62e2d1fd780e28",
+      "parentUid" : "323dfe8f3e1f684918d2a387ae1336a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771919101,
+        "stop" : 1664771955521,
+        "duration" : 36420
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "323dfe8f3e1f684918d2a387ae1336a4"
+  }, {
+    "name" : "story_id: 002 - Verify Report is Downloaded",
+    "children" : [ {
+      "name" : "verify_user_able_to_Download_Report",
+      "uid" : "1e18f861626794c5",
+      "parentUid" : "cccd0a1a9a3abc0bef29dbe061326536",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771964606,
+        "stop" : 1664771998391,
+        "duration" : 33785
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cccd0a1a9a3abc0bef29dbe061326536"
+  }, {
+    "name" : "Data Set Test",
+    "children" : [ {
+      "name" : "story_id: 001  - verify that user is able to Check search Datasets on user page ",
+      "children" : [ {
+        "name" : "verify_that_user_is_able_to_Check_Datasets_on_user_page",
+        "uid" : "11439f3b5c6cbbcc",
+        "parentUid" : "ae41051bce90533aab9a7614ddc132a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664772007550,
+          "stop" : 1664772046441,
+          "duration" : 38891
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ae41051bce90533aab9a7614ddc132a2"
+    }, {
+      "name" : "story_id: 002  - verify that user is able to add new category on dataset page",
+      "children" : [ {
+        "name" : "verify_that_user_is_able_to_add_new_category_on_dataset_page",
+        "uid" : "398b3f2e40561753",
+        "parentUid" : "f36770ced11ff23ea6c9505a3dfc2a46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664772057619,
+          "stop" : 1664772066935,
+          "duration" : 9316
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f36770ced11ff23ea6c9505a3dfc2a46"
+    }, {
+      "name" : "story_id: 003  - verify that user is able to Sort List Of Datasets ",
+      "children" : [ {
+        "name" : "verify_that_user_is_able_to_Sort_List_Of_Datasets",
+        "uid" : "6fbac95b87d06861",
+        "parentUid" : "70c9c00d32b0061ff66e7cccac8a825f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664772076660,
+          "stop" : 1664772084984,
+          "duration" : 8324
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "70c9c00d32b0061ff66e7cccac8a825f"
+    }, {
+      "name" : "story_id: 004  - verify that user is able to click on Action Button ",
+      "children" : [ {
+        "name" : "verify_that_user_is_able_to_click_on_Action_Button",
+        "uid" : "80a1aaafcb4e4436",
+        "parentUid" : "a404239cd3a96c2d79a79438ad7442ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664772093643,
+          "stop" : 1664772115238,
+          "duration" : 21595
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a404239cd3a96c2d79a79438ad7442ba"
+    }, {
+      "name" : "story_id: 005  - verify that user is able to Count total Users in UserTab ",
+      "children" : [ {
+        "name" : "verify_that_user_is_able_to_Count_total_Users_in_UserTab",
+        "uid" : "9a7105f34a815244",
+        "parentUid" : "8047cda38375d0853dece9c069f15e29",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664772123813,
+          "stop" : 1664772147284,
+          "duration" : 23471
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8047cda38375d0853dece9c069f15e29"
+    } ],
+    "uid" : "23c567bf78505c2524293cfe375b32cd"
+  }, {
+    "name" : "test to create role",
+    "children" : [ {
+      "name" : "story_id: 001 - verify that user is able to create new role with permission",
+      "children" : [ {
+        "name" : "verify_that_user_is_able_to_create_new_role_with_permission",
+        "uid" : "e8d3d183e162b25d",
+        "parentUid" : "41ce76564a4ead329dfa2e03da7179f9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1664772157244,
+          "stop" : 1664773618736,
+          "duration" : 1461492
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "41ce76564a4ead329dfa2e03da7179f9"
+    }, {
+      "name" : "setupmethod",
+      "uid" : "a45e2e96a4300573",
+      "parentUid" : "d3afb3c6b547a2b763f0e2908fceca98",
+      "status" : "broken",
+      "time" : {
+        "start" : 1664773623078,
+        "stop" : 1664773623086,
+        "duration" : 8
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "story_id: 002 - verify role with invalid data details and cancel",
+      "children" : [ {
+        "name" : "verify_role_with_invalid_data_details_and_cancel",
+        "uid" : "c6be98c0d579dc7c",
+        "parentUid" : "66fc4db59b6bdc97bed4d5496e05e7f9",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1664773623143,
+          "stop" : 1664773623143,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "66fc4db59b6bdc97bed4d5496e05e7f9"
+    }, {
+      "name" : "story_id: 003 - verify that user is able to create role with valid details",
+      "children" : [ {
+        "name" : "verify_that_user_is_able_to_create_role_with_valid_details",
+        "uid" : "3279758c789db8ef",
+        "parentUid" : "1725cc034c45390de3f8f784b8ada8be",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1664773623163,
+          "stop" : 1664773623163,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1725cc034c45390de3f8f784b8ada8be"
+    } ],
+    "uid" : "d3afb3c6b547a2b763f0e2908fceca98"
+  }, {
+    "name" : "setmethod",
+    "uid" : "b30b153c4f2be10",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1664773625631,
+      "stop" : 1664773625631,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "newPassed" : false,
+    "newBroken" : false,
+    "retriesCount" : 0,
+    "retriesStatusChange" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "story_id: 001 - Test organization arrows on analytics page",
+    "children" : [ {
+      "name" : "verify test organization arrows on analytics page",
+      "uid" : "dcbc09f03891f001",
+      "parentUid" : "05773a9bbbd575acc361330bce802dd4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1664773625640,
+        "stop" : 1664773625641,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "05773a9bbbd575acc361330bce802dd4"
+  }, {
+    "name" : "story_id: 002 - verify Total Document Count",
+    "children" : [ {
+      "name" : "verify_Total_Document_Count",
+      "uid" : "8c29b6d5f250d211",
+      "parentUid" : "d159e125ce0f4c8aa6e9d46075101bbe",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1664773625646,
+        "stop" : 1664773625647,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d159e125ce0f4c8aa6e9d46075101bbe"
+  }, {
+    "name" : "story_id: 003 - verify Total Document Count in project statistics",
+    "children" : [ {
+      "name" : "verify_Total_Document_Count_in_project_statistics",
+      "uid" : "8c10dc3f07d9f690",
+      "parentUid" : "73d2922e60889f030eb52a7661ca73c2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1664773625653,
+        "stop" : 1664773625654,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "73d2922e60889f030eb52a7661ca73c2"
+  }, {
+    "name" : "story_id: 004 - verify that user able To see trends According To Selections",
+    "children" : [ {
+      "name" : "verify_that_user_able_to_see_trends_according_to_selections",
+      "uid" : "2165e9508d856478",
+      "parentUid" : "258d0f53f596b9a6dcec8eadee762eab",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1664773625660,
+        "stop" : 1664773625661,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "258d0f53f596b9a6dcec8eadee762eab"
+  }, {
+    "name" : "story_id: 005 - verify total count of ready to proccess document is equal to total count of document in table",
+    "children" : [ {
+      "name" : "verify_total_count_of_ready_to_proccess_document_is_equal_to_total_count_of_document_in_table",
+      "uid" : "eb3a77249ab8de34",
+      "parentUid" : "6371a5b6a9d55ac105db8b63512f82ce",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1664773625668,
+        "stop" : 1664773625668,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "6371a5b6a9d55ac105db8b63512f82ce"
+  }, {
+    "name" : "story_id: 006 - verify That user click On NTS platform admin button and admin popup is display",
+    "children" : [ {
+      "name" : "verify_that_user_click_on_NTS_platform_admin_button_and_admin_popup_is_display",
+      "uid" : "f94997a3ac216d64",
+      "parentUid" : "28fa8c33eedda58867399376513e189d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1664773625673,
+        "stop" : 1664773625674,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "28fa8c33eedda58867399376513e189d"
+  }, {
+    "name" : "story_id: 007 - verify that user validate the count of total user in analytics page",
+    "children" : [ {
+      "name" : "verify_that_user_validate_the_count_of_total_user_in_analytics_page",
+      "uid" : "2b70a23a126a40d2",
+      "parentUid" : "c700a956189592278de8f2bfd5685813",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1664773625680,
+        "stop" : 1664773625680,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "c700a956189592278de8f2bfd5685813"
+  }, {
+    "name" : "story_id: 008 - Verify That user click Drop Down on Analytics Page",
+    "children" : [ {
+      "name" : "Verify_that_user_click_Drop_Down_Of_Analytics_Page",
+      "uid" : "f928a98fc7abeb63",
+      "parentUid" : "290c5f0ec1184dcb248332f33318a560",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1664773625686,
+        "stop" : 1664773625687,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "290c5f0ec1184dcb248332f33318a560"
+  } ]
+}

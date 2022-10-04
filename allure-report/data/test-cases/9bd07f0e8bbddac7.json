@@ -1,0 +1,165 @@
+{
+  "uid" : "9bd07f0e8bbddac7",
+  "name" : "verify_the_total_Count_Of_user_in_UserTab",
+  "fullName" : "Tests.UserTest.verifyTheTotalCountOfUserinUserTab",
+  "historyId" : "943553b9c7826b051999d6d042950094",
+  "time" : {
+    "start" : 1664771701031,
+    "stop" : 1664771758699,
+    "duration" : 57668
+  },
+  "description" : "verify_the_total_Count_Of_user_in_UserTab",
+  "descriptionHtml" : "<p>verify_the_total_Count_Of_user_in_UserTab</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setmethod",
+    "time" : {
+      "start" : 1664771692503,
+      "stop" : 1664771701015,
+      "duration" : 8512
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "EnterUsername",
+      "time" : {
+        "start" : 1664771698491,
+        "stop" : 1664771698643,
+        "duration" : 152
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "di-admin@neutrinotechsystems.com"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "setPassword",
+      "time" : {
+        "start" : 1664771698643,
+        "stop" : 1664771698752,
+        "duration" : 109
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "pass",
+        "value" : "Nts#admin@123"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "clickLoginButtonForValidInput",
+      "time" : {
+        "start" : 1664771698752,
+        "stop" : 1664771698829,
+        "duration" : 77
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1664771758710,
+      "stop" : 1664771759043,
+      "duration" : 333
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Tests.UserTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Tests.UserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyTheTotalCountOfUserinUserTab"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Dsuite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Tests.UserTest"
+  }, {
+    "name" : "host",
+    "value" : "NTS-AmitKorade"
+  }, {
+    "name" : "thread",
+    "value" : "7668@NTS-AmitKorade.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "story_id: 005 -The Total Count Of User in UserTab"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "692034cca9b84b1f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664542591816,
+        "stop" : 1664542645581,
+        "duration" : 53765
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9bd07f0e8bbddac7.json",
+  "parameterValues" : [ ]
+}

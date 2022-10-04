@@ -1,0 +1,184 @@
+{
+  "uid" : "6fbac95b87d06861",
+  "name" : "verify_that_user_is_able_to_Sort_List_Of_Datasets",
+  "fullName" : "Tests.DataSetTest.verifySortingListOfDatasets",
+  "historyId" : "31b09e54a4490a688ab12e3f456876bb",
+  "time" : {
+    "start" : 1664772076660,
+    "stop" : 1664772084984,
+    "duration" : 8324
+  },
+  "description" : "verify_that_user_is_able_to_Sort_List_Of_Datasets",
+  "descriptionHtml" : "<p>verify_that_user_is_able_to_Sort_List_Of_Datasets</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 3,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setmethod",
+    "time" : {
+      "start" : 1664772067504,
+      "stop" : 1664772076654,
+      "duration" : 9150
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "EnterUsername",
+      "time" : {
+        "start" : 1664772073989,
+        "stop" : 1664772074198,
+        "duration" : 209
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "di-admin@neutrinotechsystems.com"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "setPassword",
+      "time" : {
+        "start" : 1664772074198,
+        "stop" : 1664772074333,
+        "duration" : 135
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "pass",
+        "value" : "Nts#admin@123"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "clickLoginButtonForValidInput",
+      "time" : {
+        "start" : 1664772074333,
+        "stop" : 1664772074430,
+        "duration" : 97
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 3,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1664772084984,
+      "stop" : 1664772085204,
+      "duration" : 220
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "Tests.DataSetTest"
+  }, {
+    "name" : "testClass",
+    "value" : "Tests.DataSetTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifySortingListOfDatasets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Dsuite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Tests.DataSetTest"
+  }, {
+    "name" : "host",
+    "value" : "NTS-AmitKorade"
+  }, {
+    "name" : "thread",
+    "value" : "7668@NTS-AmitKorade.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "story_id: 003  - verify that user is able to Sort List Of Datasets "
+  }, {
+    "name" : "feature",
+    "value" : "Data Set Test"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8b0f62b204e54fed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664547559697,
+        "stop" : 1664547568427,
+        "duration" : 8730
+      }
+    }, {
+      "uid" : "b1c1cd0451eb22b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664543474196,
+        "stop" : 1664543483463,
+        "duration" : 9267
+      }
+    }, {
+      "uid" : "190ee01ae2bd04d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664542950744,
+        "stop" : 1664542957835,
+        "duration" : 7091
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6fbac95b87d06861.json",
+  "parameterValues" : [ ]
+}

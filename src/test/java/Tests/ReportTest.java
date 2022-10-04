@@ -19,7 +19,7 @@ public class ReportTest extends BaseTest {
 
     @AfterMethod
     public void tearDown() {
-        driver.close();
+        driver.quit();
     }
 
     @Severity(SeverityLevel.NORMAL)
@@ -33,8 +33,6 @@ public class ReportTest extends BaseTest {
         Thread.sleep(10000);
         reportPage.clickOnProjectDropdown();
         Thread.sleep(1000);
-//        int totalProjects = reportPage.getAllProjectsFromDropDown();
-//        System.out.println("toal projects: " + totalProjects);
         for (int i = 1; i <= 5; i++) {
             Thread.sleep(1000);
             reportPage.selectProjectFromDropDown(i);

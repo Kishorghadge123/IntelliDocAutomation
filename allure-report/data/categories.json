@@ -1,0 +1,223 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//label[text()='Email Id']//following::input[1]\"}\n  (Session info: chrome=105.0.5195.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61006}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c6ae8cb4e5fc23cefe0c12c734410e23\n*** Element info: {Using=xpath, value=//label[text()='Email Id']//following::input[1]}",
+      "children" : [ {
+        "name" : "setmethod",
+        "uid" : "e246e9a723ffd576",
+        "parentUid" : "7445179dfdc7af2a6bd348bc97a64442",
+        "status" : "broken",
+        "time" : {
+          "start" : 1664521136911,
+          "stop" : 1664521136911,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7445179dfdc7af2a6bd348bc97a64442"
+    }, {
+      "name" : "element click intercepted: Element <th _ngcontent-serverapp-c277=\"\" role=\"columnheader\" mat-header-cell=\"\" mat-sort-header=\"\" class=\"mat-sort-header mat-header-cell cdk-header-cell font-14px ng-tns-c167-16 cdk-column-document mat-column-document ng-star-inserted mat-table-sticky mat-table-sticky-border-elem-top\" aria-sort=\"none\" style=\"top: 0px; z-index: 100;\">...</th> is not clickable at point (223, 541). Other element would receive the click: <div _ngcontent-serverapp-c130=\"\" class=\"loading-spinner\">...</div>\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60752}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 74391b64ead122a3b2d4867da9adaefc",
+      "children" : [ {
+        "name" : "verify_the_user_able_to_sort_the_table_from_data",
+        "uid" : "ac66669cc3f8926b",
+        "parentUid" : "27c2c57291150a8e613151d4fd7b75db",
+        "status" : "broken",
+        "time" : {
+          "start" : 1664544852540,
+          "stop" : 1664544870928,
+          "duration" : 18388
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "27c2c57291150a8e613151d4fd7b75db"
+    }, {
+      "name" : "Keys to send should be a not null CharSequence",
+      "children" : [ {
+        "name" : "verify click_on_cancel_button_on_forgot_password",
+        "uid" : "d3e822fd740dd00d",
+        "parentUid" : "8863195d2002b04b9f89a669982dae2c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1664771422935,
+          "stop" : 1664771423080,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8863195d2002b04b9f89a669982dae2c"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Add Role')]/parent::button\"}\n  (Session info: chrome=105.0.5195.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62720}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a5d90c8c5100c3d6be13d986a778a58e\n*** Element info: {Using=xpath, value=//span[contains(text(),'Add Role')]/parent::button}",
+      "children" : [ {
+        "name" : "verify_user_able_to_click_on_active_role_toggle_button_in_user_tab",
+        "uid" : "7dbde4e66388272f",
+        "parentUid" : "0a61a8f9897f7fa142c002c3a5a1a632",
+        "status" : "broken",
+        "time" : {
+          "start" : 1664771646302,
+          "stop" : 1664771692131,
+          "duration" : 45829
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0a61a8f9897f7fa142c002c3a5a1a632"
+    }, {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Add Role')]/parent::button\"}\n  (Session info: chrome=105.0.5195.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dac199d4e717330fdc53f771825e6f40\n*** Element info: {Using=xpath, value=//span[contains(text(),'Add Role')]/parent::button}",
+      "children" : [ {
+        "name" : "verify_user_able_to_add_or_delete_role",
+        "uid" : "f3f66516731300ac",
+        "parentUid" : "a9e770bd389d583032a02cba9e85c06a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1664771814941,
+          "stop" : 1664771852635,
+          "duration" : 37694
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a9e770bd389d583032a02cba9e85c06a"
+    }, {
+      "name" : "Cannot locate an element using xpath=//mat-error[contains(text(),'Only alphabets,digits,parenthesis and hyphens are allowed.')]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: driver.version: RemoteWebDriver",
+      "children" : [ {
+        "name" : "verify_that_user_is_able_to_create_new_role_with_permission",
+        "uid" : "e8d3d183e162b25d",
+        "parentUid" : "aee786221b684b358ec8e8a605d0c2e3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1664772157244,
+          "stop" : 1664773618736,
+          "duration" : 1461492
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aee786221b684b358ec8e8a605d0c2e3"
+    }, {
+      "name" : "no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62598}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 74e4c5e28f55feced084d9266448c6b4\n*** Element info: {Using=xpath, value=//label[text()='Email Id']//following::input[1]}",
+      "children" : [ {
+        "name" : "setupmethod",
+        "uid" : "a45e2e96a4300573",
+        "parentUid" : "8c5cb4d72245b98c477599a091afc5da",
+        "status" : "broken",
+        "time" : {
+          "start" : 1664773623078,
+          "stop" : 1664773623086,
+          "duration" : 8
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8c5cb4d72245b98c477599a091afc5da"
+    }, {
+      "name" : "unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8ec45e0e99ed33712874d98dc3f917b1",
+      "children" : [ {
+        "name" : "setmethod",
+        "uid" : "b30b153c4f2be10",
+        "parentUid" : "9e1add3e0cc71aa9102493a5e1944493",
+        "status" : "broken",
+        "time" : {
+          "start" : 1664773625631,
+          "stop" : 1664773625631,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9e1add3e0cc71aa9102493a5e1944493"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected [true] but found [false]",
+      "children" : [ {
+        "name" : "verify Drop Downs Of Analytics And Filters In AuditPage",
+        "uid" : "889c286107d55d1b",
+        "parentUid" : "067aa11ae245eca950dc984999fefd6d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1664544789808,
+          "stop" : 1664544797466,
+          "duration" : 7658
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "067aa11ae245eca950dc984999fefd6d"
+    }, {
+      "name" : "The following asserts failed:\n\texpected [true] but found [false]",
+      "children" : [ {
+        "name" : "verify_user_able_to_Update_Created_Project",
+        "uid" : "cc74ff20e44691b2",
+        "parentUid" : "005b650c9a76323a032228c3bda08441",
+        "status" : "failed",
+        "time" : {
+          "start" : 1664771442389,
+          "stop" : 1664771480522,
+          "duration" : 38133
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "005b650c9a76323a032228c3bda08441"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

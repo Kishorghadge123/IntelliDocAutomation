@@ -1,0 +1,1295 @@
+{
+  "dd535e9345d2a764d2a37819c842fa2b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "43d56946d4bfbfe5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664544833359,
+        "stop" : 1664544841225,
+        "duration" : 7866
+      }
+    } ]
+  },
+  "31b09e54a4490a688ab12e3f456876bb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6fbac95b87d06861",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664772076660,
+        "stop" : 1664772084984,
+        "duration" : 8324
+      }
+    } ]
+  },
+  "23265c8e1aa2fbcddb018c1425a32989" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "80a1aaafcb4e4436",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664772093643,
+        "stop" : 1664772115238,
+        "duration" : 21595
+      }
+    } ]
+  },
+  "b244a057aa2bbfec3cf55efae2ad081b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e14bbf8c89bdf64b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771431743,
+        "stop" : 1664771442381,
+        "duration" : 10638
+      }
+    } ]
+  },
+  "3664eca59263759068dec694653ec809" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e8d3d183e162b25d",
+      "status" : "broken",
+      "statusDetails" : "Cannot locate an element using xpath=//mat-error[contains(text(),'Only alphabets,digits,parenthesis and hyphens are allowed.')]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: driver.version: RemoteWebDriver",
+      "time" : {
+        "start" : 1664772157244,
+        "stop" : 1664773618736,
+        "duration" : 1461492
+      }
+    } ]
+  },
+  "f798bf168518d201d0191a4b7b447ec9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "788d344ec5f403ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771295270,
+        "stop" : 1664771296634,
+        "duration" : 1364
+      }
+    } ]
+  },
+  "a812f45cfbc22aaf72ade97381924f38" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3cc257c23b31cc9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664545027907,
+        "stop" : 1664545041634,
+        "duration" : 13727
+      }
+    } ]
+  },
+  "8501754439a73e92a54d41f8d460bdce" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1d5fe5dc05508d11",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771398448,
+        "stop" : 1664771398788,
+        "duration" : 340
+      }
+    } ]
+  },
+  "ef15fe9f0898ce12e0815b6f11a1dfcd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c6be98c0d579dc7c",
+      "status" : "skipped",
+      "statusDetails" : "no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62598}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 74e4c5e28f55feced084d9266448c6b4\n*** Element info: {Using=xpath, value=//label[text()='Email Id']//following::input[1]}",
+      "time" : {
+        "start" : 1664773623143,
+        "stop" : 1664773623143,
+        "duration" : 0
+      }
+    } ]
+  },
+  "61d4726679bd6054938142219130d929" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8b883f7996729235",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771310332,
+        "stop" : 1664771310729,
+        "duration" : 397
+      }
+    } ]
+  },
+  "d8b743628607fae228b472fedddaf8e9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8c10dc3f07d9f690",
+      "status" : "skipped",
+      "statusDetails" : "unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8ec45e0e99ed33712874d98dc3f917b1",
+      "time" : {
+        "start" : 1664773625653,
+        "stop" : 1664773625654,
+        "duration" : 1
+      }
+    } ]
+  },
+  "e58a5f4dfedec67bd6e105587c29ad97" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b3aecaf2f1bc3bcd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771411130,
+        "stop" : 1664771411138,
+        "duration" : 8
+      }
+    } ]
+  },
+  "88f1c248915661616dfa3c4009a04fa9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2b70a23a126a40d2",
+      "status" : "skipped",
+      "statusDetails" : "unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8ec45e0e99ed33712874d98dc3f917b1",
+      "time" : {
+        "start" : 1664773625680,
+        "stop" : 1664773625680,
+        "duration" : 0
+      }
+    } ]
+  },
+  "78e144b6835e6a72424676e320087b4a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f3f66516731300ac",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Add Role')]/parent::button\"}\n  (Session info: chrome=105.0.5195.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64187}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dac199d4e717330fdc53f771825e6f40\n*** Element info: {Using=xpath, value=//span[contains(text(),'Add Role')]/parent::button}",
+      "time" : {
+        "start" : 1664771814941,
+        "stop" : 1664771852635,
+        "duration" : 37694
+      }
+    } ]
+  },
+  "7004ee6bd8ac8a975034c92c3dcaa07b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2d43588bfccd67b5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771382963,
+        "stop" : 1664771384343,
+        "duration" : 1380
+      }
+    } ]
+  },
+  "28103a3f2432f1845b9814c5b7e5163d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a45e2e96a4300573",
+      "status" : "broken",
+      "statusDetails" : "no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62598}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 74e4c5e28f55feced084d9266448c6b4\n*** Element info: {Using=xpath, value=//label[text()='Email Id']//following::input[1]}",
+      "time" : {
+        "start" : 1664773623078,
+        "stop" : 1664773623086,
+        "duration" : 8
+      }
+    } ]
+  },
+  "b3c19425924e8b15531593e5c86e4be1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "46df72528ab251d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771362767,
+        "stop" : 1664771363081,
+        "duration" : 314
+      }
+    } ]
+  },
+  "83596af458d2483c124c128de1a2af1b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e4ab729cda22c67f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771404886,
+        "stop" : 1664771405192,
+        "duration" : 306
+      }
+    } ]
+  },
+  "c34eadd79c0ad31c3b875b87c6457a8a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b85a3bbbd013805d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664544810954,
+        "stop" : 1664544824536,
+        "duration" : 13582
+      }
+    } ]
+  },
+  "c4e1f488af86ddf0ece8cc620d89ccc4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5e53c72d152c5c72",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771538015,
+        "stop" : 1664771573453,
+        "duration" : 35438
+      }
+    } ]
+  },
+  "1e7c7764bc0f928d56c14ab8b4eda35a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "889c286107d55d1b",
+      "status" : "failed",
+      "statusDetails" : "expected [true] but found [false]",
+      "time" : {
+        "start" : 1664544789808,
+        "stop" : 1664544797466,
+        "duration" : 7658
+      }
+    } ]
+  },
+  "6392c246a913ab2401c98cbec789e9fe" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "13d75488282c7aa3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771323303,
+        "stop" : 1664771323551,
+        "duration" : 248
+      }
+    } ]
+  },
+  "8e78ce2e7d266937b923cb48697fccf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3279758c789db8ef",
+      "status" : "skipped",
+      "statusDetails" : "no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62598}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 74e4c5e28f55feced084d9266448c6b4\n*** Element info: {Using=xpath, value=//label[text()='Email Id']//following::input[1]}",
+      "time" : {
+        "start" : 1664773623163,
+        "stop" : 1664773623163,
+        "duration" : 0
+      }
+    } ]
+  },
+  "9251e2b4741bddded61ef204ea8b180b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7573d3043b578edd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664544919411,
+        "stop" : 1664544937875,
+        "duration" : 18464
+      }
+    } ]
+  },
+  "ad8ae0b767ace4b9943d46b3b08adebc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a689505c806a5cc2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771302810,
+        "stop" : 1664771304135,
+        "duration" : 1325
+      }
+    } ]
+  },
+  "2d1e6a849d7ec61a7abbf59a4cdefe74" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4b62e2d1fd780e28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771919101,
+        "stop" : 1664771955521,
+        "duration" : 36420
+      }
+    } ]
+  },
+  "a5a0659c669e617cee81d7efa0a478e7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "61e71bce67043f74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771332586,
+        "stop" : 1664771333970,
+        "duration" : 1384
+      }
+    } ]
+  },
+  "b6b94cf100ef9b5c832ad89a29b3fe40" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5efa30865f3ec409",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771612728,
+        "stop" : 1664771636548,
+        "duration" : 23820
+      }
+    } ]
+  },
+  "3588282d15478f9caa354858d98e9fad" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "79fce2a763188b78",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771287242,
+        "stop" : 1664771288663,
+        "duration" : 1421
+      }
+    } ]
+  },
+  "943553b9c7826b051999d6d042950094" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9bd07f0e8bbddac7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771701031,
+        "stop" : 1664771758699,
+        "duration" : 57668
+      }
+    } ]
+  },
+  "8734f7d86de9d763729a320c760e23f5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "80a5d705722268d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771369026,
+        "stop" : 1664771369298,
+        "duration" : 272
+      }
+    } ]
+  },
+  "28f28d03b163afae9d17e4f37492c62d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "11439f3b5c6cbbcc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664772007550,
+        "stop" : 1664772046441,
+        "duration" : 38891
+      }
+    } ]
+  },
+  "47c021bbf25d70294650acb4619e954d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1317c589605015ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771487367,
+        "stop" : 1664771497951,
+        "duration" : 10584
+      }
+    } ]
+  },
+  "365e6f8dbf2562c78a3ee7e1e0271edb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3f366ebf57e7ef8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771766941,
+        "stop" : 1664771806572,
+        "duration" : 39631
+      }
+    } ]
+  },
+  "67834ff772c22edbaa06e9d7c7c84317" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "be5ec8e5a9cfcc44",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771347545,
+        "stop" : 1664771349002,
+        "duration" : 1457
+      }
+    } ]
+  },
+  "d7f43aa6cc35e96207fec04fc14b77f1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "84aa6879b7794bce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771860964,
+        "stop" : 1664771910311,
+        "duration" : 49347
+      }
+    } ]
+  },
+  "eeecea85dbb5f07367d66f77fc08099b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dcbc09f03891f001",
+      "status" : "skipped",
+      "statusDetails" : "unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8ec45e0e99ed33712874d98dc3f917b1",
+      "time" : {
+        "start" : 1664773625640,
+        "stop" : 1664773625641,
+        "duration" : 1
+      }
+    } ]
+  },
+  "5929e73cd0a3b97ecbcc906a498569e9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "24e5a21ccff0789f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664544946633,
+        "stop" : 1664544990851,
+        "duration" : 44218
+      }
+    } ]
+  },
+  "878bfb0f9866aa6e82bd0b3529cdf7b0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f94997a3ac216d64",
+      "status" : "skipped",
+      "statusDetails" : "unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8ec45e0e99ed33712874d98dc3f917b1",
+      "time" : {
+        "start" : 1664773625673,
+        "stop" : 1664773625674,
+        "duration" : 1
+      }
+    } ]
+  },
+  "c8f76bc6c8534cdaddbcc3c6494015e8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5e1c5633f1c537b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771316804,
+        "stop" : 1664771317090,
+        "duration" : 286
+      }
+    } ]
+  },
+  "fcc5799d7545bc7d1132929ccebadac0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d1c7f468f9b487f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664544882260,
+        "stop" : 1664544907159,
+        "duration" : 24899
+      }
+    } ]
+  },
+  "71ae77a91013b8f4d12c85ad84039723" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "147339584ae1bb68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771355558,
+        "stop" : 1664771355934,
+        "duration" : 376
+      }
+    } ]
+  },
+  "145da4766265dfd49791359090ad0880" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "633488e7a702abec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771514325,
+        "stop" : 1664771529237,
+        "duration" : 14912
+      }
+    } ]
+  },
+  "63b860e997c59c6da81f986c7c54a237" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c2431edf08df4f7e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771390644,
+        "stop" : 1664771392005,
+        "duration" : 1361
+      }
+    } ]
+  },
+  "cd52097c4258009f7a15370c02f6506a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7dbde4e66388272f",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[contains(text(),'Add Role')]/parent::button\"}\n  (Session info: chrome=105.0.5195.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62720}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a5d90c8c5100c3d6be13d986a778a58e\n*** Element info: {Using=xpath, value=//span[contains(text(),'Add Role')]/parent::button}",
+      "time" : {
+        "start" : 1664771646302,
+        "stop" : 1664771692131,
+        "duration" : 45829
+      }
+    } ]
+  },
+  "7d64dc38ea9f936dcd6901ab6da9ca42" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "398b3f2e40561753",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664772057619,
+        "stop" : 1664772066935,
+        "duration" : 9316
+      }
+    } ]
+  },
+  "10c88ca74493f2aef490c73ab7a3ded8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8c29b6d5f250d211",
+      "status" : "skipped",
+      "statusDetails" : "unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8ec45e0e99ed33712874d98dc3f917b1",
+      "time" : {
+        "start" : 1664773625646,
+        "stop" : 1664773625647,
+        "duration" : 1
+      }
+    } ]
+  },
+  "85fc22606b585c51083fd5c4000a0709" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cc74ff20e44691b2",
+      "status" : "failed",
+      "statusDetails" : "The following asserts failed:\n\texpected [true] but found [false]",
+      "time" : {
+        "start" : 1664771442389,
+        "stop" : 1664771480522,
+        "duration" : 38133
+      }
+    } ]
+  },
+  "434c20117e50485b7187803a13aeb9c8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b30b153c4f2be10",
+      "status" : "broken",
+      "statusDetails" : "unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8ec45e0e99ed33712874d98dc3f917b1",
+      "time" : {
+        "start" : 1664773625631,
+        "stop" : 1664773625631,
+        "duration" : 0
+      }
+    } ]
+  },
+  "8be57e9d2c47b266ebd7419f8d82500e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "df7a25a31f617ade",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771480533,
+        "stop" : 1664771487361,
+        "duration" : 6828
+      }
+    } ]
+  },
+  "ee8dd67d3fe0b9cf187cedd6a98dddc2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "75f3aa2a9a3c0dc5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771416856,
+        "stop" : 1664771416882,
+        "duration" : 26
+      }
+    } ]
+  },
+  "c0c38cadcb1b253b2e795dfac111e617" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bcb5abc7be0346ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771497960,
+        "stop" : 1664771514319,
+        "duration" : 16359
+      }
+    } ]
+  },
+  "b431fe0307e63753176ef90dfb2c382e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9a7105f34a815244",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664772123813,
+        "stop" : 1664772147284,
+        "duration" : 23471
+      }
+    } ]
+  },
+  "f8a8d5a1ca8631f9eb6fe44544c960df" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e246e9a723ffd576",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//label[text()='Email Id']//following::input[1]\"}\n  (Session info: chrome=105.0.5195.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:61006}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c6ae8cb4e5fc23cefe0c12c734410e23\n*** Element info: {Using=xpath, value=//label[text()='Email Id']//following::input[1]}",
+      "time" : {
+        "start" : 1664521136911,
+        "stop" : 1664521136911,
+        "duration" : 0
+      }
+    } ]
+  },
+  "a0c46b2a4bca7d62f104b4f292a399e5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2165e9508d856478",
+      "status" : "skipped",
+      "statusDetails" : "unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8ec45e0e99ed33712874d98dc3f917b1",
+      "time" : {
+        "start" : 1664773625660,
+        "stop" : 1664773625661,
+        "duration" : 1
+      }
+    } ]
+  },
+  "3fc69d3706b5172e58e1fbe2886f209d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1e18f861626794c5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771964606,
+        "stop" : 1664771998391,
+        "duration" : 33785
+      }
+    } ]
+  },
+  "d0a2d05f20dbd0bfd646f5f5363526ad" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d3e822fd740dd00d",
+      "status" : "broken",
+      "statusDetails" : "Keys to send should be a not null CharSequence",
+      "time" : {
+        "start" : 1664771422935,
+        "stop" : 1664771423080,
+        "duration" : 145
+      }
+    } ]
+  },
+  "619b02c46d1431d94e9a44607baa0fdf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "eb3a77249ab8de34",
+      "status" : "skipped",
+      "statusDetails" : "unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8ec45e0e99ed33712874d98dc3f917b1",
+      "time" : {
+        "start" : 1664773625668,
+        "stop" : 1664773625668,
+        "duration" : 0
+      }
+    } ]
+  },
+  "2a9ba2e99f28ff461cc64725bbdb3594" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "efce234ba06b3f2b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771375654,
+        "stop" : 1664771376974,
+        "duration" : 1320
+      }
+    } ]
+  },
+  "64066b12ce1648f227efdef1b8e54ab7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f928a98fc7abeb63",
+      "status" : "skipped",
+      "statusDetails" : "unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8ec45e0e99ed33712874d98dc3f917b1",
+      "time" : {
+        "start" : 1664773625686,
+        "stop" : 1664773625687,
+        "duration" : 1
+      }
+    } ]
+  },
+  "11c44124ab774ca67abab15daace6a84" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "159b5129651c1e75",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664545053513,
+        "stop" : 1664545084277,
+        "duration" : 30764
+      }
+    } ]
+  },
+  "677c74c7970aeccaad0af4f47e1f5f3c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "11e2900b54f35ba4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664774771678,
+        "stop" : 1664774784300,
+        "duration" : 12622
+      }
+    } ]
+  },
+  "94419b2fb4ca31f97214db43e145ab43" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ac66669cc3f8926b",
+      "status" : "broken",
+      "statusDetails" : "element click intercepted: Element <th _ngcontent-serverapp-c277=\"\" role=\"columnheader\" mat-header-cell=\"\" mat-sort-header=\"\" class=\"mat-sort-header mat-header-cell cdk-header-cell font-14px ng-tns-c167-16 cdk-column-document mat-column-document ng-star-inserted mat-table-sticky mat-table-sticky-border-elem-top\" aria-sort=\"none\" style=\"top: 0px; z-index: 100;\">...</th> is not clickable at point (223, 541). Other element would receive the click: <div _ngcontent-serverapp-c130=\"\" class=\"loading-spinner\">...</div>\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'NTS-AMITKORADE', ip: '192.168.1.149', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\NTS-AM~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:60752}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 74391b64ead122a3b2d4867da9adaefc",
+      "time" : {
+        "start" : 1664544852540,
+        "stop" : 1664544870928,
+        "duration" : 18388
+      }
+    } ]
+  },
+  "ecbc1f3f35dd3b419e60e865f5163437" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "308b2f8c62d43a37",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771272571,
+        "stop" : 1664771278880,
+        "duration" : 6309
+      }
+    } ]
+  },
+  "df9633712887e2ef8a33858077779af3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "291be82ce1e64ffa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771582389,
+        "stop" : 1664771603348,
+        "duration" : 20959
+      }
+    } ]
+  },
+  "7c8ad8bc03447ab7fe4652925a7fd998" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ce333ed15264eb48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664771339836,
+        "stop" : 1664771341235,
+        "duration" : 1399
+      }
+    } ]
+  },
+  "91f1383c27a6d20006226c10e7ca0453" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c79d84db8deaf92a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664545003185,
+        "stop" : 1664545018873,
+        "duration" : 15688
+      }
+    } ]
+  }
+}

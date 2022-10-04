@@ -17,7 +17,7 @@ public class TemplateTest extends BaseTest{
     }
     @AfterMethod
     public void tearDown() {
-        driver.close();
+        driver.quit();
     }
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 001  - Check Templates on user page ")

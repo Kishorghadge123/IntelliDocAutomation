@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
-public class ProjectModuleTest extends BaseTest{
+public class ProjectModuleTest extends BaseTest {
     Project_Module project;
     SoftAssert softAssert;
 
@@ -23,7 +23,7 @@ public class ProjectModuleTest extends BaseTest{
 
     @AfterClass
     public void tearDown() {
-        driver.close();
+        driver.quit();
 
     }
 
@@ -224,7 +224,7 @@ public class ProjectModuleTest extends BaseTest{
     @Story("story_id: 003 - Create Project With Blank Data")
     @Description("verify_user_able_to_Create_Project_With_Blank_Data")
     @Test(priority = 3, groups = "smoke", description = "verify_user_able_to_Create_Project_With_Blank_Data")
-    public void Create_Project_With_Blank_Data() throws Exception{
+    public void Create_Project_With_Blank_Data() throws Exception {
         softAssert = new SoftAssert();
         project = new Project_Module(driver);
         project.clickOnCreateProjectButton();
@@ -241,12 +241,6 @@ public class ProjectModuleTest extends BaseTest{
         project.clickOnCancelButton();
         waitForloadSpinner();
     }
-
-
-
-
-
-
 
 
     @Severity(SeverityLevel.NORMAL)

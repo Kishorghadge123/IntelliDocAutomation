@@ -23,7 +23,7 @@ public class DocumentTest extends BaseTest{
 
     @AfterMethod
     public void tearDown() {
-        driver.close();
+  driver.quit();
     }
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 001 - verify_Data_Extracted_From_Document")

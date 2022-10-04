@@ -29,7 +29,7 @@ public class UserTest extends BaseTest {
 
     @AfterMethod
     public void tearDown() {
-        driver.close();
+        driver.quit();
     }
 
     @Severity(SeverityLevel.CRITICAL)

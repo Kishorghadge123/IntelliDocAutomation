@@ -48,6 +48,23 @@ public class AuditPage {
     @FindBy(xpath = "(//table/tbody/tr/td[8])[1]")
     WebElement ActionButtoninTable;
 
+    @FindBy(xpath = "(//div[contains(@class,'mat-form-field-infix ng-tns-c')]//input[contains(@aria-label,'Choose one option')])[1]")
+    WebElement classificationTab;
+
+    @FindBy(xpath = "//div[contains(@role,'listbox')]")
+    WebElement selectChatsDropDown;
+
+    @FindBy(xpath = "(//div[contains(@class,'mat-select-arrow-wrapper ng-tns-c')]//div[contains(@class,'mat-select-arrow ng-tns')])[1]")
+    WebElement chatLevelFlagDropDown;
+
+    @FindBy(xpath = "//span[contains(@class,'mat-expansion-indicator ng-tns-c')]")
+    WebElement chatCardDropDown;
+
+    @FindBy(xpath = "//mat-row[contains(@role,'row')]//mat-cell[text()=' SSN ']")
+   public WebElement ssn;
+
+    //mat-row[contains(@role,'row')]//mat-cell[text()=' SSN ']
+
     public void clickOnauditTab() {
         this.auditTab.click();
     }
@@ -91,9 +108,30 @@ public class AuditPage {
     public void enterDocName() {
         this.documentName.click();
     }
-    public void clickOnActionButtoninTable(){
+
+    public void clickOnActionButtoninTable() {
         this.ActionButtoninTable.click();
     }
 
+    public void clickOnClassificationTab() {
+        this.classificationTab.click();
+    }
+
+    public void SelectChatsDropDown() {
+        this.selectChatsDropDown.click();
+    }
+
+    public void SelectChatLevelFlags(int index) {
+        driver.findElement(By.xpath("(//span[contains(@class,'mat-option-text')])[" + index + "]")).click();
+    }
+    public void SelectChatLevelFlagsDropDown(){
+        this.chatLevelFlagDropDown.click();
+    }
+    public void clickOnChatCardDropDown(){
+        this.chatCardDropDown.click();
+    }
+    public void verifyPetientDetails(){
+        driver.findElement(By.xpath("//mat-row[contains(@role,'row')]//mat-cell[text()=' SSN ']"));
+    }
 }
 
