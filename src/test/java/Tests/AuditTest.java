@@ -206,10 +206,9 @@ public class AuditTest extends BaseTest {
         auditPage.SelectChatLevelFlags(1);
         auditPage.clickOnChatCardDropDown();
         Thread.sleep(2000);
-        Assert.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'chronicConditionsTable ng-star-inserted')]")).isDisplayed());
-        Assert.assertEquals(driver.findElement(By.xpath("(//span[contains(text(),'Kordus, Elaine M')])[1]")).getText().split("Elaine")[0].strip(), "Kordus,");
+        softAssert.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'chronicConditionsTable ng-star-inserted')]")).isDisplayed());
+        softAssert.assertEquals(driver.findElement(By.xpath("(//span[contains(text(),'Kordus, Elaine M')])[1]")).getText().split("Elaine")[0].strip(), "Kordus,");
         Thread.sleep(2000);
         scroll_page.ScrollUpDown(auditPage.ssn);
-
     }
 }

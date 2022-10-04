@@ -5,6 +5,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -58,4 +59,24 @@ public class ReportTest extends BaseTest {
         reportPage.deleteReportFile("final_report.xlsx");
     }
 
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 003 - verifyTheDropDownOfReportTab")
+    @Description("verifyTheDropDownOfReportTab")
+    @Test(priority = 3, groups = "smoke", description = "verifyTheDropDownOfReportTab", enabled = true)
+    public void verifyTheDropDownOfReportTab() throws Exception {
+        waitForloadSpinner();
+        reportPage = new ReportPage(driver);
+        reportPage.clickOnReportTab();
+        Thread.sleep(2000);
+        reportPage.ClickOnDropDownsInReportTab();
+        Thread.sleep(2000);
+        reportPage.ClickOnDropDownsInReportTab();
+        Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(@class,'row user-info-container ng-tns-c')])[1]")).isDisplayed());
+        Thread.sleep(2000);
+//        reportPage.ClickOnDropDownsInReportTab(6);
+//        Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(@class,'row user-info-container ng-tns-c')])[2]")).isDisplayed());
+
+    }
 }
+
+
