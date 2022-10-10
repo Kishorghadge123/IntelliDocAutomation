@@ -109,16 +109,16 @@ public class UserTest extends BaseTest {
         userPage.clickonActionBtton();
         waitForloadSpinner();
         Thread.sleep(3000);
-        if (userPage.isAddRoleButtonEnable() == true) {
-            userPage.setActiveUserToggleButton("on");
-            System.out.println(userPage.isAddRoleButtonEnable());
-            Assert.assertTrue(userPage.isAddRoleButtonEnable());
-            System.out.println("Toggle Button is on ");
-        } else {
-            userPage.setActiveUserToggleButton("off");
-            Assert.assertFalse(userPage.isAddRoleButtonEnable());
-            System.out.println("Toggle Button is off ");
-        }
+//        if (userPage.isAddRoleButtonEnable() == true) {
+//            userPage.setActiveUserToggleButton("on");
+//            System.out.println(userPage.isAddRoleButtonEnable());
+//            Assert.assertTrue(userPage.isAddRoleButtonEnable());
+//            System.out.println("Toggle Button is on ");
+//        } else {
+//            userPage.setActiveUserToggleButton("off");
+//            Assert.assertFalse(userPage.isAddRoleButtonEnable());
+//            System.out.println("Toggle Button is off ");
+//        }
     }
 
     @Severity(SeverityLevel.CRITICAL)

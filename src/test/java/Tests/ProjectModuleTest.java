@@ -101,93 +101,91 @@ public class ProjectModuleTest extends BaseTest {
         project.selectoperator();
         project.clickUpdate1();
         Thread.sleep(3000);
-        softAssert.assertAll();
+//        softAssert.assertAll();
     }
 
 
-    //    @Severity(SeverityLevel.NORMAL)
-//    @Story("story_id: 003 - Update Created Project")
-//    @Description("verify user able to Update Created Project")
-//    @Test(priority = 3, groups = "smoke", description = "verify user able to Update Created Project")
-//    public void Create_Project_With_Valid_Data() throws Exception{
-//        softAssert = new SoftAssert();
-//        project = new Project_Module(driver);
-//        Thread.sleep(3000);
-//    project.clickOnCreateProjectButton();
-//  Thread.sleep(4000);
-//    project.ClickOnTemplateNameNew("QA-Automation");
-//    project.ClickOnLeadBtn();
-//    project.selectLead();
-//        project.selectDateRange("2022", "OCT", "20", "1");
-//        project.selectDateRange("2022", "OCT", "23", "2");
-//        Thread.sleep(2000);
-//        project.selectDocumentStructure();
-//        Thread.sleep(2000);
-//        project.selectProjectType();
-//        project.selectprocessengindropdown();
-//        Thread.sleep(1000);
-//        project.selectprocessingengine();
-//
-//        project.clickstatustogglebutton();
-//        project.clickondocumentautoassignmentogglebtn();
-//        project.clickauditenabletogglebtn();
-//        project.clickStraightThroughProcesstogglebtn();
-//        JavascriptExecutor js = (JavascriptExecutor) driver;
-//        js.executeScript("window.scrollBy(0,50000)", "");
-//        Thread.sleep(3000);
-//        softAssert.assertTrue(project.templatemsg.isDisplayed());
-//        project.clickAddTemplateButton();
-//        Thread.sleep(2000);
-//        project.selectTemplate();
-//        project.clickonrolelabel();
-//        softAssert.assertTrue(project.roletab.isDisplayed());
-//        project.clickOnAddRoleButton();
-//        project.selectRole();
-//        project.clickonroleplusbutton();
-//        project.selectUser();
-//        project.clickOutside();
-//        Thread.sleep(2000);
-//        project.clickOnDocumentlabel();
-//        Thread.sleep(3000);
-//        project.selectchanneldropdown();
-//        Thread.sleep(2000);
-//        project.selectchannel();
-//        project.clickonnextbutton();
-//        Thread.sleep(3000);
-//        project.clickondatasetlabel();
-//        softAssert.assertEquals(project.datasetmsg.getText(),"Please Add Dataset ...");
-//        project.clickonadddatasetbtn();
-//        project.clickondataset();
-//        project.selectdataset();
-//        project.clickonvariablelabel();
-//        softAssert.assertEquals(project.variablemsg.getText()," Please Add Variables ...");
-//        project.addvariable();
-//        Thread.sleep(3000);
-//        project.enterVariableName("Address");
-//        Thread.sleep(2000);
-//        project.clickvalidationtypelabel();
-//        project.selectvalidationtype();
-//        project.canceldataset();
-//        Thread.sleep(3000);
-//        project.clickOnNextButton();
-//        softAssert.assertEquals(project.rulemsg.getText(),"Rules");
-//        softAssert.assertEquals(project.backbtn.getText(),"Back");
-//      project.clickOnRuleBtn();
-//        project.clickoncreaterolebutton();
-//project.clickaddrule();
-//softAssert.assertTrue(project.namemsg.isDisplayed());
-//Thread.sleep(3000);
-//project.enterName("rule");
-//project.clickOnCondition();
-//        project.clickOnAttributDropdown1();
-//        project.selectatrribute();
-//        project.selectoperatodropdown();
-//        project.selectoperator();
-//        project.enterValue("10");
-//project.clickonSaveButton();
-//
-//Thread.sleep(4000);
-//        project.clickOnTrureBox();
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 003 - Update Created Project")
+    @Description("verify user able to Update Created Project")
+    @Test(priority = 3, groups = "smoke", description = "verify user able to Update Created Project")
+    public void Create_Project_With_Valid_Data() throws Exception {
+        softAssert = new SoftAssert();
+        project = new Project_Module(driver);
+        Thread.sleep(3000);
+        project.clickOnCreateProjectButton();
+        Thread.sleep(4000);
+        project.ClickOnTemplateNameNew("QA-Automation");
+        project.ClickOnLeadBtn();
+        project.selectLead();
+        project.selectDateRange("2022", "OCT", "20", "1");
+        project.selectDateRange("2022", "OCT", "23", "2");
+        Thread.sleep(2000);
+        project.selectDocumentStructure();
+        Thread.sleep(2000);
+        project.selectProjectType();
+        project.selectprocessengindropdown();
+        Thread.sleep(1000);
+        project.selectprocessingengine();
+        project.clickstatustogglebutton();
+        project.clickondocumentautoassignmentogglebtn();
+        project.clickauditenabletogglebtn();
+        project.clickStraightThroughProcesstogglebtn();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,50000)", "");
+        Thread.sleep(3000);
+        softAssert.assertTrue(project.templatemsg.isDisplayed());
+        project.clickAddTemplateButton();
+        Thread.sleep(2000);
+        project.selectTemplate();
+        project.clickonrolelabel();
+        softAssert.assertTrue(project.roletab.isDisplayed());
+        project.clickOnAddRoleButton();
+        project.selectRole();
+        project.clickonroleplusbutton();
+        project.selectUser();
+        project.clickOutside();
+        Thread.sleep(2000);
+        project.clickOnDocumentlabel();
+        Thread.sleep(3000);
+        project.selectchanneldropdown();
+        Thread.sleep(2000);
+        project.selectchannel();
+        project.clickonnextbutton();
+        Thread.sleep(3000);
+        project.clickondatasetlabel();
+        softAssert.assertEquals(project.datasetmsg.getText(), "Please Add Dataset ...");
+        project.clickonadddatasetbtn();
+        project.clickondataset();
+        project.selectdataset();
+        project.clickonvariablelabel();
+        softAssert.assertEquals(project.variablemsg.getText(), " Please Add Variables ...");
+        project.addvariable();
+        Thread.sleep(3000);
+        project.enterVariableName("Address");
+        Thread.sleep(2000);
+        project.clickvalidationtypelabel();
+        project.selectvalidationtype();
+        project.canceldataset();
+        Thread.sleep(3000);
+        project.clickOnNextButton();
+        softAssert.assertEquals(project.rulemsg.getText(), "Rules");
+        softAssert.assertEquals(project.backbtn.getText(), "Back");
+        project.clickOnRuleBtn();
+        project.clickoncreaterolebutton();
+        project.clickaddrule();
+        softAssert.assertTrue(project.namemsg.isDisplayed());
+        Thread.sleep(3000);
+        project.enterName("rule");
+        project.clickOnCondition();
+        project.clickOnAttributDropdown1();
+        project.selectatrribute();
+        project.selectoperatodropdown();
+        project.selectoperator();
+        project.enterValue("10");
+        project.clickonSaveButton();
+        Thread.sleep(2000);
+        project.clickOnTrureBox();
 //        Thread.sleep(2000);
 //        project.clickOnTrureBox();
 //        project.enterName("ruletrur");
@@ -197,10 +195,6 @@ public class ProjectModuleTest extends BaseTest {
 //        project.variabledropdown();
 //        project.selectvariable();
 //        project.entervariablevalue();
-//
-//
-//
-//
 //        project.clickOnTrureBox1();
 //        project.enterName("rulefalse");
 //        project.clickOnAddAction();
@@ -209,17 +203,10 @@ public class ProjectModuleTest extends BaseTest {
 //        project.variabledropdown();
 //        project.selectvariable();
 //        project.entervariablevalue();
-//
-//
-//
-//
-//
-//
-//
-//
-//////        softAssert.assertTrue(project.targetchannelmsg.isDisplayed());
-//
-//    }
+//        softAssert.assertTrue(project.targetchannelmsg.isDisplayed());
+
+    }
+
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 003 - Create Project With Blank Data")
     @Description("verify_user_able_to_Create_Project_With_Blank_Data")

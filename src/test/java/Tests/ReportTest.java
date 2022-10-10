@@ -1,6 +1,8 @@
 package Tests;
 
 import Pages.ReportPage;
+import Utilities.ClickOnOutSide;
+import Utilities.VerifyTextOfTable;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -11,6 +13,8 @@ import org.testng.annotations.*;
 
 public class ReportTest extends BaseTest {
     ReportPage reportPage;
+    ClickOnOutSide clickOnOutSide;
+    VerifyTextOfTable verifyTextOfTable;
 
     @BeforeMethod
     public void setmethod() throws Exception {
@@ -20,7 +24,7 @@ public class ReportTest extends BaseTest {
 
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+//        driver.quit();
     }
 
     @Severity(SeverityLevel.NORMAL)
@@ -70,12 +74,56 @@ public class ReportTest extends BaseTest {
         Thread.sleep(2000);
         reportPage.ClickOnDropDownsInReportTab();
         Thread.sleep(2000);
-        reportPage.ClickOnDropDownsInReportTab();
-        Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(@class,'row user-info-container ng-tns-c')])[1]")).isDisplayed());
-        Thread.sleep(2000);
+
+//        reportPage.ClickOnDropDownsInReportTab();
+//        Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(@class,'row user-info-container ng-tns-c')])[1]")).isDisplayed());
+//        Thread.sleep(2000);
 //        reportPage.ClickOnDropDownsInReportTab(6);
 //        Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(@class,'row user-info-container ng-tns-c')])[2]")).isDisplayed());
 
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 004 - verifyTheDocStatusAsPerFilters")
+    @Description("verifyTheDocStatusAsPerFilters")
+    @Test(priority = 4, groups = "smoke", description = "verifyTheDocStatusAsPerFilters", enabled = true)
+    public void verifyTheDocStatusAsPerFilters() throws Exception {
+        waitForloadSpinner();
+        reportPage = new ReportPage(driver);
+        verifyTextOfTable = new VerifyTextOfTable(driver);
+        clickOnOutSide = new ClickOnOutSide(driver);
+        reportPage.clickOnReportTab();
+        waitForloadSpinner();
+        reportPage.selectProject();
+        Thread.sleep(1000);
+        reportPage.clickOnFilterDropDownArrow();
+        reportPage.clickOnStatusDropDown();
+        reportPage.SelectStatusInReportTab(3);
+        reportPage.SelectStatusInReportTab(1);
+        clickOnOutSide.clickOutside();
+        reportPage.clickOnApplyFilter();
+        Thread.sleep(2000);
+        verifyTextOfTable.verfiyDisplayStatusOfDoc("Ready", 4);
+        reportPage.clickOnStatusDropDown();
+        reportPage.SelectStatusInReportTab(1);
+        reportPage.SelectStatusInReportTab(2);
+        clickOnOutSide.clickOutside();
+        reportPage.clickOnApplyFilter();
+        Thread.sleep(2000);
+       verifyTextOfTable.verfiyDisplayStatusOfDoc("Processed",4);
+        reportPage.clickOnStatusDropDown();
+        reportPage.SelectStatusInReportTab(2);
+        reportPage.SelectStatusInReportTab(3);
+        clickOnOutSide.clickOutside();
+        reportPage.clickOnApplyFilter();
+        Thread.sleep(2000);
+        reportPage.clickOnStatusDropDown();
+        reportPage.SelectStatusInReportTab(3);
+        reportPage.SelectStatusInReportTab(4);
+        clickOnOutSide.clickOutside();
+        reportPage.clickOnApplyFilter();
+        Thread.sleep(2000);
+        verifyTextOfTable.verfiyDisplayStatusOfDoc("Rejected",4);
     }
 }
 

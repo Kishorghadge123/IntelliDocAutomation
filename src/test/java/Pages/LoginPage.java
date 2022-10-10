@@ -61,7 +61,7 @@ public class LoginPage {
     @Step("ClickOnCancelButton")
     public void ClickOnCancelButton(String EmailId) {
         this.email.sendKeys(EmailId);
-        this.Cancel.click();
+//        this.Cancel.click();
     }
     @Step("ClickOnSumitButton")
     public void ClickOnSumitButton(String EmailId) {

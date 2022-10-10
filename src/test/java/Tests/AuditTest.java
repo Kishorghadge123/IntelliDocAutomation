@@ -104,6 +104,7 @@ public class AuditTest extends BaseTest {
         clickOnOutSide.clickOutside();
         Thread.sleep(2000);
         auditPage.clickOnApplyFilter();
+        Thread.sleep(2000);
         auditPage.verifySortsortingofTableData(1);
         sortingLists.sortingListInOrder("ascending", 1);
         auditPage.verifySortsortingofTableData(1);
@@ -135,7 +136,7 @@ public class AuditTest extends BaseTest {
         clickOnOutSide.clickOutside();
         Thread.sleep(2000);
         auditPage.clickOnApplyFilter();
-        verifyTextOfTable.verfiyDisplayStatusOfDoc("Pending");
+        verifyTextOfTable.verfiyDisplayStatusOfDoc("Pending",3);
         Thread.sleep(2000);
         auditPage.clickStatusDropDownArrow();
         Thread.sleep(2000);
@@ -145,7 +146,7 @@ public class AuditTest extends BaseTest {
         Thread.sleep(2000);
         auditPage.clickOnApplyFilter();
         Thread.sleep(2000);
-        verifyTextOfTable.verfiyDisplayStatusOfDoc("Audited");
+        verifyTextOfTable.verfiyDisplayStatusOfDoc("Audited",3);
     }
 
     @Severity(SeverityLevel.NORMAL)

@@ -283,8 +283,12 @@ public class Project_Module {
     @FindBy(xpath = "(//span[contains(text(),' contains ')])[1]")
     public WebElement selectoperator;
 
-    @FindBy(xpath = "//span[contains(text(),' T ')]")
+    @FindBy(xpath = "//button[contains(@class,'conditinBlockTrueButton')]")
     public WebElement truebox;
+
+//    @FindBy(xpath = "(//div//span[@class='invisible'])[9]")
+//    public WebElement truebox;
+
 
     @FindBy(xpath = "//span[contains(text(),'Save ')]")
     public WebElement save;

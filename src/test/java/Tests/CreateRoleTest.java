@@ -38,7 +38,7 @@ public class CreateRoleTest extends BaseTest {
         waitForloadSpinner();
 //        Thread.sleep(4000);
         createRolePage.clickRoleBtn();
-//        Thread.sleep(3000);
+        Thread.sleep(3000);
         createRolePage.clickCreateRoleBtn();
         waitForloadSpinner();
 //        Thread.sleep(3000);

@@ -44,6 +44,7 @@ public class DataSetTest extends BaseTest {
         Thread.sleep(5000);
         DatasetPageObj.clickOnVisibilityButton();
         DatasetPageObj.searchPatientName();
+        Thread.sleep(2000);
         DatasetPageObj.clickOnserchBarIcon1();
         Thread.sleep(5000);
         DatasetPageObj.clickOnCancelDatasets();

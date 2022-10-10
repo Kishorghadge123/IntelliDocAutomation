@@ -17,17 +17,29 @@ public class ReportPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
+    @FindBy(xpath = "//span[contains(@class,'mat-tooltip-trigger projectname')]")
+    WebElement selectProjectDropDown;
     @FindBy(xpath = "//div[@class='mat-list-item-content']/img[contains(@src,'Report')]")
     WebElement reportTab;
     @FindBy(xpath = "//span[@class=\"mat-button-wrapper\"]/i")
     WebElement projectDrowpdown;
+    @FindBy(xpath = "//input[contains(@placeholder,'Search')]")
+    WebElement searchProject;
     @FindBy(xpath = "//button[contains(@class,'mat-focus-indicator font')]")
     WebElement reportDownloadbutton;
+    @FindBy(xpath = "(//div[contains(@class,'mat-tooltip-trigger ng-star-inserted')]//button[contains(@role,'menuitem')])[1]")
+    WebElement clickOnproject;
 
-    public void clickOnReportTab() {
-        this.reportTab.click();
-    }
+    @FindBy(xpath = "(//div[contains(@class,'mat-select-trigger ng-tns-c')]//div[contains(@class,'mat-select-arrow ng-tns-c')])[3]")
+    WebElement clickOnDropDownStatus;
+
+    @FindBy(xpath = "(//mat-accordion[contains(@class,'mat-accordion example-headers-align mt-2')]//mat-expansion-panel-header//span//mat-panel-title//mat-icon)[2]")
+    WebElement FilterDropDownArrow;
+    @FindBy(xpath = "(//button[contains(@class,'mat-focus-indicator mat-flat-button mat-button-base mat-primary')]//span[contains(text(),'Apply')])[2]")
+    WebElement clickOnApplyFilter;
+
+
+    public void clickOnReportTab() {this.reportTab.click();}
 
     public void clickOnProjectDropdown() {
         this.projectDrowpdown.click();
@@ -84,7 +96,27 @@ public class ReportPage {
     }
 
     public void ClickOnDropDownsInReportTab() {
-        driver.findElement(By.xpath("(//mat-icon[contains(text(),' keyboard_arrow_down ')])[1]")).click();
+        driver.findElement(By.xpath("(//mat-icon[contains(text(),' keyboard_arrow_down ')])[1]")).click();}
+    public void selectProject() throws InterruptedException {
+        this.selectProjectDropDown.click();
+        Thread.sleep(2000);
+        this.searchProject.clear();
+        this.searchProject.sendKeys("888-Medical");
+        this.clickOnproject.click();
+    }
+    public void clickOnStatusDropDown() throws InterruptedException {
+
+        this.clickOnDropDownStatus.click();
+    }
+    public void clickOnFilterDropDownArrow() throws InterruptedException {
+        this.FilterDropDownArrow.click();
+        Thread.sleep(2000);
+    }
+    public void clickOnApplyFilter() {
+        this.clickOnApplyFilter.click();
+    }
+    public void SelectStatusInReportTab(int index){
+        driver.findElement(By.xpath("(//div//span[@class='mat-option-text'])["+index+"]")).click();
     }
 }
 
