@@ -17,6 +17,7 @@ public class ReportPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
     @FindBy(xpath = "//span[contains(@class,'mat-tooltip-trigger projectname')]")
     WebElement selectProjectDropDown;
     @FindBy(xpath = "//div[@class='mat-list-item-content']/img[contains(@src,'Report')]")
@@ -37,9 +38,22 @@ public class ReportPage {
     WebElement FilterDropDownArrow;
     @FindBy(xpath = "(//button[contains(@class,'mat-focus-indicator mat-flat-button mat-button-base mat-primary')]//span[contains(text(),'Apply')])[2]")
     WebElement clickOnApplyFilter;
+    @FindBy(xpath = "(//div[contains(@class,'mat-form-field-infix ng-tns-c')]//input[contains(@type,'text')])[2]")
+    WebElement documentName;
 
+    @FindBy(xpath = "(//div[contains(@class,'mat-select-arrow-wrapper ng-tns-c')]//div[contains(@class,'mat-select-arrow ng-tns-c')])[1]")
+    WebElement assigneeDropDown;
 
-    public void clickOnReportTab() {this.reportTab.click();}
+    @FindBy(xpath = "(//mat-option[contains(@class,'mat-option mat-focus-indicator mat-option-multiple mat-active')])[1]")
+    WebElement clickInCheckBoxOnAssignee;
+
+    @FindBy(xpath = "//span[contains(text(),'Clear')]")
+    WebElement clearButton;
+
+    //span[contains(text(),'Clear')]
+    public void clickOnReportTab() {
+        this.reportTab.click();
+    }
 
     public void clickOnProjectDropdown() {
         this.projectDrowpdown.click();
@@ -68,6 +82,7 @@ public class ReportPage {
         System.out.println("expected:" + allDocs.get(0).getText());
         System.out.println("actual:" + String.valueOf(count));
     }
+
     public void verifyUserableDownloadreport() {
         this.reportDownloadbutton.click();
     }
@@ -96,7 +111,9 @@ public class ReportPage {
     }
 
     public void ClickOnDropDownsInReportTab() {
-        driver.findElement(By.xpath("(//mat-icon[contains(text(),' keyboard_arrow_down ')])[1]")).click();}
+        driver.findElement(By.xpath("(//mat-icon[contains(text(),' keyboard_arrow_down ')])[1]")).click();
+    }
+
     public void selectProject() throws InterruptedException {
         this.selectProjectDropDown.click();
         Thread.sleep(2000);
@@ -104,19 +121,36 @@ public class ReportPage {
         this.searchProject.sendKeys("888-Medical");
         this.clickOnproject.click();
     }
+
     public void clickOnStatusDropDown() throws InterruptedException {
 
         this.clickOnDropDownStatus.click();
     }
+
     public void clickOnFilterDropDownArrow() throws InterruptedException {
         this.FilterDropDownArrow.click();
         Thread.sleep(2000);
     }
+
     public void clickOnApplyFilter() {
         this.clickOnApplyFilter.click();
     }
-    public void SelectStatusInReportTab(int index){
-        driver.findElement(By.xpath("(//div//span[@class='mat-option-text'])["+index+"]")).click();
+
+    public void SelectStatusInReportTab(int index) {
+        driver.findElement(By.xpath("(//div//span[@class='mat-option-text'])[" + index + "]")).click();
+    }
+    public void EnterDocumentName(String documentName) {
+        this.documentName.clear();
+        this.documentName.sendKeys(documentName);
+    }
+    public void clickOnassigneeDropDown(){
+        this.assigneeDropDown.click();
+    }
+    public void clickInCheckBoxOnAssignees(){
+         this.clickInCheckBoxOnAssignee.click();
+    }
+    public void clickOnClearButton(){
+        this.clearButton.click();
     }
 }
 

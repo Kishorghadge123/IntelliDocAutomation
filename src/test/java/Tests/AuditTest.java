@@ -150,9 +150,9 @@ public class AuditTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 005 - verify Text Of Audit Tab")
+    @Story("story_id: 006 - verify Text Of Audit Tab")
     @Description("verify Text Of Audit Tab")
-    @Test(priority = 5, groups = "smoke", description = "verify Text Of Audit Tab")
+    @Test(priority = 6, groups = "smoke", description = "verify Text Of Audit Tab")
     public void verifyTextOfAuditTab() throws Exception {
         auditPage = new AuditPage(driver);
         clickOnOutSide = new ClickOnOutSide(driver);
@@ -178,9 +178,9 @@ public class AuditTest extends BaseTest {
     }
 
     @Severity(SeverityLevel.NORMAL)
-    @Story("story_id: 005 - verify_That_Data_Extracted_From_Document")
+    @Story("story_id: 007 - verify_That_Data_Extracted_From_Document")
     @Description("verify_That_Data_Extracted_From_Document")
-    @Test(priority = 5, groups = "smoke", description = "verify_That_Data_Extracted_From_Document")
+    @Test(priority = 7, groups = "smoke", description = "verify_That_Data_Extracted_From_Document")
     public void verify_That_Data_Extracted_From_Document() throws Exception {
         auditPage = new AuditPage(driver);
         clickOnOutSide = new ClickOnOutSide(driver);

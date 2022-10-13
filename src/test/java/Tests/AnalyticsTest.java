@@ -48,101 +48,102 @@ public class AnalyticsTest extends BaseTest {
         Thread.sleep(20000);
         AnalyticsPageObj.ClickAnalyticsBtn();
         Thread.sleep(2000);
-//        double Percentage_Of_ready_MedicalChart = AnalyticsPageObj.Verify_progress_bar_Count_and_Total_Count_Of_Documents_for_all_Project("Medical Chart", "ready");
-//        double Percentage_Of_ProcessedMedicalChart = AnalyticsPageObj.Verify_progress_bar_Count_and_Total_Count_Of_Documents_for_all_Project("Medical Chart", "processed");
-//        double Percentage_Of_rejectedMedicalChart = AnalyticsPageObj.Verify_progress_bar_Count_and_Total_Count_Of_Documents_for_all_Project("Medical Chart", "rejected");
-//        double count_Of_readyMedicalChart = AnalyticsPageObj.getCountFromProgresBar("Medical Chart", Percentage_Of_ready_MedicalChart);
-//        double count_Of_ProcessedMedicalChart = AnalyticsPageObj.getCountFromProgresBar("Medical Chart", Percentage_Of_ProcessedMedicalChart);
-//        double count_Of_rejectedMedicalChart = AnalyticsPageObj.getCountFromProgresBar("Medical Chart", Percentage_Of_rejectedMedicalChart);
-//        double Count_Of_MedicalChart_progressbar = ((count_Of_readyMedicalChart + count_Of_ProcessedMedicalChart + count_Of_rejectedMedicalChart) + 0.10);
-//        System.out.println(Count_Of_MedicalChart_progressbar);
-//        int actualCount_Of_MedicalChart_progressbar = (int) Count_Of_MedicalChart_progressbar;
-//        System.out.println("TotalCount:-" + actualCount_Of_MedicalChart_progressbar);
-//        String totalCount_of_MedicalChart = driver.findElement(By.xpath("//div[text()=' Medical Chart ']/span[contains(text(),'Total')][1]")).getText().split("Total: ")[1];
-//        int expectedTotalCount_of_MedicalChartdocument = Integer.parseInt(totalCount_of_MedicalChart);
-//        System.out.println("TotalCount:-" + expectedTotalCount_of_MedicalChartdocument);
-//        softAssert.assertEquals(actualCount_Of_MedicalChart_progressbar, expectedTotalCount_of_MedicalChartdocument);
-//        System.out.println("Test Pass");
-//        softAssert.assertAll();
-//
-//    }
-//
-//    @Severity(SeverityLevel.CRITICAL)
-//    @Story("story_id: 002 - verify Total Document Count")
-//    @Description(" verify_Total_Document_Count")
-//    @Test(priority = 2, groups = "smoke", description = "verify_Total_Document_Count")
-//    public void verify_Total_Document_Count() throws ParseException, InterruptedException {
-//        AnalyticsPageObj = new AnalyticsPage(driver);
-//        Thread.sleep(2000);
-//        AnalyticsPageObj.verfy_TotalCountofDocuments_in_Organization_Statistics();
+        double Percentage_Of_ready_MedicalChart = AnalyticsPageObj.Verify_progress_bar_Count_and_Total_Count_Of_Documents_for_all_Project("Medical Chart", "ready");
+        double Percentage_Of_ProcessedMedicalChart = AnalyticsPageObj.Verify_progress_bar_Count_and_Total_Count_Of_Documents_for_all_Project("Medical Chart", "processed");
+        double Percentage_Of_rejectedMedicalChart = AnalyticsPageObj.Verify_progress_bar_Count_and_Total_Count_Of_Documents_for_all_Project("Medical Chart", "rejected");
+        double count_Of_readyMedicalChart = AnalyticsPageObj.getCountFromProgresBar("Medical Chart", Percentage_Of_ready_MedicalChart);
+        double count_Of_ProcessedMedicalChart = AnalyticsPageObj.getCountFromProgresBar("Medical Chart", Percentage_Of_ProcessedMedicalChart);
+        double count_Of_rejectedMedicalChart = AnalyticsPageObj.getCountFromProgresBar("Medical Chart", Percentage_Of_rejectedMedicalChart);
+        double Count_Of_MedicalChart_progressbar = ((count_Of_readyMedicalChart + count_Of_ProcessedMedicalChart + count_Of_rejectedMedicalChart) + 0.10);
+        System.out.println(Count_Of_MedicalChart_progressbar);
+        int actualCount_Of_MedicalChart_progressbar = (int) Count_Of_MedicalChart_progressbar;
+        System.out.println("TotalCount:-" + actualCount_Of_MedicalChart_progressbar);
+        String totalCount_of_MedicalChart = driver.findElement(By.xpath("//div[text()=' Medical Chart ']/span[contains(text(),'Total')][1]")).getText().split("Total: ")[1];
+        int expectedTotalCount_of_MedicalChartdocument = Integer.parseInt(totalCount_of_MedicalChart);
+        System.out.println("TotalCount:-" + expectedTotalCount_of_MedicalChartdocument);
+        softAssert.assertEquals(actualCount_Of_MedicalChart_progressbar, expectedTotalCount_of_MedicalChartdocument);
+        System.out.println("Test Pass");
+        softAssert.assertAll();
+
+    }
+
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 002 - verify Total Document Count")
+    @Description(" verify_Total_Document_Count")
+    @Test(priority = 2, groups = "smoke", description = "verify_Total_Document_Count")
+    public void verify_Total_Document_Count() throws ParseException, InterruptedException {
+        AnalyticsPageObj = new AnalyticsPage(driver);
+        Thread.sleep(2000);
+        AnalyticsPageObj.verfy_TotalCountofDocuments_in_Organization_Statistics();
 //        AnalyticsPageObj.verfiy_TotalPercentageCount_Of_Organization_Statistics();
-//    }
-//
-//    @Severity(SeverityLevel.CRITICAL)
-//    @Story("story_id: 003 - verify Total Document Count in project statistics")
-//    @Description(" verify_Total_Document_Countin_project_statistics")
-//    @Test(priority = 3, groups = "smoke", description = "verify_Total_Document_Count_in_project_statistics")
-//    public void verify_Total_Document_CountInProjectStatistics() throws ParseException, InterruptedException {
-//        AnalyticsPageObj = new AnalyticsPage(driver);
-//        Thread.sleep(20000);
-//        int actualCountOfProjectDoc = AnalyticsPageObj.verfiyThatTotalCountOfProjectDocisequleToTotalCountOfProccessReadyRejectDoc();
-//        String expectedCountOfProjectDoc = driver.findElement(By.xpath("(//div[@class='row'] //div[@class='col-md-2 mb-3 px-2']//h5)[1]")).getText();
-//        int expectedCountOfProjectDocs = Integer.parseInt(expectedCountOfProjectDoc);
-//        Assert.assertEquals(actualCountOfProjectDoc, expectedCountOfProjectDocs);
-//    }
-//
-//    @Severity(SeverityLevel.CRITICAL)
-//    @Story("story_id: 004 - verify that user able To see trends According To Selections")
-//    @Description(" verify_that_user_able_to_see_trends_according_to_selections")
-//    @Test(priority = 4, groups = "smoke", description = "verify_that_user_able_to_see_trends_according_to_selections")
-//    public void verifyThatuserableToseetrendsAccordingToSelections() throws InterruptedException {
-//        AnalyticsPageObj = new AnalyticsPage(driver);
-//        Thread.sleep(20000);
-//        String actualtextofdailybutton = AnalyticsPageObj.verfyWhenuserClickondaiyButtonAccordingThatResultisDiaplayinDocProccessing(" Daily ");
-//        String expectedtextDaily = driver.findElement(By.xpath(" //span[contains(text(),'Daily trends')] ")).getText().split(" trends")[0];
-//        Assert.assertEquals(actualtextofdailybutton, expectedtextDaily);
-//        System.out.println("Dialy Test Pass");
-//        String actualtextofWeeklybutton = AnalyticsPageObj.verfyWhenuserClickondaiyButtonAccordingThatResultisDiaplayinDocProccessing(" Weekly ");
-//        String expectedtextWeekly = driver.findElement(By.xpath("//span[contains(text(),' Weekly trends ')]")).getText().split(" trends")[0];
-//        Assert.assertEquals(actualtextofWeeklybutton, expectedtextWeekly);
-//        System.out.println("Wekly Test Pass");
-//        String actualtextofMonthlybutton = AnalyticsPageObj.verfyWhenuserClickondaiyButtonAccordingThatResultisDiaplayinDocProccessing(" Monthly ");
-//        String expectedtextMonthly = driver.findElement(By.xpath("//span[contains(text(),' Monthly trends ')]")).getText().split(" trends")[0];
-//        Assert.assertEquals(actualtextofMonthlybutton, expectedtextMonthly);
-//        System.out.println("Monthly Test Pass");
-//        String actualtextofOverallbutton = AnalyticsPageObj.verfyWhenuserClickondaiyButtonAccordingThatResultisDiaplayinDocProccessing(" Overall ");
-//        String expectedtextOverall = driver.findElement(By.xpath("//span[contains(text(),' Overall trends ')]")).getText().split(" trends")[0];
-//        Assert.assertEquals(actualtextofOverallbutton, expectedtextOverall);
-//        System.out.println("Overall Test Pass");
-//    }
-//
-//    @Severity(SeverityLevel.CRITICAL)
-//    @Story("story_id: 005 - verify total count of ready to proccess document is equal to total count of document in table")
-//    @Description(" verify_total_count_of_ready_to_proccess_document_is_equal_to_total_count_of_document_in_table")
-//    @Test(priority = 5, groups = "smoke", description = "verify_total_count_of_ready_to_proccess_document_is_equal_to_total_count_of_document_in_table")
-//    public void verifyTotalcountOfreadyToProccessDocisequalToTotalcountofDocinTable() throws InterruptedException {
-//        AnalyticsPageObj = new AnalyticsPage(driver);
-//        int actualcountOfdoc = AnalyticsPageObj.verifyTotalcountOfreadyToProccessDocisequalToTotalcountofDocinTable();
-//        String expectedCountOfDocument = driver.findElement(By.xpath("//span[@class='bgcolor2 customBadge rounded_5px ml-3 ng-star-inserted']")).getText();
-//        int expectedCountOfDocuments = Integer.parseInt(expectedCountOfDocument);
-//        System.out.println(expectedCountOfDocuments);
-//        Assert.assertEquals(actualcountOfdoc, expectedCountOfDocuments);
-//    }
-//
-//    @Severity(SeverityLevel.CRITICAL)
-//    @Story("story_id: 006 - verify That user click On NTS platform admin button and admin popup is display")
-//    @Description(" verify_that_user_click_on_NTS_platform_admin_button_and_admin_popup_is_display")
-//    @Test(priority = 6, groups = "smoke", description = "verify_that_user_click_on_NTS_platform_admin_button_and_admin_popup_is_display")
-//    public void verifyThatuserClickOnNtsplatformAdminbuttonandAdminPopupisDispaly() throws InterruptedException {
-//        AnalyticsPageObj = new AnalyticsPage(driver);
-//        Thread.sleep(20000);
-//        driver.findElement(By.xpath("//button[contains(@class,'mat-focus-indicator mat-tooltip-trigger mat-m')]")).click();
-//        boolean element = driver.findElement(By.xpath("//div[@class='mat-menu-content ng-tns-c108-0']")).isDisplayed();
-//        Assert.assertTrue(element);
-//        driver.findElement(By.xpath("//button[contains(@class,'mat-focus-indicator mat-menu-item ng-tns-c108-0')]")).click();
-//        driver.findElement(By.xpath("//button[@class='mat-focus-indicator mat-flat-button mat-button-base mat-primary']")).click();
-//        boolean element1 = driver.findElement(By.xpath("//button[contains(@class,'mat-focus-indicator mat-tooltip-trigger mat-m')]")).isDisplayed();
-//        Assert.assertTrue(element1);
+    }
+
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 003 - verify Total Document Count in project statistics")
+    @Description(" verify_Total_Document_Countin_project_statistics")
+    @Test(priority = 3, groups = "smoke", description = "verify_Total_Document_Count_in_project_statistics")
+    public void verify_Total_Document_CountInProjectStatistics() throws ParseException, InterruptedException {
+        AnalyticsPageObj = new AnalyticsPage(driver);
+        Thread.sleep(20000);
+        int actualCountOfProjectDoc = AnalyticsPageObj.verfiyThatTotalCountOfProjectDocisequleToTotalCountOfProccessReadyRejectDoc();
+        String expectedCountOfProjectDoc = driver.findElement(By.xpath("(//div[@class='row'] //div[@class='col-md-2 mb-3 px-2']//h5)[1]")).getText();
+        int expectedCountOfProjectDocs = Integer.parseInt(expectedCountOfProjectDoc);
+        Assert.assertEquals(actualCountOfProjectDoc, expectedCountOfProjectDocs);
+    }
+
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 004 - verify that user able To see trends According To Selections")
+    @Description(" verify_that_user_able_to_see_trends_according_to_selections")
+    @Test(priority = 4, groups = "smoke", description = "verify_that_user_able_to_see_trends_according_to_selections")
+    public void verifyThatuserableToseetrendsAccordingToSelections() throws InterruptedException {
+        AnalyticsPageObj = new AnalyticsPage(driver);
+        Thread.sleep(20000);
+        String actualtextofdailybutton = AnalyticsPageObj.verfyWhenuserClickondaiyButtonAccordingThatResultisDiaplayinDocProccessing(" Daily ");
+        String expectedtextDaily = driver.findElement(By.xpath(" //span[contains(text(),'Daily trends')] ")).getText().split(" trends")[0];
+        Assert.assertEquals(actualtextofdailybutton, expectedtextDaily);
+        System.out.println("Dialy Test Pass");
+        Thread.sleep(3000);
+        String actualtextofWeeklybutton = AnalyticsPageObj.verfyWhenuserClickondaiyButtonAccordingThatResultisDiaplayinDocProccessing(" Weekly ");
+        String expectedtextWeekly = driver.findElement(By.xpath("//span[contains(text(),' Weekly trends ')]")).getText().split(" trends")[0];
+        Assert.assertEquals(actualtextofWeeklybutton, expectedtextWeekly);
+        System.out.println("Wekly Test Pass");
+        String actualtextofMonthlybutton = AnalyticsPageObj.verfyWhenuserClickondaiyButtonAccordingThatResultisDiaplayinDocProccessing(" Monthly ");
+        String expectedtextMonthly = driver.findElement(By.xpath("//span[contains(text(),' Monthly trends ')]")).getText().split(" trends")[0];
+        Assert.assertEquals(actualtextofMonthlybutton, expectedtextMonthly);
+        System.out.println("Monthly Test Pass");
+        String actualtextofOverallbutton = AnalyticsPageObj.verfyWhenuserClickondaiyButtonAccordingThatResultisDiaplayinDocProccessing(" Overall ");
+        String expectedtextOverall = driver.findElement(By.xpath("//span[contains(text(),' Overall trends ')]")).getText().split(" trends")[0];
+        Assert.assertEquals(actualtextofOverallbutton, expectedtextOverall);
+        System.out.println("Overall Test Pass");
+    }
+
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 005 - verify total count of ready to proccess document is equal to total count of document in table")
+    @Description(" verify_total_count_of_ready_to_proccess_document_is_equal_to_total_count_of_document_in_table")
+    @Test(priority = 5, groups = "smoke", description = "verify_total_count_of_ready_to_proccess_document_is_equal_to_total_count_of_document_in_table")
+    public void verifyTotalcountOfreadyToProccessDocisequalToTotalcountofDocinTable() throws InterruptedException {
+        AnalyticsPageObj = new AnalyticsPage(driver);
+        int actualcountOfdoc = AnalyticsPageObj.verifyTotalcountOfreadyToProccessDocisequalToTotalcountofDocinTable();
+        String expectedCountOfDocument = driver.findElement(By.xpath("//span[@class='bgcolor2 customBadge rounded_5px ml-3 ng-star-inserted']")).getText();
+        int expectedCountOfDocuments = Integer.parseInt(expectedCountOfDocument);
+        System.out.println(expectedCountOfDocuments);
+        Assert.assertEquals(actualcountOfdoc, expectedCountOfDocuments);
+    }
+
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 006 - verify That user click On NTS platform admin button and admin popup is display")
+    @Description(" verify_that_user_click_on_NTS_platform_admin_button_and_admin_popup_is_display")
+    @Test(priority = 6, groups = "smoke", description = "verify_that_user_click_on_NTS_platform_admin_button_and_admin_popup_is_display")
+    public void verifyThatuserClickOnNtsplatformAdminbuttonandAdminPopupisDispaly() throws InterruptedException {
+        AnalyticsPageObj = new AnalyticsPage(driver);
+        Thread.sleep(20000);
+        driver.findElement(By.xpath("//button[contains(@class,'mat-focus-indicator mat-tooltip-trigger mat-m')]")).click();
+        boolean element = driver.findElement(By.xpath("//div[@class='mat-menu-content ng-tns-c108-0']")).isDisplayed();
+        Assert.assertTrue(element);
+        driver.findElement(By.xpath("//button[contains(@class,'mat-focus-indicator mat-menu-item ng-tns-c108-0')]")).click();
+        driver.findElement(By.xpath("//button[@class='mat-focus-indicator mat-flat-button mat-button-base mat-primary']")).click();
+        boolean element1 = driver.findElement(By.xpath("//button[contains(@class,'mat-focus-indicator mat-tooltip-trigger mat-m')]")).isDisplayed();
+        Assert.assertTrue(element1);
     }
 
     @Severity(SeverityLevel.CRITICAL)

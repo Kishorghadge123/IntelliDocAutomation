@@ -2,6 +2,7 @@ package Tests;
 
 import Pages.ReportPage;
 import Utilities.ClickOnOutSide;
+import Utilities.SelectDateRange;
 import Utilities.VerifyTextOfTable;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
@@ -15,6 +16,7 @@ public class ReportTest extends BaseTest {
     ReportPage reportPage;
     ClickOnOutSide clickOnOutSide;
     VerifyTextOfTable verifyTextOfTable;
+    SelectDateRange selectDateRange;
 
     @BeforeMethod
     public void setmethod() throws Exception {
@@ -74,13 +76,6 @@ public class ReportTest extends BaseTest {
         Thread.sleep(2000);
         reportPage.ClickOnDropDownsInReportTab();
         Thread.sleep(2000);
-
-//        reportPage.ClickOnDropDownsInReportTab();
-//        Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(@class,'row user-info-container ng-tns-c')])[1]")).isDisplayed());
-//        Thread.sleep(2000);
-//        reportPage.ClickOnDropDownsInReportTab(6);
-//        Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(@class,'row user-info-container ng-tns-c')])[2]")).isDisplayed());
-
     }
 
     @Severity(SeverityLevel.NORMAL)
@@ -110,7 +105,7 @@ public class ReportTest extends BaseTest {
         clickOnOutSide.clickOutside();
         reportPage.clickOnApplyFilter();
         Thread.sleep(2000);
-       verifyTextOfTable.verfiyDisplayStatusOfDoc("Processed",4);
+        verifyTextOfTable.verfiyDisplayStatusOfDoc("Processed", 4);
         reportPage.clickOnStatusDropDown();
         reportPage.SelectStatusInReportTab(2);
         reportPage.SelectStatusInReportTab(3);
@@ -123,8 +118,37 @@ public class ReportTest extends BaseTest {
         clickOnOutSide.clickOutside();
         reportPage.clickOnApplyFilter();
         Thread.sleep(2000);
-        verifyTextOfTable.verfiyDisplayStatusOfDoc("Rejected",4);
+        verifyTextOfTable.verfiyDisplayStatusOfDoc("Rejected", 4);
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 005 - verifyTheClearFilterButtonInFilter")
+    @Description("verifyTheClearFilterButtonInFilter")
+    @Test(priority = 5, groups = "smoke", description = "verifyTheClearFilterButtonInFilter", enabled = true)
+    public void verifyTheClearFilterButtonInFilter() throws Exception {
+        waitForloadSpinner();
+        reportPage = new ReportPage(driver);
+        verifyTextOfTable = new VerifyTextOfTable(driver);
+         selectDateRange=new SelectDateRange(driver);
+        clickOnOutSide = new ClickOnOutSide(driver);
+        reportPage.clickOnReportTab();
+        waitForloadSpinner();
+        reportPage.selectProject();
+        Thread.sleep(1000);
+        reportPage.clickOnFilterDropDownArrow();
+        reportPage.EnterDocumentName("Meadical Document");
+        reportPage.clickOnassigneeDropDown();
+        Thread.sleep(2000);
+        reportPage.clickInCheckBoxOnAssignees();
+        clickOnOutSide.clickOutside();
+        selectDateRange.selectDateRange("2022", "OCT", "20", "1");
+        selectDateRange.selectDateRange("2022", "OCT", "23", "2");
+        reportPage.clickOnClearButton();
+        Thread.sleep(2000);
+        String text1=driver.findElement(By.xpath("//input[@id='mat-input-3']")).getText();
+        System.out.println(text1);
+        Assert.assertEquals(driver.findElement(By.xpath("//input[@id='mat-input-3']")).getText(),"");
+        Assert.assertEquals(driver.findElement(By.xpath("//div[@id='mat-select-value-1']")).getText(),"");
     }
 }
-
 
