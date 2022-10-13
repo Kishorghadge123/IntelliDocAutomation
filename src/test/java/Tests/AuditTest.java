@@ -48,7 +48,6 @@ public class AuditTest extends BaseTest {
         auditPage.ClickOnDropDownsInAuditPage(2);
         Assert.assertTrue(driver.findElement(By.xpath("(//div[contains(@class,'row user-info-container ng-tns-c')])[2]")).isDisplayed());
     }
-
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 002 - verify total Count Of Audited and Audit Pending documents")
     @Description("verify_total_Count_of_Audited_and_Audit_Pending_documents")
@@ -146,7 +145,6 @@ public class AuditTest extends BaseTest {
         Thread.sleep(2000);
         verifyTextOfTable.verfiyDisplayStatusOfDoc("Audited", 3);
     }
-
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 006 - verify Text Of Audit Tab")
     @Description("verify Text Of Audit Tab")
@@ -174,7 +172,6 @@ public class AuditTest extends BaseTest {
         softAssert.assertEquals(driver.findElement(By.xpath("//span[contains(text(),'Release')]")).getText(), "Release");
         softAssert.assertAll();
     }
-
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 007 - verify_That_Data_Extracted_From_Document")
     @Description("verify_That_Data_Extracted_From_Document")
@@ -210,7 +207,6 @@ public class AuditTest extends BaseTest {
         Thread.sleep(2000);
         scroll_page.ScrollUpDown(auditPage.ssn);
     }
-
     @Severity(SeverityLevel.NORMAL)
     @Story("story_id: 008 - verifyTheClearFilterButtonInFilter")
     @Description("verifyTheClearFilterButtonInFilter")

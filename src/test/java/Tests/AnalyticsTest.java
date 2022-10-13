@@ -116,7 +116,6 @@ public class AnalyticsTest extends BaseTest {
         Assert.assertEquals(actualtextofOverallbutton, expectedtextOverall);
         System.out.println("Overall Test Pass");
     }
-
     @Severity(SeverityLevel.CRITICAL)
     @Story("story_id: 005 - verify total count of ready to proccess document is equal to total count of document in table")
     @Description(" verify_total_count_of_ready_to_proccess_document_is_equal_to_total_count_of_document_in_table")
@@ -129,7 +128,6 @@ public class AnalyticsTest extends BaseTest {
         System.out.println(expectedCountOfDocuments);
         Assert.assertEquals(actualcountOfdoc, expectedCountOfDocuments);
     }
-
     @Severity(SeverityLevel.CRITICAL)
     @Story("story_id: 006 - verify That user click On NTS platform admin button and admin popup is display")
     @Description(" verify_that_user_click_on_NTS_platform_admin_button_and_admin_popup_is_display")
@@ -162,7 +160,6 @@ public class AnalyticsTest extends BaseTest {
         String expectedCount = userPage.getUserCountOfatomperPage();
         Assert.assertEquals(actualcount, expectedCount);
     }
-
     @Severity(SeverityLevel.CRITICAL)
     @Story("story_id: 008 - Verify That user click Drop Down on Analytics Page")
     @Description(" Verify_that_user_click_Drop_Down_Of_Analytics_Page")
