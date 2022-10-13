@@ -129,7 +129,7 @@ public class ReportTest extends BaseTest {
         waitForloadSpinner();
         reportPage = new ReportPage(driver);
         verifyTextOfTable = new VerifyTextOfTable(driver);
-         selectDateRange=new SelectDateRange(driver);
+        selectDateRange = new SelectDateRange(driver);
         clickOnOutSide = new ClickOnOutSide(driver);
         reportPage.clickOnReportTab();
         waitForloadSpinner();
@@ -145,10 +145,8 @@ public class ReportTest extends BaseTest {
         selectDateRange.selectDateRange("2022", "OCT", "23", "2");
         reportPage.clickOnClearButton();
         Thread.sleep(2000);
-        String text1=driver.findElement(By.xpath("//input[@id='mat-input-3']")).getText();
-        System.out.println(text1);
-        Assert.assertEquals(driver.findElement(By.xpath("//input[@id='mat-input-3']")).getText(),"");
-        Assert.assertEquals(driver.findElement(By.xpath("//div[@id='mat-select-value-1']")).getText(),"");
+        Assert.assertEquals(driver.findElement(By.xpath("//input[@id='mat-input-3']")).getText(), "");
+        Assert.assertEquals(driver.findElement(By.xpath("//div[@id='mat-select-value-1']")).getText(), "");
     }
 }
 

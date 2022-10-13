@@ -60,11 +60,19 @@ public class AuditPage {
     @FindBy(xpath = "//span[contains(@class,'mat-expansion-indicator ng-tns-c')]")
     WebElement chatCardDropDown;
 
+    @FindBy(xpath = "(//mat-option[contains(@class,'mat-option mat-focus-indicator mat-option-multiple mat-active')])[1]")
+    WebElement clickInCheckBoxOnAssignee;
     @FindBy(xpath = "//mat-row[contains(@role,'row')]//mat-cell[text()=' SSN ']")
    public WebElement ssn;
+//    @FindBy(xpath = "//input[@id='mat-input-6']")
 
-    //mat-row[contains(@role,'row')]//mat-cell[text()=' SSN ']
-
+    @FindBy(xpath = "(//div[contains(@class,'mat-select-arrow-wrapper ng-tns-c')]//div[contains(@class,'mat-select-arrow ng-tns-c')])[1]")
+    WebElement assigneeDropDown;
+    @FindBy(xpath = "//span[contains(text(),'Clear')]")
+    WebElement clearButton;
+    public void clickOnassigneeDropDown() {
+        this.assigneeDropDown.click();
+    }
     public void clickOnauditTab() {
         this.auditTab.click();
     }
@@ -105,8 +113,8 @@ public class AuditPage {
         this.clickOnApplyFilter.click();
     }
 
-    public void enterDocName() {
-        this.documentName.click();
+    public void enterDocName(String docName) {
+        this.documentName.sendKeys(docName);
     }
 
     public void clickOnActionButtoninTable() {
@@ -132,6 +140,12 @@ public class AuditPage {
     }
     public void verifyPetientDetails(){
         driver.findElement(By.xpath("//mat-row[contains(@role,'row')]//mat-cell[text()=' SSN ']"));
+    }
+    public void clickOnClearButton(){
+        this.clearButton.click();
+    }
+    public void clickInCheckBoxOnAssignees(){
+        this.clickInCheckBoxOnAssignee.click();
     }
 }
 

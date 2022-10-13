@@ -1,10 +1,7 @@
 package Tests;
 
 import Pages.AuditPage;
-import Utilities.ClickOnOutSide;
-import Utilities.Scroll_Page;
-import Utilities.SortingLists;
-import Utilities.VerifyTextOfTable;
+import Utilities.*;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -22,6 +19,7 @@ public class AuditTest extends BaseTest {
     SortingLists sortingLists;
     ClickOnOutSide clickOnOutSide;
     VerifyTextOfTable verifyTextOfTable;
+    SelectDateRange selectDateRange;
 
     Scroll_Page scroll_page;
 
@@ -33,7 +31,7 @@ public class AuditTest extends BaseTest {
 
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+         driver.quit();
     }
 
     @Severity(SeverityLevel.NORMAL)
@@ -89,7 +87,7 @@ public class AuditTest extends BaseTest {
         auditPage = new AuditPage(driver);
         clickOnOutSide = new ClickOnOutSide(driver);
         sortingLists = new SortingLists(driver);
-        Scroll_Page scroll_page=new Scroll_Page(driver);
+        Scroll_Page scroll_page = new Scroll_Page(driver);
         waitForloadSpinner();
         auditPage.clickOnauditTab();
         waitForloadSpinner();
@@ -136,7 +134,7 @@ public class AuditTest extends BaseTest {
         clickOnOutSide.clickOutside();
         Thread.sleep(2000);
         auditPage.clickOnApplyFilter();
-        verifyTextOfTable.verfiyDisplayStatusOfDoc("Pending",3);
+        verifyTextOfTable.verfiyDisplayStatusOfDoc("Pending", 3);
         Thread.sleep(2000);
         auditPage.clickStatusDropDownArrow();
         Thread.sleep(2000);
@@ -146,7 +144,7 @@ public class AuditTest extends BaseTest {
         Thread.sleep(2000);
         auditPage.clickOnApplyFilter();
         Thread.sleep(2000);
-        verifyTextOfTable.verfiyDisplayStatusOfDoc("Audited",3);
+        verifyTextOfTable.verfiyDisplayStatusOfDoc("Audited", 3);
     }
 
     @Severity(SeverityLevel.NORMAL)
@@ -185,7 +183,7 @@ public class AuditTest extends BaseTest {
         auditPage = new AuditPage(driver);
         clickOnOutSide = new ClickOnOutSide(driver);
         verifyTextOfTable = new VerifyTextOfTable(driver);
-        scroll_page=new Scroll_Page(driver);
+        scroll_page = new Scroll_Page(driver);
         SoftAssert softAssert = new SoftAssert();
         waitForloadSpinner();
         auditPage.clickOnauditTab();
@@ -211,5 +209,29 @@ public class AuditTest extends BaseTest {
         softAssert.assertEquals(driver.findElement(By.xpath("(//span[contains(text(),'Kordus, Elaine M')])[1]")).getText().split("Elaine")[0].strip(), "Kordus,");
         Thread.sleep(2000);
         scroll_page.ScrollUpDown(auditPage.ssn);
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 008 - verifyTheClearFilterButtonInFilter")
+    @Description("verifyTheClearFilterButtonInFilter")
+    @Test(priority = 8, groups = "smoke", description = "verifyTheClearFilterButtonInFilter", enabled = true)
+    public void verifyTheClearFilterButtonInFilter() throws Exception {
+        auditPage = new AuditPage(driver);
+        clickOnOutSide = new ClickOnOutSide(driver);
+        verifyTextOfTable = new VerifyTextOfTable(driver);
+        selectDateRange = new SelectDateRange(driver);
+        waitForloadSpinner();
+        auditPage.clickOnauditTab();
+        waitForloadSpinner();
+        auditPage.ClickOnDropDownsInAuditPage(2);
+        auditPage.enterDocName("Medical Chat");
+        auditPage.clickOnassigneeDropDown();
+        Thread.sleep(2000);
+        auditPage.clickInCheckBoxOnAssignees();
+        clickOnOutSide.clickOutside();
+        selectDateRange.selectDateRange("2022", "OCT", "20", "1");
+        auditPage.clickOnClearButton();
+        Assert.assertEquals(driver.findElement(By.xpath("//input[@id='mat-input-3']")).getText(), "");
+        Assert.assertEquals(driver.findElement(By.xpath("//div[@id='mat-select-value-1']")).getText(), "");
     }
 }

@@ -55,7 +55,6 @@ public class DataSetTest extends BaseTest {
         int exepectedCountOfFileInTable = driver.findElements(By.xpath("//td[contains(text(),'QA Automation')]/following::table/tbody/tr")).size();
         String ActualCountOfFile = driver.findElement(By.xpath("(//table/tbody/tr/td[2])[1]")).getText();
         softAssert.assertEquals(exepectedCountOfFileInTable,Integer.parseInt(ActualCountOfFile));
-
         softAssert.assertAll();
 
     }
@@ -79,7 +78,6 @@ public class DataSetTest extends BaseTest {
         softAssert.assertEquals(DatasetPageObj.validateCreateNewDatasetCategory.getText(),"Create New Dataset Category");
         //verify yhe Create Category
         softAssert.assertEquals(DatasetPageObj.validateCreateCategory.getText(),"Create Category");
-
         softAssert.assertAll();
 
     }
