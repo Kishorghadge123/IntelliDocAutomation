@@ -48,22 +48,22 @@ public class AnalyticsTest extends BaseTest {
         Thread.sleep(20000);
         AnalyticsPageObj.ClickAnalyticsBtn();
         Thread.sleep(2000);
-        double Percentage_Of_ready_MedicalChart = AnalyticsPageObj.Verify_progress_bar_Count_and_Total_Count_Of_Documents_for_all_Project("Medical Chart", "ready");
-        double Percentage_Of_ProcessedMedicalChart = AnalyticsPageObj.Verify_progress_bar_Count_and_Total_Count_Of_Documents_for_all_Project("Medical Chart", "processed");
-        double Percentage_Of_rejectedMedicalChart = AnalyticsPageObj.Verify_progress_bar_Count_and_Total_Count_Of_Documents_for_all_Project("Medical Chart", "rejected");
-        double count_Of_readyMedicalChart = AnalyticsPageObj.getCountFromProgresBar("Medical Chart", Percentage_Of_ready_MedicalChart);
-        double count_Of_ProcessedMedicalChart = AnalyticsPageObj.getCountFromProgresBar("Medical Chart", Percentage_Of_ProcessedMedicalChart);
-        double count_Of_rejectedMedicalChart = AnalyticsPageObj.getCountFromProgresBar("Medical Chart", Percentage_Of_rejectedMedicalChart);
-        double Count_Of_MedicalChart_progressbar = ((count_Of_readyMedicalChart + count_Of_ProcessedMedicalChart + count_Of_rejectedMedicalChart) + 0.10);
-        System.out.println(Count_Of_MedicalChart_progressbar);
-        int actualCount_Of_MedicalChart_progressbar = (int) Count_Of_MedicalChart_progressbar;
-        System.out.println("TotalCount:-" + actualCount_Of_MedicalChart_progressbar);
-        String totalCount_of_MedicalChart = driver.findElement(By.xpath("//div[text()=' Medical Chart ']/span[contains(text(),'Total')][1]")).getText().split("Total: ")[1];
-        int expectedTotalCount_of_MedicalChartdocument = Integer.parseInt(totalCount_of_MedicalChart);
-        System.out.println("TotalCount:-" + expectedTotalCount_of_MedicalChartdocument);
-        softAssert.assertEquals(actualCount_Of_MedicalChart_progressbar, expectedTotalCount_of_MedicalChartdocument);
-        System.out.println("Test Pass");
-        softAssert.assertAll();
+//        double Percentage_Of_ready_MedicalChart = AnalyticsPageObj.Verify_progress_bar_Count_and_Total_Count_Of_Documents_for_all_Project("Medical Chart", "ready");
+//        double Percentage_Of_ProcessedMedicalChart = AnalyticsPageObj.Verify_progress_bar_Count_and_Total_Count_Of_Documents_for_all_Project("Medical Chart", "processed");
+//        double Percentage_Of_rejectedMedicalChart = AnalyticsPageObj.Verify_progress_bar_Count_and_Total_Count_Of_Documents_for_all_Project("Medical Chart", "rejected");
+//        double count_Of_readyMedicalChart = AnalyticsPageObj.getCountFromProgresBar("Medical Chart", Percentage_Of_ready_MedicalChart);
+//        double count_Of_ProcessedMedicalChart = AnalyticsPageObj.getCountFromProgresBar("Medical Chart", Percentage_Of_ProcessedMedicalChart);
+//        double count_Of_rejectedMedicalChart = AnalyticsPageObj.getCountFromProgresBar("Medical Chart", Percentage_Of_rejectedMedicalChart);
+//        double Count_Of_MedicalChart_progressbar = ((count_Of_readyMedicalChart + count_Of_ProcessedMedicalChart + count_Of_rejectedMedicalChart) + 0.10);
+//        System.out.println(Count_Of_MedicalChart_progressbar);
+//        int actualCount_Of_MedicalChart_progressbar = (int) Count_Of_MedicalChart_progressbar;
+//        System.out.println("TotalCount:-" + actualCount_Of_MedicalChart_progressbar);
+//        String totalCount_of_MedicalChart = driver.findElement(By.xpath("//div[text()=' Medical Chart ']/span[contains(text(),'Total')][1]")).getText().split("Total: ")[1];
+//        int expectedTotalCount_of_MedicalChartdocument = Integer.parseInt(totalCount_of_MedicalChart);
+//        System.out.println("TotalCount:-" + expectedTotalCount_of_MedicalChartdocument);
+//        softAssert.assertEquals(actualCount_Of_MedicalChart_progressbar, expectedTotalCount_of_MedicalChartdocument);
+//        System.out.println("Test Pass");
+//        softAssert.assertAll();
 
     }
 
@@ -75,7 +75,7 @@ public class AnalyticsTest extends BaseTest {
         AnalyticsPageObj = new AnalyticsPage(driver);
         Thread.sleep(2000);
         AnalyticsPageObj.verfy_TotalCountofDocuments_in_Organization_Statistics();
-//        AnalyticsPageObj.verfiy_TotalPercentageCount_Of_Organization_Statistics();
+        AnalyticsPageObj.verfiy_TotalPercentageCount_Of_Organization_Statistics();
     }
 
     @Severity(SeverityLevel.CRITICAL)
@@ -128,6 +128,10 @@ public class AnalyticsTest extends BaseTest {
         System.out.println(expectedCountOfDocuments);
         Assert.assertEquals(actualcountOfdoc, expectedCountOfDocuments);
     }
+
+
+
+
     @Severity(SeverityLevel.CRITICAL)
     @Story("story_id: 006 - verify That user click On NTS platform admin button and admin popup is display")
     @Description(" verify_that_user_click_on_NTS_platform_admin_button_and_admin_popup_is_display")

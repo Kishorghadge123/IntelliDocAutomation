@@ -1,19 +1,24 @@
 package Pages;
 
 import Tests.BaseTest;
+import Utilities.Custome_Wait;
 import Utilities.Functions;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserPage extends BaseTest {
     WebDriver driver;
     Functions functions;
+    SoftAssert sa =new SoftAssert();
 
     public UserPage(WebDriver driver) {
         this.driver = driver;
@@ -76,7 +81,7 @@ public class UserPage extends BaseTest {
     @FindBy(xpath = "//span[text()='Update']")
     public WebElement updateButton;
 
-
+    public By userTilesLocator = By.xpath("//div[@class='proj_name']");
     public void userclickOnUserTab() throws Exception {
         functions = new Functions();
         waitForloadSpinner();
@@ -92,7 +97,7 @@ public class UserPage extends BaseTest {
     }
 
     public void clickonGridIcon() {
-       this.grid_icon.click();
+        this.grid_icon.click();
     }
 
     public void clickonActionBtton() {
@@ -150,6 +155,7 @@ public class UserPage extends BaseTest {
             }
         }
     }
+
     public String getUserCountOfatomperPage() {
         return driver.findElement(By.xpath("//div[@class=\"mat-paginator-range-label\"]")).getText().split("of")[1].strip();
     }
@@ -158,7 +164,7 @@ public class UserPage extends BaseTest {
         this.Items_per_pageDropDown.click();
     }
 
-    public void selectDropDownValue()  {
+    public void selectDropDownValue() {
         driver.findElement(By.xpath("//span[text()=' 200 ']")).click();
     }
 
@@ -175,17 +181,85 @@ public class UserPage extends BaseTest {
         this.searchOnAddroles.sendKeys(text);
         this.selectRoleInAddRole.click();
     }
-
     public void clickOnDeleteButtonIndeleteRoleInEditUser() {
         this.deleteRoleInEditUser.click();
     }
-
-
-
     public void userSendTextinTextboxofEditUser() {
         this.textBoxinEdituser.clear();
         this.textBoxinEdituser.sendKeys("QA Automation Project");
         this.updateButton.click();
+    }
+    public List<WebElement> getListOfUserTiles(){
+        List<WebElement> userTileList = null;
+        try{
+            userTileList = driver.findElements(userTilesLocator);
+        }catch(StaleElementReferenceException sere){
+            System.out.println("Stale Element Reference Exception");
+            sere.printStackTrace();
+            PageFactory.initElements(driver,this);
+            userTileList = driver.findElements(userTilesLocator);
+        }
+
+        return userTileList;
+    }
+    public void verifyUserTileDetails(WebElement ele) throws Exception {
+        String userNameOnTile;
+        String userEmailOnTile;
+        String createdDateOnTile;
+        String updateDateOnTile;
+
+        /*try{
+           }catch(StaleElementReferenceException sere){
+               System.out.println("Stale Element Reference Exception");
+               sere.printStackTrace();
+               PageFactory.initElements(driver,this);
+               userNameOnTile = ele.findElement(By.cssSelector("div>h5.project-name")).getText();
+           }
+           finally {
+
+           }*/
+        //PageFactory.initElements(driver,this);
+        updateDateOnTile = ele.findElement(By.xpath("//mat-label[text()='Updated Date ']/following-sibling::div")).getText();
+        userNameOnTile = ele.findElement(By.cssSelector("div>h5.project-name")).getText();
+        userEmailOnTile = ele.findElement(By.cssSelector("div>span.email.ng-star-inserted")).getText();
+        createdDateOnTile = ele.findElement(By.xpath("//mat-label[text()='Created Date ']/following-sibling::div")).getText();
+        waitForloadSpinner();
+        Custome_Wait.waitUpToelementClickable(driver, ele.findElement(By.xpath("//button[@aria-label='edit user details']")));
+        ele.findElement(By.xpath("//button[@aria-label='edit user details']")).click();
+            /*Assert.assertEquals(userNameOnTile,driver.findElement(By.xpath("//input[@type='text' and @formcontrolname='name']")).getAttribute("value"));
+           Assert.assertEquals(userEmailOnTile,driver.findElement(By.xpath("//input[@type='email' and @formcontrolname='email']")).getAttribute("value"));
+           Assert.assertEquals(updateDateOnTile,driver.findElement(By.xpath("//input[@type='text' and @formcontrolname='updated']")).getAttribute("value"));
+           Assert.assertEquals(createdDateOnTile,driver.findElement(By.xpath("//input[@type='text' and @formcontrolname='created']")).getAttribute("value"));
+           driver.findElement(By.xpath("//span[@class='mat-button-wrapper' and text()='Cancel']")).click();
+           waitForloadSpinner();*/
+    }
+    public void verifyUserTileDetails(int index) throws Exception {
+        String userNameOnTile;
+        String userEmailOnTile;
+        String createdDateOnTile;
+        String updateDateOnTile;
+
+        //PageFactory.initElements(driver,this);
+        updateDateOnTile = driver.findElement(By.xpath("(//mat-label[text()='Updated Date ']/following-sibling::div)["+index+"]")).getText();
+        userNameOnTile = driver.findElement(By.xpath("(//div/h5[contains(@class,'project-name')])["+index+"]")).getText();
+        userEmailOnTile = driver.findElement(By.xpath("(//div/span[@class = 'email ng-star-inserted'])["+index+"]")).getText();
+        createdDateOnTile = driver.findElement(By.xpath("(//mat-label[text()='Created Date ']/following-sibling::div)["+index+"]")).getText();
+        waitForloadSpinner();
+        System.out.println(userNameOnTile+" | "+userEmailOnTile+" | "+updateDateOnTile+" | "+createdDateOnTile);
+        Custome_Wait.waitUpToelementClickable(driver, driver.findElement(By.xpath("(//button[@aria-label='edit user details'])["+index+"]")));
+        driver.findElement(By.xpath("(//button[@aria-label='edit user details'])["+index+"]")).click();
+        waitForloadSpinner();
+        Thread.sleep(2000);
+        /*Assert.assertEquals
+                (userNameOnTile+":",driver.findElement(By.xpath("//input[@type='text' and @formcontrolname='name']")).getAttribute("value"));*/
+        System.out.println(userNameOnTile+"   |   "+driver.findElement(By.xpath("//input[@type='text' and @formcontrolname='name']")).getAttribute("value"));
+        sa.assertEquals(userNameOnTile,driver.findElement(By.xpath("//input[@type='text' and @formcontrolname='name']")).getAttribute("values"));
+        sa.assertEquals(userEmailOnTile,driver.findElement(By.xpath("//input[@type='email' and @formcontrolname='email']")).getAttribute("value"));
+        sa.assertEquals(updateDateOnTile,driver.findElement(By.xpath("//input[@type='text' and @formcontrolname='updated']")).getAttribute("value"));
+        sa.assertEquals(createdDateOnTile,driver.findElement(By.xpath("//input[@type='text' and @formcontrolname='created']")).getAttribute("value"));
+        Custome_Wait.waitUpToelementClickable(driver,driver.findElement(By.xpath("//span[@class='mat-button-wrapper' and text()='Cancel']/parent::button")));
+        driver.findElement(By.xpath("//span[@class='mat-button-wrapper' and text()='Cancel']/parent::button")).click();
+        waitForloadSpinner();
     }
 
 }

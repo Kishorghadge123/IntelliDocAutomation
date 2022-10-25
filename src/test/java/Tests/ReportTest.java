@@ -3,6 +3,7 @@ package Tests;
 import Pages.ReportPage;
 import Utilities.ClickOnOutSide;
 import Utilities.SelectDateRange;
+import Utilities.SortingLists;
 import Utilities.VerifyTextOfTable;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
@@ -17,6 +18,7 @@ public class ReportTest extends BaseTest {
     ClickOnOutSide clickOnOutSide;
     VerifyTextOfTable verifyTextOfTable;
     SelectDateRange selectDateRange;
+    SortingLists sortingLists;
 
     @BeforeMethod
     public void setmethod() throws Exception {
@@ -147,6 +149,39 @@ public class ReportTest extends BaseTest {
         Thread.sleep(2000);
         Assert.assertEquals(driver.findElement(By.xpath("//input[@id='mat-input-3']")).getText(), "");
         Assert.assertEquals(driver.findElement(By.xpath("//div[@id='mat-select-value-1']")).getText(), "");
+    }
+
+    @Severity(SeverityLevel.NORMAL)
+    @Story("story_id: 005 - verify the user able to sort the table from data")
+    @Description("verify_the_user_able_to_sort_the_table_from_data")
+    @Test(priority = 5, groups = "smoke", description = "verify_the_user_able_to_sort_the_table_from_data")
+    public void verifytableDataisSorting() throws Exception {
+        waitForloadSpinner();
+        reportPage = new ReportPage(driver);
+        verifyTextOfTable = new VerifyTextOfTable(driver);
+        clickOnOutSide = new ClickOnOutSide(driver);
+        sortingLists = new SortingLists(driver);
+        reportPage.clickOnReportTab();
+        waitForloadSpinner();
+        reportPage.selectProject();
+        Thread.sleep(1000);
+        reportPage.clickOnFilterDropDownArrow();
+        reportPage.clickOnStatusDropDown();
+        reportPage.SelectStatusInReportTab(3);
+        reportPage.SelectStatusInReportTab(1);
+        clickOnOutSide.clickOutside();
+        reportPage.clickOnApplyFilter();
+        Thread.sleep(2000);
+        verifyTextOfTable.verfiyDisplayStatusOfDoc("Ready", 4);
+        reportPage.clickOnStatusDropDown();
+        reportPage.SelectStatusInReportTab(1);
+        reportPage.SelectStatusInReportTab(2);
+        clickOnOutSide.clickOutside();
+        reportPage.clickOnApplyFilter();
+        Thread.sleep(2000);
+        reportPage.verifySortsortingofTableData(2);
+        sortingLists.sortingListInOrder("ascending", 1);
+        reportPage.verifySortsortingofTableData(2);
     }
 }
 

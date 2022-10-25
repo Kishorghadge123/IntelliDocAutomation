@@ -67,7 +67,7 @@ public class AnalyticsPage {
             i = Double.parseDouble(s.getText());
             j = j + i;
         }
-        Assert.assertEquals((j - 100.0), 100.0);
+        Assert.assertEquals((j-200), 100.0);
     }
 
     public int verfiyThatTotalCountOfProjectDocisequleToTotalCountOfProccessReadyRejectDoc() throws InterruptedException {
@@ -102,6 +102,7 @@ public class AnalyticsPage {
     }
 
     public void clickOnDropDowns(int index) {
+
         driver.findElement(By.xpath("(//span[contains(@class,'mat-expansion-indicator ng-tns-c')])[" + index + "]")).click();
     }
 }

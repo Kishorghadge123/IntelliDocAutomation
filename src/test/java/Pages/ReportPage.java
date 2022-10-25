@@ -152,5 +152,8 @@ public class ReportPage {
     public void clickOnClearButton(){
         this.clearButton.click();
     }
+    public void verifySortsortingofTableData(int index) {
+        driver.findElement(By.xpath("(//table/thead/tr/th)[" + index + "]")).click();
+    }
 }
 

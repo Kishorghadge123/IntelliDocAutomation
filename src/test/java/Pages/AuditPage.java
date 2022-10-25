@@ -92,7 +92,6 @@ public class AuditPage {
         this.searchProject.sendKeys("888-Medical");
         this.clickOnproject.click();
     }
-
     public void verifySortsortingofTableData(int index) {
         driver.findElement(By.xpath("(//table/thead/tr/th)[" + index + "]")).click();
     }

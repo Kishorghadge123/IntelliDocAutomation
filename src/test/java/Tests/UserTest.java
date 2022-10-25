@@ -217,7 +217,40 @@ public class UserTest extends BaseTest {
         Thread.sleep(20000);
     }
 
+
+
+    List<WebElement> userTiles = null;
+    @Severity(SeverityLevel.CRITICAL)
+    @Story("story_id: 009 -verify details on user tiles")
+    @Description("verify_details_on_user_tiles")
+    @Test(priority = 9, groups = "smoke", description = "verify_details_on_user_tiles")
+    public void verifyTileDetailsForAllUsers() throws Exception {
+        userPage = new UserPage(driver);
+        waitForloadSpinner();
+        userPage.userclickOnUserTab();
+        waitForloadSpinner();
+        userTiles = userPage.getListOfUserTiles();
+        System.out.println(userTiles.size());
+        /*for (WebElement ele : userTiles){
+            try{
+                userPage.verifyUserTileDetails(ele);
+            }catch(StaleElementReferenceException sere){
+                System.out.println("Stale Element Reference Exception");
+                sere.printStackTrace();
+                PageFactory.initElements(driver,UserPage.class);
+                userPage.verifyUserTileDetails(ele);
+            }
+        }*/
+        for(int i = 1; i <= userTiles.size(); i++){
+            if(i>5)
+                break;
+            userPage.verifyUserTileDetails(i);
+        }
+    }
+
 }
+
+
 
 
 
