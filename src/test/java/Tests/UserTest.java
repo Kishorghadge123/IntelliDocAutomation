@@ -231,16 +231,6 @@ public class UserTest extends BaseTest {
         waitForloadSpinner();
         userTiles = userPage.getListOfUserTiles();
         System.out.println(userTiles.size());
-        /*for (WebElement ele : userTiles){
-            try{
-                userPage.verifyUserTileDetails(ele);
-            }catch(StaleElementReferenceException sere){
-                System.out.println("Stale Element Reference Exception");
-                sere.printStackTrace();
-                PageFactory.initElements(driver,UserPage.class);
-                userPage.verifyUserTileDetails(ele);
-            }
-        }*/
         for(int i = 1; i <= userTiles.size(); i++){
             if(i>5)
                 break;
